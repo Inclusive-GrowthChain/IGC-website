@@ -1,0 +1,141 @@
+.navbar {
+  background-color: #064420;
+  color: #fff;
+  box-shadow: 0 0 0 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  min-height: 8vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  transition: all .7s ease-in;
+}
+
+.navbar_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.logo_container {
+  grid-column: 1;
+}
+
+.options_container {
+  grid-column: 2 / 4;
+}
+
+.navbar_scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  margin-left: 150px;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  border: none;
+  background-color: #064420;
+  color: #fff;
+  margin-top: 5%;
+}
+
+.options_home, .options_services, .options_platform, .options_about, .options_contact, .options_news, .options_careers {
+  font-size: 18px;
+  margin-right: 2.5rem;
+  background-color: #064420;
+  color: #fff;
+  border: none;
+  margin-top: 2.9%;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.options_scrolled {
+  font-size: 16px;
+  margin-right: 3.12rem;                   /* maintain ratio if changing font-size */
+  transition: all 0.2s ease-in;
+}
+
+.demo {
+  background-color: #fff;
+  color: #064420;
+  border: 1px solid #064420;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  margin-top: 1.1rem;
+}
+
+.demo:hover {
+  background-color: #064420;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.services_list {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #064420;
+  height: 28%;
+  width: 15%;
+  position: absolute;
+  margin-top: 1.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in;
+  border-radius: 5px;
+  border: 1px solid #064420;
+}
+
+.services_list > ul, .platform_list > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.services_list > ul > li, .platform_list > ul > li {
+  font-size: 18px;
+  background-color: #064420;
+  color: #fff;
+  border: none;
+  padding: 5%;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.platform_list {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #064420;
+  height: 23%;
+  width: 15%;
+  position: absolute;
+  margin-top: 1.4%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in;
+  border-radius: 5px;
+  border: 1px solid #064420;
+}
