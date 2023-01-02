@@ -123,7 +123,7 @@ const Home = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className='tab_5'>
+            {/* <div className='tab_5'>
               <Card className='card'>
                 <CardContent>
                   <img
@@ -139,7 +139,7 @@ const Home = () => {
                   </p>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
           <div className='desc_container'>
             <div className='desc_title'>

@@ -8,9 +8,9 @@
 }
 
 .welcome_title {
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #064420;
+    color: #0094f8;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
 }
 
 .welcome_title_loading {
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
     text-align: left;
@@ -31,7 +31,7 @@
 
 .welcome_text {
     font-size: 3.5em;
-    font-weight: 400;
+    font-weight: 600;
     color: #000;
     text-align: left;
     margin: 0;
@@ -40,11 +40,12 @@
     margin-top: 2rem;
     width: 80vh;
     transition: all 1.5s ease-in;
+    font-weight: 600;
 }
 
 .welcome_text_loading {
     font-size: 3.5em;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
     text-align: left;
     margin: 0;
@@ -64,12 +65,12 @@
 }
 
 .learn_button {
-    background-color: #064420;
+    background-image: linear-gradient(to right, #0094f8, #00d581);
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: 1rem;
     cursor: pointer;
@@ -77,12 +78,12 @@
 }
 
 .learn_button_loaded {
-    background-color: #064420;
+    background-image: linear-gradient(to right, #0094f8, #00d581);
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: 1rem;
     cursor: pointer;
@@ -94,8 +95,8 @@
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: -1rem;
     cursor: pointer;
@@ -103,8 +104,7 @@
 
 .learn_button:hover {
     background-color: #fff;
-    color: #064420;
-    border: 1px solid #064420;
+    border: 1px solid #fff;
 }
 
 .home_img {
@@ -131,7 +131,7 @@
 .home_container_2 {
     background-image: url(../../assets/home_bg/rm380-12.jpg);
     background-size: cover;
-    padding-bottom: 125vh;
+    padding-bottom: 100vh;
 }
 
 .tab_container {
@@ -139,7 +139,7 @@
     width: 35%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 7%;
     margin-left: 35vh;
@@ -150,14 +150,17 @@
 }
 
 .card {
-    height: 16rem;
-    width: 18rem;
+    height: 18rem;
+    width: 19rem;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in;
-    background-color: #b5d146;
+    background-image: linear-gradient(to bottom right, #0094f8, #00d581);
+    color: #fff;
     margin-top: -10px;
     cursor: pointer;
 }
@@ -191,9 +194,9 @@
 }
 
 .desc_title, .platform_title, .about_title {
-    font-size: 1.7em;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: #064420;
+    color: #0094f8;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -201,8 +204,8 @@
 }
 
 .desc_text {
-    font-size: 2.2em;
-    font-weight: 400;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: #000;
     text-align: left;
     margin: 0;
@@ -244,8 +247,8 @@
 }
 
 .platform_text, .about_text {
-    font-size: 2.2em;
-    font-weight: 400;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: #000;
     text-align: left;
     margin: 0;
@@ -312,17 +315,17 @@
 }
 
 .news_title {
-    font-size: 1.7em;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: #064420;
+    color: #0094f8;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .news_text {
-    font-size: 2.2em;
-    font-weight: 400;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: #000;
     text-align: center;
     margin: 0;
@@ -357,7 +360,7 @@
 .news_card_title {
     font-size: 1.5em;
     font-weight: 600;
-    color: #064420;
+    color: #000;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -419,7 +422,7 @@
 .company_title {
     font-size: 2.2em;
     font-weight: 600;
-    color: #064420;
+    color: #000;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -445,7 +448,7 @@
 .contact_title_2 {
     font-size: 1.5em;
     font-weight: 600;
-    color: #064420;
+    color: #000;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -476,7 +479,7 @@
 .navigation_title {
     font-size: 1.5em;
     font-weight: 600;
-    color: #064420;
+    color: #000;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -507,7 +510,7 @@
 .news_title_2 {
     font-size: 1.5em;
     font-weight: 600;
-    color: #064420;
+    color: #000;
     text-align: left;
     margin: 0;
     padding: 0;
