@@ -41,7 +41,7 @@ const Home = () => {
             </div>
             <div className='learn_more'>
               <button className={allLoaded ? 'learn_button' : showLearnButton ? 'learn_button_loaded' : 'learn_button_loading'}>
-                Learn More
+                LEARN MORE
               </button>
             </div>
           </div>
@@ -153,7 +153,7 @@ const Home = () => {
             </p>
             <div className='learn_more_2'>
               <button className='learn_button'>
-                Learn More
+                LEARN MORE
               </button>
             </div>
           </div>
@@ -171,7 +171,7 @@ const Home = () => {
             </p>
             <div className='learn_more_3'>
               <button className='learn_button'>
-                Learn More
+                LEARN MORE
               </button>
             </div>
           </div>
@@ -259,7 +259,7 @@ const Home = () => {
             </p>
             <div className='learn_more_4'>
               <button className='learn_button'>
-                Learn More
+                LEARN MORE
               </button>
             </div>
           </div>

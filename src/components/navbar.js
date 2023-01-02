@@ -84,7 +84,7 @@ const Navbar = () => {
         }
       </ul>
       <Link to="demo">
-        <button className="demo_button">Request Demo</button>
+        <button className="demo_button">REQUEST DEMO</button>
       </Link>
     </nav>
     </>

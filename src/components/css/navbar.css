@@ -26,6 +26,7 @@
     justify-content: space-between;
     margin-left: 5vw;
     margin-right: 5vw;
+    font-weight: 900;
 }
 
 .navbar_logo_img {
@@ -55,7 +56,9 @@
     margin-right: 1rem;
     padding: 30px 0px 30px 20px;
     font-size: 17px;
+    font-weight: 600;
     transition: all 0.2s ease-in;
+    /* font-family: 'Titillium Web', sans-serif; */
 }
 
 .nav_item_a_scrolled {
@@ -65,7 +68,7 @@
 
 .nav_item a:hover {
     background-color: #fff;
-    color: #ff3d08;
+    color: #ff5325;
     border-radius: 5px;
 }
 
@@ -73,14 +76,14 @@
     border: none;
     background: transparent;
     padding: 12px 20px;
-    font-size: 22px;
+    font-size: 17px;
     color: #fff;
     background-image: linear-gradient(to right, #0094f8, #00d581);
     border-radius: 5px;
     transition: all 0.2s ease-in;
     margin-right: 5vw;
     margin-left: 5vw;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .demo_button:hover {

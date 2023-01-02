@@ -70,8 +70,8 @@
     border: none;
     border-radius: 5px;
     padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 300;
     margin-top: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in;
