@@ -20,7 +20,7 @@ const Layout = () => {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
