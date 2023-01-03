@@ -7,12 +7,14 @@ import "./css/navbar.css";
 
 import ServiceDropdown from "./nav-service_dropdown";
 import PlatformDropdown from "./nav-platform_dropdown";
+import { platform_list } from "./navitems";
 import logo from "../assets/logo/logo3.png"
 
 const Navbar = () => {
-  const [serviceDropdown, setServiceDropdown] = useState(false);
-  const [platformDropdown, setPlatformDropdown] = useState(false);
+  const [showServiceDropdown, setShowServiceDropdown] = useState(false);
+  const [showPlatformDropdown, setShowPlatformDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [platformDropdown, setPlatformDropdown] = useState(false);
 
   const handleScroll=() => {
     const offset=window.scrollY;
@@ -54,11 +56,11 @@ const Navbar = () => {
                 <li 
                   key={item.id} 
                   className={item.cName} 
-                  onMouseEnter={() => setServiceDropdown(true)} 
-                  onMouseLeave={() => setServiceDropdown(false)}
+                  onMouseEnter={() => setShowServiceDropdown(true)} 
+                  onMouseLeave={() => setShowServiceDropdown(false)}
                 >
                   <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
-                  { serviceDropdown && <ServiceDropdown /> }
+                  { showServiceDropdown && <ServiceDropdown /> }
                 </li>
               )
             }
@@ -67,11 +69,25 @@ const Navbar = () => {
                 <li 
                   key={item.id} 
                   className={item.cName} 
-                  onMouseEnter={() => setPlatformDropdown(true)} 
-                  onMouseLeave={() => setPlatformDropdown(false)}
+                  onMouseEnter={() => setShowPlatformDropdown(true)} 
+                  onMouseLeave={() => setShowPlatformDropdown(false)}
                 >
                   <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
-                  { platformDropdown && <PlatformDropdown /> }
+                  {
+                    showPlatformDropdown && (
+                      <ul className={platformDropdown ? "platform_menu.clicked" : "platform_menu"} onClick={() => setPlatformDropdown(!platformDropdown)}>
+                        {
+                          platform_list.map((item, index) => {
+                            return (
+                              <li key={item.id}>
+                                <Link to={item.path} className={item.cName} onClick={() => setPlatformDropdown(false)}>{item.title}</Link>
+                              </li>
+                            )
+                          })
+                        }
+                      </ul>
+                    )
+                  }
                 </li>
               )
             }
