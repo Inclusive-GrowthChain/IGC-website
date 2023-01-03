@@ -375,6 +375,7 @@ const Home = () => {
           <div className='contact_container_2'>
             <div className='contact_title_2'>
               CONTACT US
+              <hr className='hc6_line' />
             </div>
             <div className='contact_text_2'>
               <p>Address Line 1</p>
@@ -388,6 +389,7 @@ const Home = () => {
           <div className='navigation_container'>
             <div className='navigation_title'>
               NAVIGATION
+              <hr className='hc6_line' />
             </div>
             <div className='navigation_text'>
               <p>Home</p>
@@ -402,6 +404,7 @@ const Home = () => {
           <div className='news_container_2'>
             <div className='news_title_2'>
               LATEST NEWS & POSTS
+              <hr className='hc6_line' />
             </div>
             <div className='news_card_container_2'>
               <div className='news_1_2'>

@@ -7,7 +7,7 @@ import "./css/navbar.css";
 
 import ServiceDropdown from "./nav-service_dropdown";
 import PlatformDropdown from "./nav-platform_dropdown";
-import logo from "../assets/logo/logo2.png"
+import logo from "../assets/logo/logo3.png"
 
 const Navbar = () => {
   const [serviceDropdown, setServiceDropdown] = useState(false);
@@ -83,9 +83,11 @@ const Navbar = () => {
           })
         }
       </ul>
-      <Link to="demo">
-        <button className="demo_button">REQUEST DEMO</button>
-      </Link>
+      <div className="demo_button_container">
+        <Link to="demo">
+          <button className="demo_button">REQUEST DEMO</button>
+        </Link>
+      </div>
     </nav>
     </>
   );
