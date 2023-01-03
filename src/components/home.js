@@ -123,23 +123,6 @@ const Home = () => {
                 </CardContent>
               </Card>
             </div>
-            {/* <div className='tab_5'>
-              <Card className='card'>
-                <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
-                    IOT
-                  </p>
-                  <p className='card_desc'>
-                    IOT Description
-                  </p>
-                </CardContent>
-              </Card>
-            </div> */}
           </div>
           <div className='desc_container'>
             <div className='desc_title'>
@@ -159,6 +142,50 @@ const Home = () => {
           </div>
         </div>
         <div className='home_container_3'>
+          <div className='stats_container'>
+            <div className='stat_1_container'>
+              <div className='stat_1'>
+                <div className='stat_firstLine'>
+                  6000+
+                </div>
+                <div className='stat_secondLine'>
+                  Complete Projects
+                </div>
+              </div>
+            </div>
+            <div className='stat_2_container'>
+              <div className='stat_2'>
+                <div className='stat_firstLine'>
+                  4000+
+                </div>
+                <div className='stat_secondLine'>
+                  NLP Experts
+                </div>
+              </div>
+            </div>
+            <div className='stat_3_container'>
+              <div className='stat_3'>
+                <div className='stat_firstLine'>
+                  3500+
+                </div>
+                <div className='stat_secondLine'>
+                  Satisfied Clients
+                </div>
+              </div>
+            </div>
+            <div className='stat_4_container'>
+              <div className='stat_4'>
+                <div className='stat_firstLine'>
+                  6000+
+                </div>
+                <div className='stat_secondLine'>
+                  Industries Served
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='home_container_4'>
           <div className='platform_container'>
             <div className='platform_title'>
               INDUSTRIES & PLATFORMS
@@ -246,7 +273,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home_container_4'>
+        <div className='home_container_5'>
           <div className='about_container'>
             <div className='about_title'>
               ABOUT US
@@ -271,7 +298,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className='home_container_5'>
+        <div className='home_container_6'>
           <div className='news_container'>
             <div className='news_title'>
               NEWS & MEDIA
@@ -358,7 +385,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home_container_6'>
+        <div className='home_container_7'>
           <div className='company_container'>
             <div className='company_title'>
               {/* <img
@@ -375,7 +402,7 @@ const Home = () => {
           <div className='contact_container_2'>
             <div className='contact_title_2'>
               CONTACT US
-              <hr className='hc6_line' />
+              <hr className='hc7_line' />
             </div>
             <div className='contact_text_2'>
               <p>Address Line 1</p>
@@ -389,7 +416,7 @@ const Home = () => {
           <div className='navigation_container'>
             <div className='navigation_title'>
               NAVIGATION
-              <hr className='hc6_line' />
+              <hr className='hc7_line' />
             </div>
             <div className='navigation_text'>
               <p>Home</p>
@@ -404,7 +431,7 @@ const Home = () => {
           <div className='news_container_2'>
             <div className='news_title_2'>
               LATEST NEWS & POSTS
-              <hr className='hc6_line' />
+              <hr className='hc7_line' />
             </div>
             <div className='news_card_container_2'>
               <div className='news_1_2'>
