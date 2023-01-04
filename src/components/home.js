@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMap } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
 
 import './css/home.css';
 
@@ -316,6 +328,7 @@ const Home = () => {
                       className='news_card_img'
                     />
                     <p className="news_card_date">
+                      <FontAwesomeIcon icon={faCalendarCheck} className='news_icon'/>
                       October 10, 2020
                     </p>
                     <p className='news_card_title'>
@@ -341,6 +354,7 @@ const Home = () => {
                       className='news_card_img'
                     />
                     <p className="news_card_date">
+                      <FontAwesomeIcon icon={faCalendarCheck} className='news_icon'/>
                       October 10, 2020
                     </p>
                     <p className='news_card_title'>
@@ -366,6 +380,7 @@ const Home = () => {
                       className='news_card_img'
                     />
                     <p className="news_card_date">
+                      <FontAwesomeIcon icon={faCalendarCheck} className='news_icon'/>
                       October 10, 2020
                     </p>
                     <p className='news_card_title'>
@@ -398,6 +413,13 @@ const Home = () => {
             <div className='company_text'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
+            <div className='company_social_container'>
+              <FontAwesomeIcon icon={faFacebookF} className='social_icon'/>
+              <FontAwesomeIcon icon={faInstagram} className='social_icon'/>
+              <FontAwesomeIcon icon={faWhatsapp} className='social_icon'/>
+              <FontAwesomeIcon icon={faTwitter} className='social_icon'/>
+              <FontAwesomeIcon icon={faLinkedin} className='social_icon'/>
+            </div>
           </div>
           <div className='contact_container_2'>
             <div className='contact_title_2'>
@@ -405,12 +427,26 @@ const Home = () => {
               <hr className='hc7_line' />
             </div>
             <div className='contact_text_2'>
-              <p>Address Line 1</p>
-              <p>Address Line 2</p>
-              <p>Address Line 3</p>
-              <p>Phone Number</p>
-              <p>Email Address</p>
-              <p>Active Hours</p>
+              <p>
+                <FontAwesomeIcon icon={faMap} className='contact_icon'/>
+                Address
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faPhone} className='contact_icon'/>
+                Phone Number
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faEnvelope} className='contact_icon'/>
+                Email
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faWhatsapp} className='contact_icon'/>
+                Whatsapp Number
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faClock} className='contact_icon'/>
+                Working Hours
+              </p>
             </div>
           </div>
           <div className='navigation_container'>
@@ -419,13 +455,30 @@ const Home = () => {
               <hr className='hc7_line' />
             </div>
             <div className='navigation_text'>
-              <p>Home</p>
-              <p>Services</p>
-              <p>Industries & Platform</p>
-              <p>About Us</p>
-              <p>Contact Us</p>
-              <p>News & Media</p>
-              <p>Careers</p>
+              <p>
+                <FontAwesomeIcon icon={faCircleCheck} className='contact_icon'/>
+                Home
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faCircleCheck} className='contact_icon'/>
+                Industries & Platform
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faCircleCheck} className='contact_icon'/>
+                About Us
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faCircleCheck} className='contact_icon'/>
+                Contact Us
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faCircleCheck} className='contact_icon'/>
+                News & Media
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faCircleCheck} className='contact_icon'/>
+                Careers
+              </p>
             </div>
           </div>
           <div className='news_container_2'>
