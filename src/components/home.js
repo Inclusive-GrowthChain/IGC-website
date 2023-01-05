@@ -22,6 +22,8 @@ import { faCreditCard } from '@fortawesome/free-regular-svg-icons';
 import { faSeedling } from '@fortawesome/free-solid-svg-icons';
 import { faTachographDigital } from '@fortawesome/free-solid-svg-icons';
 import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import './css/home.css';
 
@@ -428,6 +430,27 @@ const Home = () => {
             </div>
         </div>
         <div className='home_container_8'>
+          <div className='subscribe_icon_container'>
+            <FontAwesomeIcon icon={faEnvelopeOpenText} className='subscribe_icon'/>
+          </div>
+          <div className='subscribe_title'>
+            Subscribe
+          </div>
+          <div className='subscribe_text'>
+            Subscribe to our newsletter & stay updated
+          </div>
+          <div className='subscribe_input_container'>
+            <input
+              type='text'
+              placeholder='Your email address'
+              className='subscribe_input'
+            />
+            <button className='subscribe_button'>
+              <FontAwesomeIcon icon={faPaperPlane} className='send_icon'/>
+            </button>
+          </div>
+        </div>
+        <div className='home_container_9'>
           <div className='news_container'>
             <div className='news_title'>
               NEWS & MEDIA
@@ -517,7 +540,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home_container_9'>
+        <div className='home_container_10'>
           <div className='company_container'>
             <div className='company_title'>
               {/* <img
@@ -541,7 +564,7 @@ const Home = () => {
           <div className='contact_container_2'>
             <div className='contact_title_2'>
               CONTACT US
-              <hr className='hc9_line' />
+              <hr className='hc10_line' />
             </div>
             <div className='contact_text_2'>
               <p>
@@ -569,7 +592,7 @@ const Home = () => {
           <div className='navigation_container'>
             <div className='navigation_title'>
               NAVIGATION
-              <hr className='hc9_line' />
+              <hr className='hc10_line' />
             </div>
             <div className='navigation_text'>
               <p>
@@ -601,7 +624,7 @@ const Home = () => {
           <div className='news_container_2'>
             <div className='news_title_2'>
               LATEST NEWS & POSTS
-              <hr className='hc9_line' />
+              <hr className='hc10_line' />
             </div>
             <div className='news_card_container_2'>
               <div className='news_1_2'>
