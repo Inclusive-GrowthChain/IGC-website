@@ -26,8 +26,11 @@ import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
 import './css/home.css';
 
 import home_img from '../assets/home_img/20943774.jpg';
-import app_icon from '../assets/card_icons/app_icon/16.jpg';
-// import logo from '../assets/logo/logo2.png';
+import hc7_img_1 from '../assets/hc7_companies/1.png';
+import hc7_img_2 from '../assets/hc7_companies/2.png';
+import hc7_img_3 from '../assets/hc7_companies/3.png';
+import hc7_img_4 from '../assets/hc7_companies/4.png';
+import hc7_img_5 from '../assets/hc7_companies/5.png';
 
 const Home = () => {
   const [showWelcomeTitle, setShowWelcomeTitle] = useState(false);
@@ -356,6 +359,75 @@ const Home = () => {
           </div>
         </div>
         <div className='home_container_7'>
+            <div className='hc7_row_1'>
+              <div className='hc7_col_1'>
+                <img
+                  src={hc7_img_1}
+                  alt='hc7_img_1'
+                  className='hc7_img_1'
+                />
+              </div>
+              <div className='hc7_col_2'>
+                <img
+                  src={hc7_img_2}
+                  alt='hc7_img_2'
+                  className='hc7_img_2'
+                />
+              </div>
+              <div className='hc7_col_3'>
+                <img
+                  src={hc7_img_3}
+                  alt='hc7_img_3'
+                  className='hc7_img_3'
+                />
+              </div>
+              <div className='hc7_col_4'>
+                <img
+                  src={hc7_img_4}
+                  alt='hc7_img_4'
+                  className='hc7_img_4'
+                />
+              </div>
+              <div className='hc7_col_5'>
+                <img
+                  src={hc7_img_5}
+                  alt='hc7_img_5'
+                  className='hc7_img_5'
+                />
+              </div>
+            </div>
+            <div className='hc7_row_2'>
+              <div className='hc7_col_1'>
+                <img
+                  src={hc7_img_1}
+                  alt='hc7_img_1'
+                  className='hc7_img_1'
+                />
+              </div>
+              <div className='hc7_col_2'>
+                <img
+                  src={hc7_img_2}
+                  alt='hc7_img_2'
+                  className='hc7_img_2'
+                />
+              </div>
+              <div className='hc7_col_3'>
+                <img
+                  src={hc7_img_3}
+                  alt='hc7_img_3'
+                  className='hc7_img_3'
+                />
+              </div>
+              <div className='hc7_col_4'>
+                <img
+                  src={hc7_img_4}
+                  alt='hc7_img_4'
+                  className='hc7_img_4'
+                />
+              </div>
+            </div>
+        </div>
+        <div className='home_container_8'>
           <div className='news_container'>
             <div className='news_title'>
               NEWS & MEDIA
@@ -445,7 +517,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home_container_8'>
+        <div className='home_container_9'>
           <div className='company_container'>
             <div className='company_title'>
               {/* <img
@@ -469,7 +541,7 @@ const Home = () => {
           <div className='contact_container_2'>
             <div className='contact_title_2'>
               CONTACT US
-              <hr className='hc8_line' />
+              <hr className='hc9_line' />
             </div>
             <div className='contact_text_2'>
               <p>
@@ -497,7 +569,7 @@ const Home = () => {
           <div className='navigation_container'>
             <div className='navigation_title'>
               NAVIGATION
-              <hr className='hc8_line' />
+              <hr className='hc9_line' />
             </div>
             <div className='navigation_text'>
               <p>
@@ -529,7 +601,7 @@ const Home = () => {
           <div className='news_container_2'>
             <div className='news_title_2'>
               LATEST NEWS & POSTS
-              <hr className='hc8_line' />
+              <hr className='hc9_line' />
             </div>
             <div className='news_card_container_2'>
               <div className='news_1_2'>
