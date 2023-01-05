@@ -17,6 +17,11 @@ import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
+import { faCreditCard } from '@fortawesome/free-regular-svg-icons';
+import { faSeedling } from '@fortawesome/free-solid-svg-icons';
+import { faTachographDigital } from '@fortawesome/free-solid-svg-icons';
+import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
 
 import './css/home.css';
 
@@ -72,69 +77,49 @@ const Home = () => {
         <div className='home_container_2'>
           <div className='tab_container'>
             <div className='tab_1'>
-              <Card className='card'>
+              <Card className='service_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='service_card_icon_container'>
+                    <FontAwesomeIcon icon={faCode} className='service_icon'/>
+                  </div>
+                  <p className='service_card_title'>
                     App Development
-                  </p>
-                  <p className='card_desc'>
-                    App Development Description
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className='tab_2'>
-              <Card className='card'>
+              <Card className='service_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='service_card_icon_container'>
+                    <FontAwesomeIcon icon={faCode} className='service_icon'/>
+                  </div>
+                  <p className='service_card_title'>
                     Web Development
-                  </p>
-                  <p className='card_desc'>
-                    Web Development Description
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className='tab_3'>
-              <Card className='card'>
+              <Card className='service_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='service_card_icon_container'>
+                    <FontAwesomeIcon icon={faMicrochip} className='service_icon'/>
+                  </div>
+                  <p className='service_card_title'>
                     AI & ML
-                  </p>
-                  <p className='card_desc'>
-                    AI & ML Description
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className='tab_4'>
-              <Card className='card'>
+              <Card className='service_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='service_card_icon_container'>
+                    <FontAwesomeIcon icon={faCode} className='service_icon'/>
+                  </div>
+                  <p className='service_card_title'>
                     Blockchain
-                  </p>
-                  <p className='card_desc'>
-                    Blockchain Description
                   </p>
                 </CardContent>
               </Card>
@@ -220,69 +205,73 @@ const Home = () => {
           </div>
           <div className='platform_card_container'>
             <div className='platform_1'>
-              <Card className='card'>
+              <Card className='platform_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='platform_icon_container'>
+                    <FontAwesomeIcon icon={faHeartPulse} className='platform_icon'/>
+                  </div>
+                  <p className='platform_card_title'>
                     Health Care
-                  </p>
-                  <p className='card_desc'>
-                    Health Description
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className='platform_2'>
-              <Card className='card'>
+              <Card className='platform_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='platform_icon_container'>
+                    <FontAwesomeIcon icon={faCreditCard} className='platform_icon'/>
+                  </div>
+                  <p className='platform_card_title'>
                     Fin-Tech
-                  </p>
-                  <p className='card_desc'>
-                    Fin-Tech Description
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className='platform_3'>
-              <Card className='card'>
+              <Card className='platform_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='platform_icon_container'>
+                    <FontAwesomeIcon icon={faSeedling} className='platform_icon'/>
+                  </div>
+                  <p className='platform_card_title'>
                     Agri Tech
-                  </p>
-                  <p className='card_desc'>
-                    Agri Tech Description
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className='platform_4'>
-              <Card className='card'>
+              <Card className='platform_card'>
                 <CardContent>
-                  <img
-                    src={app_icon}
-                    alt='app_icon'
-                    className='card_icon'
-                  />
-                  <p className='card_title'>
+                  <div className='platform_icon_container'>
+                    <FontAwesomeIcon icon={faTachographDigital} className='platform_icon'/>
+                  </div>
+                  <p className='platform_card_title'>
                     IGC-Data Logger
                   </p>
-                  <p className='card_desc'>
-                    IGC-Data Logger Description
+                </CardContent>
+              </Card>
+            </div>
+            <div className='platform_5'>
+              <Card className='platform_card'>
+                <CardContent>
+                  <div className='platform_icon_container'>
+                    <FontAwesomeIcon icon={faSeedling} className='platform_icon'/>
+                  </div>
+                  <p className='platform_card_title'>
+                    Agri Tech
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            <div className='platform_6'>
+              <Card className='platform_card'>
+                <CardContent>
+                  <div className='platform_icon_container'>
+                    <FontAwesomeIcon icon={faTachographDigital} className='platform_icon'/>
+                  </div>
+                  <p className='platform_card_title'>
+                    IGC-Data Logger
                   </p>
                 </CardContent>
               </Card>
