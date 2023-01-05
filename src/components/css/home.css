@@ -394,6 +394,117 @@
 }
 
 .home_container_6 {
+    padding-bottom: 10vh;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+.process_container {
+    width: 65%;
+    margin: auto;
+}
+
+.process_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0094f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.process_text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.process_card_container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+    display: grid;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.process_1, .process_2, .process_3, .process_4 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left: 55px;
+    transition: all 0.2s ease-in;
+}
+
+.process_icon_container_container {
+    width: 14rem;
+    height: 14rem;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    transition: all 0.2s ease-in;
+    border: 1px dotted rgb(96, 96, 96);
+    border-radius: 50%;
+}
+
+.process_icon_container {
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -17.5px;
+    transition: all 0.2s ease-in;
+    border-radius: 50%;
+}
+
+.process_icon_container:hover {
+    transition: all 0.2s ease-in;
+    background-image: linear-gradient(to bottom right, #0094f8, #00d581);
+}
+
+.process_icon_container:hover .process_icon {
+    transition: all 0.2s ease-in;
+    color: #fff;
+}
+
+.process_icon {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    color: #0094f8;
+    box-sizing: border-box;
+    padding-top: 35px;
+    margin: auto;
+    transition: all 0.2s ease-in;
+}
+
+.process_card_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.home_container_7 {
     padding-bottom: 20vh;
     width: 100%;
     padding-top: 20vh;
@@ -494,7 +605,7 @@
     margin-left: 1rem;
 }
 
-.home_container_7 {
+.home_container_8 {
     padding-bottom: 10vh;
     width: 100%;
     padding-top: 10vh;
@@ -679,7 +790,7 @@
     cursor: pointer;
 }
 
-.hc7_line {
+.hc8_line {
     width: 40px;
     background-color: #0094f8;
     height: 5px;

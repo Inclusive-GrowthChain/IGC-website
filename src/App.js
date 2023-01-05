@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./components/home";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 // import OldNavbar from './components/old-navbar';
 import Navbar from "./components/navbar";
 

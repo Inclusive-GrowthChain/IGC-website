@@ -6,7 +6,7 @@ import { navItems } from "./navitems";
 import "./css/navbar.css";
 
 import ServiceDropdown from "./nav-service_dropdown";
-import PlatformDropdown from "./nav-platform_dropdown";
+// import PlatformDropdown from "./nav-platform_dropdown";
 import { platform_list } from "./navitems";
 import logo from "../assets/logo/logo3.png"
 

@@ -13,12 +13,16 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
+import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faBrain } from '@fortawesome/free-solid-svg-icons';
 
 import './css/home.css';
 
 import home_img from '../assets/home_img/20943774.jpg';
 import app_icon from '../assets/card_icons/app_icon/16.jpg';
-import logo from '../assets/logo/logo2.png';
+// import logo from '../assets/logo/logo2.png';
 
 const Home = () => {
   const [showWelcomeTitle, setShowWelcomeTitle] = useState(false);
@@ -311,6 +315,58 @@ const Home = () => {
           </div>
         </div>
         <div className='home_container_6'>
+          <div className='process_container'>
+            <div className='process_title'>
+              OUR PROCESS
+            </div>
+            <div className='process_text'>
+              How We Work
+            </div>
+            <div className='process_card_container'>
+              <div className='process_1'>
+                <div className='process_icon_container_container'>
+                  <div className='process_icon_container'>
+                    <FontAwesomeIcon icon={faLayerGroup} className='process_icon'/>
+                  </div>
+                </div>
+                <div className='process_card_title'>
+                  Data Generated
+                </div>
+              </div>
+              <div className='process_2'>
+                <div className='process_icon_container_container'>
+                  <div className='process_icon_container'>
+                    <FontAwesomeIcon icon={faDatabase} className='process_icon'/>
+                  </div>
+                </div>
+                <div className='process_card_title'>
+                  Data Stored
+                </div>
+              </div>
+              <div className='process_3'>
+                <div className='process_icon_container_container'>
+                  <div className='process_icon_container'>
+                    <FontAwesomeIcon icon={faCode} className='process_icon'/>
+                  </div>
+                </div>
+                <div className='process_card_title'>
+                  Data Processing
+                </div>
+              </div>
+              <div className='process_4'>
+                <div className='process_icon_container_container'>
+                  <div className='process_icon_container'>
+                    <FontAwesomeIcon icon={faBrain} className='process_icon'/>
+                  </div>
+                </div>
+                <div className='process_card_title'>
+                  Actionable Insights
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='home_container_7'>
           <div className='news_container'>
             <div className='news_title'>
               NEWS & MEDIA
@@ -400,7 +456,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home_container_7'>
+        <div className='home_container_8'>
           <div className='company_container'>
             <div className='company_title'>
               {/* <img
@@ -424,7 +480,7 @@ const Home = () => {
           <div className='contact_container_2'>
             <div className='contact_title_2'>
               CONTACT US
-              <hr className='hc7_line' />
+              <hr className='hc8_line' />
             </div>
             <div className='contact_text_2'>
               <p>
@@ -452,7 +508,7 @@ const Home = () => {
           <div className='navigation_container'>
             <div className='navigation_title'>
               NAVIGATION
-              <hr className='hc7_line' />
+              <hr className='hc8_line' />
             </div>
             <div className='navigation_text'>
               <p>
@@ -484,7 +540,7 @@ const Home = () => {
           <div className='news_container_2'>
             <div className='news_title_2'>
               LATEST NEWS & POSTS
-              <hr className='hc7_line' />
+              <hr className='hc8_line' />
             </div>
             <div className='news_card_container_2'>
               <div className='news_1_2'>
