@@ -64,7 +64,7 @@ const Navbar = () => {
                 </li>
               )
             }
-            if (item.title === "PLATFORM") {
+            if (item.title === "IMPACT STORIES") {
               return (
                 <li 
                   key={item.id} 

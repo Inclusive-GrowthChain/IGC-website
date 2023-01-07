@@ -13,8 +13,8 @@ export const navItems = [
   // },
   {
     id: 3,
-    title: "PLATFORM",
-    path: "./platform",
+    title: "IMPACT STORIES",
+    path: "./impact-stories",
     cName: "nav_item"
   },
   {
@@ -93,12 +93,6 @@ export const platform_list = [
     id: 3,
     title: "Agri Tech",
     path: "./agri-tech",
-    cName: "platform_list_item"
-  },
-  {
-    id: 4,
-    title: "IGC-Data Logger",
-    path: "./igc-data-logger",
     cName: "platform_list_item"
   }
 ];

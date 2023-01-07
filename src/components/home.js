@@ -56,7 +56,7 @@ const Home = () => {
   }, []);
 
   return (
-      <div className='home_container'>
+      <div className='home_main_container'>
         <div className='home_container_1'>
           <div className='welcome_container'>
             <div className={showWelcomeTitle ? 'welcome_title' : 'welcome_title_loading'}>
@@ -285,13 +285,13 @@ const Home = () => {
         </div>
         <div className='home_container_5'>
           <div className='about_container'>
-            <div className='about_title'>
+            <div className='about_container_title'>
               ABOUT US
             </div>
-            <div className='about_text'>
+            <div className='about_container_text'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
-            <p className='about_desc'>
+            <p className='about_container_desc'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             </p>
             <div className='learn_more_4'>
@@ -306,58 +306,6 @@ const Home = () => {
               alt='home_img'
               className='home_img'
             />
-          </div>
-        </div>
-        <div className='home_container_6'>
-          <div className='process_container'>
-            <div className='process_title'>
-              OUR PROCESS
-            </div>
-            <div className='process_text'>
-              How We Work
-            </div>
-            <div className='process_card_container'>
-              <div className='process_1'>
-                <div className='process_icon_container_container'>
-                  <div className='process_icon_container'>
-                    <FontAwesomeIcon icon={faLayerGroup} className='process_icon'/>
-                  </div>
-                </div>
-                <div className='process_card_title'>
-                  Data Generated
-                </div>
-              </div>
-              <div className='process_2'>
-                <div className='process_icon_container_container'>
-                  <div className='process_icon_container'>
-                    <FontAwesomeIcon icon={faDatabase} className='process_icon'/>
-                  </div>
-                </div>
-                <div className='process_card_title'>
-                  Data Stored
-                </div>
-              </div>
-              <div className='process_3'>
-                <div className='process_icon_container_container'>
-                  <div className='process_icon_container'>
-                    <FontAwesomeIcon icon={faCode} className='process_icon'/>
-                  </div>
-                </div>
-                <div className='process_card_title'>
-                  Data Processing
-                </div>
-              </div>
-              <div className='process_4'>
-                <div className='process_icon_container_container'>
-                  <div className='process_icon_container'>
-                    <FontAwesomeIcon icon={faBrain} className='process_icon'/>
-                  </div>
-                </div>
-                <div className='process_card_title'>
-                  Actionable Insights
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className='home_container_7'>
@@ -540,14 +488,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='home_container_10'>
+        <div className='footer'>
           <div className='company_container'>
             <div className='company_title'>
-              {/* <img
-                src={logo}
-                alt='logo'
-                className='logo'
-              /> */}
               IGC
             </div>
             <div className='company_text'>
