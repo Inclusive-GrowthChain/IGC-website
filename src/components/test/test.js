@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 
 import {ReactComponent as Img_1} from '../../assets/home_img/1.svg';
-import {ReactComponent as Img_2} from '../../assets/home_img/2.svg';
+import {ReactComponent as Img_2} from '../../assets/home_img/6.svg';
 
 import '../css/home.css';
 
@@ -68,6 +68,21 @@ function Item(props) {
         }
         {
           props.item.index === 2 && (
+            <Img_2 className={'home_img'}/>
+          )
+        }
+        {
+          props.item.index === 3 && (
+            <Img_2 className={'home_img'}/>
+          )
+        }
+        {
+          props.item.index === 4 && (
+            <Img_2 className={'home_img'}/>
+          )
+        }
+        {
+          props.item.index === 5 && (
             <Img_2 className={'home_img'}/>
           )
         }
