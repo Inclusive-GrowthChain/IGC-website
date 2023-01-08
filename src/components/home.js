@@ -24,6 +24,7 @@ import { faTachographDigital } from '@fortawesome/free-solid-svg-icons';
 import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faPeopleRoof } from '@fortawesome/free-solid-svg-icons';
 
 import './css/home.css';
 
@@ -85,10 +86,13 @@ const Home = () => {
               <Card className='service_card'>
                 <CardContent>
                   <div className='service_card_icon_container'>
-                    <FontAwesomeIcon icon={faCode} className='service_icon'/>
+                    <FontAwesomeIcon icon={faCreditCard} className='service_icon'/>
                   </div>
                   <p className='service_card_title'>
-                    App Development
+                    Fin-Tech
+                  </p>
+                  <p className='service_card_desc'>
+                    Disrupting Financial Services Industry to empower bottom of the pyramid population
                   </p>
                 </CardContent>
               </Card>
@@ -97,10 +101,13 @@ const Home = () => {
               <Card className='service_card'>
                 <CardContent>
                   <div className='service_card_icon_container'>
-                    <FontAwesomeIcon icon={faCode} className='service_icon'/>
+                    <FontAwesomeIcon icon={faSeedling} className='service_icon'/>
                   </div>
                   <p className='service_card_title'>
-                    Web Development
+                    Agri-Tech
+                  </p>
+                  <p className='service_card_desc'>
+                    Making markets work for small holder farmers
                   </p>
                 </CardContent>
               </Card>
@@ -109,10 +116,13 @@ const Home = () => {
               <Card className='service_card'>
                 <CardContent>
                   <div className='service_card_icon_container'>
-                    <FontAwesomeIcon icon={faMicrochip} className='service_icon'/>
+                    <FontAwesomeIcon icon={faHeartPulse} className='service_icon'/>
                   </div>
                   <p className='service_card_title'>
-                    AI & ML
+                    Health Care
+                  </p>
+                  <p className='service_card_desc'>
+                    Protecting lives with timely data and information
                   </p>
                 </CardContent>
               </Card>
@@ -121,10 +131,13 @@ const Home = () => {
               <Card className='service_card'>
                 <CardContent>
                   <div className='service_card_icon_container'>
-                    <FontAwesomeIcon icon={faCode} className='service_icon'/>
+                    <FontAwesomeIcon icon={faPeopleRoof} className='service_icon'/>
                   </div>
                   <p className='service_card_title'>
-                    Blockchain
+                    Citizen Science
+                  </p>
+                  <p className='service_card_desc'>
+                    Disruptive data aggregation models to empower ordinary citizens to make a better world
                   </p>
                 </CardContent>
               </Card>
@@ -132,7 +145,7 @@ const Home = () => {
           </div>
           <div className='desc_container'>
             <div className='desc_title'>
-              SERVICES
+              INDUSTRIES
             </div>
             <div className='desc_text'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -165,7 +178,7 @@ const Home = () => {
                   4000+
                 </div>
                 <div className='stat_secondLine'>
-                  NLP Experts
+                  Satisfied Clients
                 </div>
               </div>
             </div>
@@ -175,7 +188,7 @@ const Home = () => {
                   3500+
                 </div>
                 <div className='stat_secondLine'>
-                  Satisfied Clients
+                  Years of Combined Experience
                 </div>
               </div>
             </div>
@@ -185,7 +198,27 @@ const Home = () => {
                   6000+
                 </div>
                 <div className='stat_secondLine'>
-                  Industries Served
+                  Team Members
+                </div>
+              </div>
+            </div>
+            <div className='stat_5_container'>
+              <div className='stat_5'>
+                <div className='stat_firstLine'>
+                  3500+
+                </div>
+                <div className='stat_secondLine'>
+                  Different Services Provided
+                </div>
+              </div>
+            </div>
+            <div className='stat_6_container'>
+              <div className='stat_6'>
+                <div className='stat_firstLine'>
+                  6000+
+                </div>
+                <div className='stat_secondLine'>
+                  Happy Customers
                 </div>
               </div>
             </div>
@@ -194,7 +227,7 @@ const Home = () => {
         <div className='home_container_4'>
           <div className='platform_container'>
             <div className='platform_title'>
-              INDUSTRIES & PLATFORMS
+              SERVICES
             </div>
             <div className='platform_text'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -216,7 +249,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faHeartPulse} className='platform_icon'/>
                   </div>
                   <p className='platform_card_title'>
-                    Health Care
+                    AI & ML
                   </p>
                 </CardContent>
               </Card>
@@ -228,7 +261,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faCreditCard} className='platform_icon'/>
                   </div>
                   <p className='platform_card_title'>
-                    Fin-Tech
+                    Blockchain
                   </p>
                 </CardContent>
               </Card>
@@ -240,7 +273,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faSeedling} className='platform_icon'/>
                   </div>
                   <p className='platform_card_title'>
-                    Agri Tech
+                    IOT
                   </p>
                 </CardContent>
               </Card>
@@ -252,31 +285,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faTachographDigital} className='platform_icon'/>
                   </div>
                   <p className='platform_card_title'>
-                    IGC-Data Logger
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className='platform_5'>
-              <Card className='platform_card'>
-                <CardContent>
-                  <div className='platform_icon_container'>
-                    <FontAwesomeIcon icon={faSeedling} className='platform_icon'/>
-                  </div>
-                  <p className='platform_card_title'>
-                    Agri Tech
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className='platform_6'>
-              <Card className='platform_card'>
-                <CardContent>
-                  <div className='platform_icon_container'>
-                    <FontAwesomeIcon icon={faTachographDigital} className='platform_icon'/>
-                  </div>
-                  <p className='platform_card_title'>
-                    IGC-Data Logger
+                    Digital Transformation
                   </p>
                 </CardContent>
               </Card>

@@ -125,9 +125,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(1rem);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -151,7 +153,8 @@
     margin-left: 35vh;
 }
 
-.tab_2, .tab_4 {
+.tab_2,
+.tab_4 {
     margin-top: 5vh;
 }
 
@@ -162,7 +165,10 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 2;
-    cursor: pointer;
+    padding-top: 42px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 .service_card::before {
@@ -183,17 +189,25 @@
 
 .service_card:hover::before {
     opacity: 1;
-    z-index: -1;    
+    z-index: -1;
 }
 
 .service_card_title {
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service_card_desc {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
 }
 
 .service_icon {
     height: 5rem;
     width: 5rem;
-    margin-top: 3.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
@@ -206,7 +220,9 @@
     margin: 0;
 }
 
-.desc_title, .platform_title, .about_container_title {
+.desc_title,
+.platform_title,
+.about_container_title {
     font-size: 1.2rem;
     color: #0094f8;
     text-align: left;
@@ -250,15 +266,20 @@
 }
 
 .stats_container {
-    width: 65%;
+    width: 85%;
     margin: auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1;
     grid-gap: 2rem;
     display: grid;
 }
 
-.stat_1, .stat_2, .stat_3, .stat_4 {
+.stat_1,
+.stat_2,
+.stat_3,
+.stat_4,
+.stat_5,
+.stat_6 {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -269,24 +290,30 @@
     background-size: contain;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding-top: 55px;
+    padding-bottom: 70px;
     transition: all 0.2s ease-in;
 }
 
-.stat_1:hover, .stat_2:hover, .stat_3:hover, .stat_4:hover {
+.stat_1:hover,
+.stat_2:hover,
+.stat_3:hover,
+.stat_4:hover,
+.stat_5:hover,
+.stat_6:hover {
     background-position-x: 100%;
     transition: all 0.2s ease-in;
+    cursor: pointer;
 }
 
 .stat_firstLine {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
 }
 
 .stat_secondLine {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     margin-top: 1rem;
@@ -304,12 +331,14 @@
     padding-top: 20vh;
 }
 
-.platform_container, .about_container {
+.platform_container,
+.about_container {
     padding-left: 35vh;
     width: 75%;
 }
 
-.platform_text, .about_container_text {
+.platform_text,
+.about_container_text {
     font-size: 2.2rem;
     color: #000;
     text-align: left;
@@ -319,7 +348,8 @@
     width: 100%;
 }
 
-.platform_desc, .about_container_desc {
+.platform_desc,
+.about_container_desc {
     margin-top: 2rem;
     width: 100%;
     text-align: left;
@@ -327,7 +357,8 @@
     line-height: 2;
 }
 
-.learn_more_3, .learn_more_4 {
+.learn_more_3,
+.learn_more_4 {
     text-align: left;
     margin: 0;
     padding: 0;
@@ -336,8 +367,8 @@
 }
 
 .platform_card {
-    height: 15rem;
-    width: 13rem;
+    width: 312px;
+    height: 290px;
     border: none;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     position: relative;
@@ -363,7 +394,7 @@
 
 .platform_card:hover::before {
     opacity: 1;
-    z-index: -1;    
+    z-index: -1;
 }
 
 .platform_card_title {
@@ -374,7 +405,7 @@
 .platform_card_container {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-left: -25%;
@@ -450,7 +481,10 @@
     margin-top: 2rem;
 }
 
-.process_1, .process_2, .process_3, .process_4 {
+.process_1,
+.process_2,
+.process_3,
+.process_4 {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -570,9 +604,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(3rem);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -853,7 +889,7 @@
     width: 100%;
 }
 
-.contact_text_2 > p {
+.contact_text_2>p {
     margin-top: 1.8rem;
 }
 
@@ -887,11 +923,11 @@
     width: 100%;
 }
 
-.navigation_text > p {
+.navigation_text>p {
     margin-top: 1.8rem;
 }
 
-.navigation_text > p:hover {
+.navigation_text>p:hover {
     color: #ff5325;
     cursor: pointer;
 }
@@ -949,7 +985,7 @@
     font-size: 1.2em;
 }
 
-.news_card_2 > p {
+.news_card_2>p {
     margin-top: 1rem;
     color: rgb(96, 96, 96);
 }
