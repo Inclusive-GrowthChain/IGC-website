@@ -113,11 +113,12 @@
 }
 
 .home_img {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     top: 0;
     left: 0;
     margin-left: -10rem;
+    margin-top: -5rem;
     animation: home_img_slide 6s ease-in-out infinite;
 }
 
@@ -185,6 +186,10 @@
     color: #fff;
     margin-top: -10px;
     transition: all 0.3s ease-in;
+}
+
+.service_card:hover .service_card_desc {
+    color: #fff;
 }
 
 .service_card:hover::before {
@@ -373,7 +378,6 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 2;
-    cursor: pointer;
 }
 
 .platform_card::before {
