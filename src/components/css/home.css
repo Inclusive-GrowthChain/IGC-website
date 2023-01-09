@@ -1,6 +1,7 @@
 .home_container_1 {
     padding-top: 25vh;
     padding-bottom: 20vh;
+    max-height: 85vh;
 }
 
 .welcome_container {
@@ -20,14 +21,14 @@
     max-width: 80vh;
 }
 
-.welcome_title_loading {
+/* .welcome_title_loading {
     font-size: 1.5rem;
     color: #fff;
     text-align: left;
     margin: 0;
     padding: 0;
     margin-bottom: 0.625rem;
-}
+} */
 
 .welcome_desc {
     font-size: 3.5rem;
@@ -41,7 +42,7 @@
     transition: all 1.5s ease-in;
 }
 
-.welcome_desc_loading {
+/* .welcome_desc_loading {
     font-size: 3.5em;
     color: #fff;
     text-align: left;
@@ -50,7 +51,7 @@
     margin-top: 2rem;
     width: 80vh;
     margin-left: 25vh;
-}
+} */
 
 .welcome_text {
     font-size: 1.2rem;
@@ -87,7 +88,7 @@
     z-index: 2;
 }
 
-.learn_button_loaded {
+/* .learn_button_loaded {
     background-image: linear-gradient(to right, #0094f8, #00d581);
     color: #fff;
     border: none;
@@ -108,7 +109,7 @@
     font-size: 1rem;
     margin-top: -1rem;
     cursor: pointer;
-}
+} */
 
 .learn_button::before {
     content: "";
@@ -156,13 +157,17 @@
 }
 
 .home_container_2 {
+    /* background-image: url(../../assets/home_bg/rm380-12.jpg);
+    background-size: cover; */
     background-color: rgb(250, 250, 250);
-    padding-top: 20vh;
     padding-bottom: 20vh;
-    display: block
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
 }
 
-/* .tab_container {
+.tab_container {
     max-width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -170,29 +175,6 @@
     grid-gap: 2rem;
     margin-top: 7%;
     margin-left: 35vh;
-} */
-
-@media (min-width: 60em) {
-    .home_container_2 {
-        /* background-image: url(../../assets/home_bg/rm380-12.jpg);
-        background-size: cover; */
-        background-color: rgb(250, 250, 250);
-        padding-bottom: 20vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1;
-        grid-gap: 2rem;
-    }
-
-    .tab_container {
-        max-width: 60%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 2rem;
-        margin-top: 7%;
-        margin-left: 35vh;
-    }
 }
 
 .tab_2,
@@ -667,17 +649,28 @@
     padding-bottom: 30vh;
     width: 100%;
     padding-top: 30vh;
-    background-image: url(../../assets/hc7_bg/hc7-bg.jpg);
+    /* background-image: url(../../assets/hc7_bg/hc7-bg.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    /* background-image: linear-gradient(to bottom right, rgba(0,148,248,1), rgba(0,213,129,1)); */
+}
+
+.partners_title {
+    font-size: 1.2rem;
+    color: #0094f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -8%;
+    width: 100%;
 }
 
 .hc7_row_1 {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -8%;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1;
@@ -693,7 +686,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1;
     grid-gap: 2rem;
-    margin-top: 2rem;
 }
 
 .home_container_8 {
@@ -703,7 +695,8 @@
     margin: auto;
     border-radius: 10px;
     margin-top: -8%;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: linear-gradient(to bottom right, #0094f8, #00d581);
     z-index: 2;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     animation: subscribe_container_slide 6s ease-in-out infinite;
@@ -727,7 +720,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #000;
+    color: #fff;
     box-sizing: border-box;
     transition: all 0.2s ease-in;
     margin-top: -20%;
@@ -745,7 +738,7 @@
 
 .subscribe_title {
     font-size: 2rem;
-    color: #000;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -754,7 +747,7 @@
 
 .subscribe_text {
     font-size: 1rem;
-    color: rgb(132, 132, 132);
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -777,6 +770,7 @@
     margin-top: 1rem;
     border: none;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .subscribe_button {

@@ -30,11 +30,15 @@ import { faPeopleRoof } from '@fortawesome/free-solid-svg-icons';
 import './css/home.css';
 
 import home_img from '../assets/home_img/20943774.jpg';
-import hc7_img_1 from '../assets/hc7_companies/1.png';
-import hc7_img_2 from '../assets/hc7_companies/2.png';
-import hc7_img_3 from '../assets/hc7_companies/3.png';
-import hc7_img_4 from '../assets/hc7_companies/4.png';
-import hc7_img_5 from '../assets/hc7_companies/5.png';
+import hc7_img_1 from '../assets/home_img/Partners/dlabs.jpg';
+import hc7_img_2 from '../assets/home_img/Partners/IITD.jpg';
+import hc7_img_3 from '../assets/home_img/Partners/Samunnati.jpg';
+import hc7_img_4 from '../assets/home_img/Partners/WaterInsight.jpg';
+import hc7_img_5 from '../assets/home_img/Partners/DrReddys.png';
+import hc7_img_6 from '../assets/home_img/Partners/eFresh.png';
+import hc7_img_7 from '../assets/home_img/Partners/Hawking.png';
+import hc7_img_8 from '../assets/home_img/Partners/SecureKloud.png';
+import hc7_img_9 from '../assets/home_img/Partners/suvik.png';
 
 import SliderContent from './HomeSliderContent';
 
@@ -413,12 +417,19 @@ const Home = () => {
         </div>
       </div>
       <div className='home_container_7'>
+        <div className='partners_title'>
+          OUR PARTNERS
+        </div>
         <div className='hc7_row_1'>
           <div className='hc7_col_1'>
             <img
               src={hc7_img_1}
               alt='hc7_img_1'
               className='hc7_img_1'
+              style={{
+                height: '100px',
+                width: '200px',
+              }}
             />
           </div>
           <div className='hc7_col_2'>
@@ -426,6 +437,11 @@ const Home = () => {
               src={hc7_img_2}
               alt='hc7_img_2'
               className='hc7_img_2'
+              style={{
+                height: '150px',
+                width: '200px',
+                marginLeft: '0px'
+              }}
             />
           </div>
           <div className='hc7_col_3'>
@@ -433,6 +449,14 @@ const Home = () => {
               src={hc7_img_3}
               alt='hc7_img_3'
               className='hc7_img_3'
+              style={{
+                height: '700px',
+                width: '700px',
+                zIndex: '-3',
+                marginTop: '-300px',
+                marginLeft: '-200px',
+                position: 'relative'
+              }}
             />
           </div>
           <div className='hc7_col_4'>
@@ -440,6 +464,11 @@ const Home = () => {
               src={hc7_img_4}
               alt='hc7_img_4'
               className='hc7_img_4'
+              style={{
+                height: '120px',
+                width: '200px',
+                marginLeft: '-200px'
+              }}
             />
           </div>
           <div className='hc7_col_5'>
@@ -447,36 +476,61 @@ const Home = () => {
               src={hc7_img_5}
               alt='hc7_img_5'
               className='hc7_img_5'
+              style={{
+                height: '200px',
+                width: '200px',
+                marginLeft: '50px',
+                marginTop: '-40px'
+              }}
             />
           </div>
         </div>
         <div className='hc7_row_2'>
           <div className='hc7_col_1'>
             <img
-              src={hc7_img_1}
-              alt='hc7_img_1'
-              className='hc7_img_1'
+              src={hc7_img_6}
+              alt='hc7_img_6'
+              className='hc7_img_6'
+              style={{
+                height: '150px',
+                width: '150px',
+              }}
             />
           </div>
           <div className='hc7_col_2'>
             <img
-              src={hc7_img_2}
-              alt='hc7_img_2'
-              className='hc7_img_2'
+              src={hc7_img_7}
+              alt='hc7_img_7'
+              className='hc7_img_7'
+              style={{
+                height: '150px',
+                width: '150px',
+                marginLeft: '-50px'
+              }}
             />
           </div>
           <div className='hc7_col_3'>
             <img
-              src={hc7_img_3}
-              alt='hc7_img_3'
-              className='hc7_img_3'
+              src={hc7_img_8}
+              alt='hc7_img_8'
+              className='hc7_img_8'
+              style={{
+                height: '150px',
+                width: '225px',
+                marginLeft: '-70px'
+              }}
             />
           </div>
           <div className='hc7_col_4'>
             <img
-              src={hc7_img_4}
-              alt='hc7_img_4'
-              className='hc7_img_4'
+              src={hc7_img_9}
+              alt='hc7_img_9'
+              className='hc7_img_9'
+              style={{
+                height: '100px',
+                width: '300px',
+                marginTop: '32.5px'
+              }}
             />
           </div>
         </div>
