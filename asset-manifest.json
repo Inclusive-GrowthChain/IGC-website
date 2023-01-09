@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/IGC-website/static/css/main.e7ae5ac2.css",
-    "main.js": "/IGC-website/static/js/main.e995e00d.js",
+    "main.css": "/IGC-website/static/css/main.9cc353c3.css",
+    "main.js": "/IGC-website/static/js/main.3e75d265.js",
     "static/js/787.71e672d5.chunk.js": "/IGC-website/static/js/787.71e672d5.chunk.js",
     "static/media/20943774.jpg": "/IGC-website/static/media/20943774.3a78573806f2623b1608.jpg",
+    "static/media/partners.png": "/IGC-website/static/media/partners.a08686d451b3780d6cdd.png",
     "static/media/6.svg": "/IGC-website/static/media/6.b9124c062e72838cfd34874362a50ac5.svg",
     "static/media/1.svg": "/IGC-website/static/media/1.1fe7ca57b6d8944096cbdc40a4d5a60d.svg",
+    "static/media/hackathon2.jpg": "/IGC-website/static/media/hackathon2.8fe8745d02ad15cd9970.jpg",
     "static/media/hc7-bg.jpg": "/IGC-website/static/media/hc7-bg.c92d5143161dc203e7e6.jpg",
     "static/media/logo3.png": "/IGC-website/static/media/logo3.7b0d28b72fa1fe2a0b16.png",
+    "static/media/hackathon.jpg": "/IGC-website/static/media/hackathon.907ad3dc8eeef6c083e8.jpg",
     "static/media/3.png": "/IGC-website/static/media/3.6f5229b3fe123c5c3a8e.png",
     "static/media/1.png": "/IGC-website/static/media/1.d730346293056b06d80b.png",
     "static/media/4.png": "/IGC-website/static/media/4.af10ca0e8528bea797ea.png",
     "index.html": "/IGC-website/index.html",
-    "main.e7ae5ac2.css.map": "/IGC-website/static/css/main.e7ae5ac2.css.map",
-    "main.e995e00d.js.map": "/IGC-website/static/js/main.e995e00d.js.map",
+    "main.9cc353c3.css.map": "/IGC-website/static/css/main.9cc353c3.css.map",
+    "main.3e75d265.js.map": "/IGC-website/static/js/main.3e75d265.js.map",
     "787.71e672d5.chunk.js.map": "/IGC-website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7ae5ac2.css",
-    "static/js/main.e995e00d.js"
+    "static/css/main.9cc353c3.css",
+    "static/js/main.3e75d265.js"
   ]
 }
