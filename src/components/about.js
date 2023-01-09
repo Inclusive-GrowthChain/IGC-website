@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,7 +44,7 @@ const About = () => {
     setShowTeamBackArrow(false);
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   });
 

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Link } from "react-router-dom";
@@ -58,10 +58,6 @@ const Home = () => {
   //     setAllLoaded(true);
   //   }, 3500);
   // }, []);
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
 
   const [showPlatformCard, setShowPlatformCard] = useState(1);
   const [showServiceCard, setShowServiceCard] = useState(1);
