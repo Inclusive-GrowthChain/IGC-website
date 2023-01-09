@@ -101,7 +101,7 @@ const Navbar = () => {
       </ul>
       <div className="demo_button_container">
         <Link to="demo">
-          <button className="demo_button">REQUEST DEMO</button>
+          <button className="demo_button">CONTACT US</button>
         </Link>
       </div>
     </nav>

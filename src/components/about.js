@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,6 +44,10 @@ const About = () => {
     setShowTeamBackArrow(false);
   };
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return (
       <div className='about_main_container'>
         <div className='about_container_1'>
@@ -70,7 +74,7 @@ const About = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
             <p className='about_desc'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            We are a startup, founded by renowned professors/scientists, incubated initially at the University of Hyderabad and later the Indian School of Business, Hyderabad. We are founded in 2022 and in less than one year, we created impact by providing blockchain, AI&ML and IoT enable solutions for women empowerment, reliable transport of critical drugs, increasing financial access through co-lending arrangement between banks, farmer empowerment by creating farmer centric engagement services and citizen science initiatives for better environment. In the last one year, out team won two major blockchain hackathons conducted by Plugin, Dubai and National Payment Corporate of India.
             </p>
             <div className='about_list'>
               <div className='about_list_1'>

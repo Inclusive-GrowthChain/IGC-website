@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -35,32 +36,39 @@ import hc7_img_3 from '../assets/hc7_companies/3.png';
 import hc7_img_4 from '../assets/hc7_companies/4.png';
 import hc7_img_5 from '../assets/hc7_companies/5.png';
 
-import Example from './test/test';
+import SliderContent from './HomeSliderContent';
 
 const Home = () => {
-  const [showWelcomeTitle, setShowWelcomeTitle] = useState(false);
-  const [showWelcomeText, setShowWelcomeText] = useState(false);
-  const [showLearnButton, setShowLearnButton] = useState(false);
-  const [allLoaded, setAllLoaded] = useState(false);
+  // const [showWelcomeTitle, setShowWelcomeTitle] = useState(false);
+  // const [showWelcomeText, setShowWelcomeText] = useState(false);
+  // const [showLearnButton, setShowLearnButton] = useState(false);
+  // const [allLoaded, setAllLoaded] = useState(false);
 
-  useEffect(() => {
-    setInterval(() => {
-      setShowWelcomeTitle(true);
-    }, 1000);
-    setInterval(() => {
-      setShowWelcomeText(true);
-    }, 2000);
-    setInterval(() => {
-      setShowLearnButton(true);
-    }, 3000);
-    setInterval(() => {
-      setAllLoaded(true);
-    }, 3500);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setShowWelcomeTitle(true);
+  //   }, 1000);
+  //   setInterval(() => {
+  //     setShowWelcomeText(true);
+  //   }, 2000);
+  //   setInterval(() => {
+  //     setShowLearnButton(true);
+  //   }, 3000);
+  //   setInterval(() => {
+  //     setAllLoaded(true);
+  //   }, 3500);
+  // }, []);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
+  const [showPlatformCard, setShowPlatformCard] = useState(1);
+  const [showServiceCard, setShowServiceCard] = useState(1);
 
   return (
     <div className='home_main_container'>
-      <Example />
+      <SliderContent />
       {/* <div className='home_container_1'> */}
         {/* <div className='welcome_container'>
           <div className={showWelcomeTitle ? 'welcome_title' : 'welcome_title_loading'}>
@@ -86,61 +94,61 @@ const Home = () => {
       <div className='home_container_2'>
         <div className='tab_container'>
           <div className='tab_1'>
-            <Card className='service_card'>
+            <Card className={showPlatformCard===1 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(1)}>
               <CardContent>
-                <div className='service_card_icon_container'>
-                  <FontAwesomeIcon icon={faCreditCard} className='service_icon' />
+                <div className='platform_card_icon_container'>
+                  <FontAwesomeIcon icon={faCreditCard} className='platform_icon' />
                 </div>
-                <p className='service_card_title'>
+                <p className='platform_card_title'>
                   Fin-Tech
                 </p>
-                <p className='service_card_desc'>
+                <p className='platform_card_desc'>
                   Disrupting Financial Services Industry to empower bottom of the pyramid population
                 </p>
               </CardContent>
             </Card>
           </div>
           <div className='tab_2'>
-            <Card className='service_card'>
+            <Card className={showPlatformCard===2 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(2)}>
               <CardContent>
-                <div className='service_card_icon_container'>
-                  <FontAwesomeIcon icon={faSeedling} className='service_icon' />
+                <div className='platform_card_icon_container'>
+                  <FontAwesomeIcon icon={faSeedling} className='platform_icon' />
                 </div>
-                <p className='service_card_title'>
+                <p className='platform_card_title'>
                   Agri-Tech
                 </p>
-                <p className='service_card_desc'>
-                  Making markets work for small holder farmers
+                <p className='platform_card_desc'>
+                  Making markets work for small holder farmers 
                 </p>
               </CardContent>
             </Card>
           </div>
           <div className='tab_3'>
-            <Card className='service_card'>
+            <Card className={showPlatformCard===3 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(3)}>
               <CardContent>
-                <div className='service_card_icon_container'>
-                  <FontAwesomeIcon icon={faHeartPulse} className='service_icon' />
+                <div className='platform_card_icon_container'>
+                  <FontAwesomeIcon icon={faHeartPulse} className='platform_icon' />
                 </div>
-                <p className='service_card_title'>
+                <p className='platform_card_title'>
                   Health Care
                 </p>
-                <p className='service_card_desc'>
-                  Protecting lives with timely data and information
+                <p className='platform_card_desc'>
+                  Protecting lives with timely data and information 
                 </p>
               </CardContent>
             </Card>
           </div>
           <div className='tab_4'>
-            <Card className='service_card'>
+            <Card className={showPlatformCard===4 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(4)}>
               <CardContent>
-                <div className='service_card_icon_container'>
-                  <FontAwesomeIcon icon={faPeopleRoof} className='service_icon' />
+                <div className='platform_card_icon_container'>
+                  <FontAwesomeIcon icon={faPeopleRoof} className='platform_icon' />
                 </div>
-                <p className='service_card_title'>
+                <p className='platform_card_title'>
                   Citizen Science
                 </p>
-                <p className='service_card_desc'>
-                  Disruptive data aggregation models to empower ordinary citizens to make a better world
+                <p className='platform_card_desc'>
+                  Disruptive data aggregation models to empower ordinary citizens to make a better world 
                 </p>
               </CardContent>
             </Card>
@@ -151,11 +159,55 @@ const Home = () => {
             INDUSTRIES
           </div>
           <div className='desc_text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            {
+              showPlatformCard===1 && (
+                <p>Fin-Tech for Inclusive Growth</p>
+              )
+            }
+            {
+              showPlatformCard===2 && (
+                <p>Farmer centric Agri-Tech for democratic distribution of wealth in agri-ecosystem</p>
+              )
+            }
+            {
+              showPlatformCard===3 && (
+                <p>Data that guide better health outcomes</p>
+              )
+            }
+            {
+              showPlatformCard===4 && (
+                <p>Disrupting data aggregation model for creating a better world</p>
+              )
+            }
           </div>
-          <p className='desc_desc'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          {
+            showPlatformCard===1 && (
+              <p className='desc_desc'>
+                Inclusive Growth Chain did the first pilot in India, by using Blockchain technology, for onboarding poor farmers for financial inclusion and developing credit history for better access to finance. 
+              </p>
+            )
+          }
+          {
+            showPlatformCard===2 && (
+              <p className='desc_desc'>
+                Inclusive Growth Chain partnered with IIT Dhanbad for creating India’s first blockchain, AI&ML platform for empowering tribal farmers in Jharkhand state by developing an integrated platform that onboards input suppliers, financial institutions, output customers for unleashing the value chain benefits and distributing higher dividends to famers, who are the central and most significant players of the whole ecosystem. 
+              </p>
+            )
+          }
+          {
+            showPlatformCard===3 && (
+              <p className='desc_desc'>
+                Inclusive Growth Chain provides secured services to store health data on blockchain and provides real-time access through cutting edge IoT devices. 
+              </p>
+            )
+          }
+          {
+            showPlatformCard===4 && (
+              <p className='desc_desc'>
+                Inclusive Growth Chain believes in the power of data and its aggregation. We strive to build models that ensure data ownership and its monetization lies with the data generators. Further, we believe ordinary citizens can play an important role in transforming societies by sourcing and supplying data on a secured blockchain platform. 
+              </p>
+            )
+          }
           <div className='learn_more_2'>
             <button className='learn_button'>
               LEARN MORE
@@ -211,7 +263,7 @@ const Home = () => {
                 3500+
               </div>
               <div className='stat_secondLine'>
-                Different Services Provided
+                Different platforms Provided
               </div>
             </div>
           </div>
@@ -228,66 +280,110 @@ const Home = () => {
         </div>
       </div>
       <div className='home_container_4'>
-        <div className='platform_container'>
-          <div className='platform_title'>
+        <div className='service_container'>
+          <div className='service_title'>
             SERVICES
           </div>
-          <div className='platform_text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <div className='service_text'>
+            {
+              showServiceCard===1 && (
+                <p>Smart Assistance for Empowerment Solutions</p>
+              )
+            }
+            {
+              showServiceCard===2 && (
+                <p>Governance, Transparency and Trust Solutions</p>
+              )
+            }
+            {
+              showServiceCard===3 && (
+                <p>Unleashing the Power of Data</p>
+              )
+            }
+            {
+              showServiceCard===4 && (
+                <p>Digital Transformation Title</p>
+              )
+            }
           </div>
-          <p className='platform_desc'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          {
+            showServiceCard===1 && (
+              <p className='service_desc'>
+                We use AI and ML for providing smart assistance to people the bottom end of the pyramid. They can create their own digital identity securely and engage with world for accessing resources. 
+              </p>
+            )
+          }
+          {
+            showServiceCard===2 && (
+              <p className='service_desc'>
+                We provide, both permissioned and permissionless, blockchain enabled services for building trust and transparency between stakeholders in several business environments. 
+              </p>
+            )
+          }
+          {
+            showServiceCard===3 && (
+              <p className='service_desc'>
+                We innovate by developing custom made IoT devices where reliable and real time data is critical for decision making. We integrate IoT devices seamlessly on blockchain platform. 
+              </p>
+            )
+          }
+          {
+            showServiceCard===4 && (
+              <p className='service_desc'>
+                Digital Transformation Desc
+              </p>
+            )
+          }
           <div className='learn_more_3'>
             <button className='learn_button'>
               LEARN MORE
             </button>
           </div>
         </div>
-        <div className='platform_card_container'>
-          <div className='platform_1'>
-            <Card className='platform_card'>
+        <div className='service_card_container'>
+          <div className='service_1'>
+            <Card className={showServiceCard===1 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(1)}>
               <CardContent>
-                <div className='platform_icon_container'>
-                  <FontAwesomeIcon icon={faHeartPulse} className='platform_icon' />
+                <div className='service_icon_container'>
+                  <FontAwesomeIcon icon={faHeartPulse} className='service_icon' />
                 </div>
-                <p className='platform_card_title'>
+                <p className='service_card_title'>
                   AI & ML
                 </p>
               </CardContent>
             </Card>
           </div>
-          <div className='platform_2'>
-            <Card className='platform_card'>
+          <div className='service_2'>
+            <Card className={showServiceCard===2 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(2)}>
               <CardContent>
-                <div className='platform_icon_container'>
-                  <FontAwesomeIcon icon={faCreditCard} className='platform_icon' />
+                <div className='service_icon_container'>
+                  <FontAwesomeIcon icon={faCreditCard} className='service_icon' />
                 </div>
-                <p className='platform_card_title'>
+                <p className='service_card_title'>
                   Blockchain
                 </p>
               </CardContent>
             </Card>
           </div>
-          <div className='platform_3'>
-            <Card className='platform_card'>
+          <div className='service_3'>
+            <Card className={showServiceCard===3 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(3)}>
               <CardContent>
-                <div className='platform_icon_container'>
-                  <FontAwesomeIcon icon={faSeedling} className='platform_icon' />
+                <div className='service_icon_container'>
+                  <FontAwesomeIcon icon={faSeedling} className='service_icon' />
                 </div>
-                <p className='platform_card_title'>
+                <p className='service_card_title'>
                   IOT
                 </p>
               </CardContent>
             </Card>
           </div>
-          <div className='platform_4'>
-            <Card className='platform_card'>
+          <div className='service_4'>
+            <Card className={showServiceCard===4 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(4)}>
               <CardContent>
-                <div className='platform_icon_container'>
-                  <FontAwesomeIcon icon={faTachographDigital} className='platform_icon' />
+                <div className='service_icon_container'>
+                  <FontAwesomeIcon icon={faTachographDigital} className='service_icon' />
                 </div>
-                <p className='platform_card_title'>
+                <p className='service_card_title'>
                   Digital Transformation
                 </p>
               </CardContent>
@@ -301,14 +397,14 @@ const Home = () => {
             ABOUT US
           </div>
           <div className='about_container_text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Inclusive Growth Chain is a technology platform provider for creating impact that leads to empowerment. 
           </div>
           <p className='about_container_desc'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We are a startup, founded by renowned professors/scientists, incubated initially at the University of Hyderabad and later the Indian School of Business, Hyderabad.
           </p>
           <div className='learn_more_4'>
             <button className='learn_button'>
-              LEARN MORE
+              <Link to={'./about'} className="learn_button_link">LEARN MORE</Link>
             </button>
           </div>
         </div>
@@ -556,7 +652,7 @@ const Home = () => {
             </p>
             <p>
               <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
-              Industries & Platform
+              Industries & service
             </p>
             <p>
               <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
