@@ -571,7 +571,7 @@ const Home = () => {
                     alt='home_img'
                     className='home_news_card_img'
                   />
-                  <p className="news_card_date">
+                  <p className="home_news_card_date">
                     <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
                     October 10, 2020
                   </p>
@@ -597,7 +597,7 @@ const Home = () => {
                     alt='home_img'
                     className='home_news_card_img'
                   />
-                  <p className="news_card_date">
+                  <p className="home_news_card_date">
                     <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
                     October 10, 2020
                   </p>
@@ -623,7 +623,7 @@ const Home = () => {
                     alt='home_img'
                     className='home_news_card_img'
                   />
-                  <p className="news_card_date">
+                  <p className="home_news_card_date">
                     <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
                     October 10, 2020
                   </p>

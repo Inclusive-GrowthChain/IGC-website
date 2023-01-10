@@ -61,9 +61,9 @@
 }
 
 .contact_contact_card:hover {
+    transition: all 0.3s ease-in;
     color: #fff;
     margin-top: -10px;
-    transition: all 0.3s ease-in;
 }
 
 .contact_contact_card:hover::before {
@@ -242,4 +242,13 @@
     height: 20px;
     color: #0094f8;
     cursor: pointer;
+}
+
+.contact_container_4 {
+    width: 100%;
+}
+
+.contact_map {
+    height: 400px;
+    /* margin-top: 80px; */
 }
