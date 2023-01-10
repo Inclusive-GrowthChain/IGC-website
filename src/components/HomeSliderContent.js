@@ -20,13 +20,13 @@ const SliderContent = () => {
     {
       index: 2,
       title: "",
-      description: "NPCI Hackathon 2022-23",
+      description: "Winners of NPCI Hackathon 2022-23",
       text: "Our Team has won the NPCI Hackathon for building a PoC of Blockchain enabled Retail Bond Market  for Indian market. We created Micro Bond Exchange PoC that can tokenize and trade Indian listed bonds at more affordable prices for retail investors. "
     },
     {
       index: 3,
       title: "",
-      description: "International Blockchain Hackathon, Dubai 2022",
+      description: "Winners of International Blockchain Hackathon, Dubai 2022",
       text: "Inclusive Growth Chain won first prize at the International Blockchain Hackathon, Dubai 2022 for building a PoC to create real time air quality monitoring through Blockchain Platform using Citizen Science model. "
     },
     {

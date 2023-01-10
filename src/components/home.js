@@ -32,7 +32,7 @@ import './css/home.css';
 import home_img from '../assets/home_img/20943774.jpg';
 import hc7_img_1 from '../assets/home_img/Partners/dlabs.jpg';
 import hc7_img_2 from '../assets/home_img/Partners/IITD.jpg';
-import hc7_img_3 from '../assets/home_img/Partners/Samunnati.jpg';
+import hc7_img_3 from '../assets/home_img/Partners/Samunnati.png';
 import hc7_img_4 from '../assets/home_img/Partners/WaterInsight.jpg';
 import hc7_img_5 from '../assets/home_img/Partners/DrReddys.png';
 import hc7_img_6 from '../assets/home_img/Partners/eFresh.png';
@@ -428,7 +428,8 @@ const Home = () => {
               className='hc7_img_1'
               style={{
                 height: '100px',
-                width: '200px',
+                width: '300px',
+                marginTop: '35px',
               }}
             />
           </div>
@@ -438,9 +439,8 @@ const Home = () => {
               alt='hc7_img_2'
               className='hc7_img_2'
               style={{
-                height: '150px',
-                width: '200px',
-                marginLeft: '0px'
+                height: '200px',
+                width: '300px',
               }}
             />
           </div>
@@ -450,12 +450,9 @@ const Home = () => {
               alt='hc7_img_3'
               className='hc7_img_3'
               style={{
-                height: '700px',
-                width: '700px',
-                zIndex: '-3',
-                marginTop: '-300px',
-                marginLeft: '-200px',
-                position: 'relative'
+                height: '100px',
+                width: '300px',
+                marginTop: '35px',
               }}
             />
           </div>
@@ -465,9 +462,9 @@ const Home = () => {
               alt='hc7_img_4'
               className='hc7_img_4'
               style={{
-                height: '120px',
-                width: '200px',
-                marginLeft: '-200px'
+                height: '150px',
+                width: '250px',
+                marginTop: '15px',
               }}
             />
           </div>
@@ -479,8 +476,7 @@ const Home = () => {
               style={{
                 height: '200px',
                 width: '200px',
-                marginLeft: '50px',
-                marginTop: '-40px'
+                marginTop: '-15px'
               }}
             />
           </div>
@@ -492,8 +488,8 @@ const Home = () => {
               alt='hc7_img_6'
               className='hc7_img_6'
               style={{
-                height: '150px',
-                width: '150px',
+                height: '200px',
+                width: '250px',
               }}
             />
           </div>
@@ -503,9 +499,10 @@ const Home = () => {
               alt='hc7_img_7'
               className='hc7_img_7'
               style={{
-                height: '150px',
+                height: '100px',
                 width: '150px',
-                marginLeft: '-50px'
+                marginLeft: '-70px',
+                marginTop: '70px'
               }}
             />
           </div>
@@ -516,8 +513,9 @@ const Home = () => {
               className='hc7_img_8'
               style={{
                 height: '150px',
-                width: '225px',
-                marginLeft: '-70px'
+                width: '300px',
+                marginLeft: '-100px',
+                marginTop: '50px'
               }}
             />
           </div>
@@ -529,58 +527,58 @@ const Home = () => {
               style={{
                 height: '100px',
                 width: '300px',
-                marginTop: '32.5px'
+                marginTop: '82px'
               }}
             />
           </div>
         </div>
       </div>
       <div className='home_container_8'>
-        <div className='subscribe_icon_container'>
-          <FontAwesomeIcon icon={faEnvelopeOpenText} className='subscribe_icon' />
+        <div className='home_subscribe_icon_container'>
+          <FontAwesomeIcon icon={faEnvelopeOpenText} className='home_subscribe_icon' />
         </div>
-        <div className='subscribe_title'>
+        <div className='home_subscribe_title'>
           Subscribe
         </div>
-        <div className='subscribe_text'>
+        <div className='home_subscribe_text'>
           Subscribe to our newsletter & stay updated
         </div>
-        <div className='subscribe_input_container'>
+        <div className='home_subscribe_input_container'>
           <input
             type='text'
             placeholder='Your email address'
-            className='subscribe_input'
+            className='home_subscribe_input'
           />
-          <button className='subscribe_button'>
+          <button className='home_subscribe_button'>
             <FontAwesomeIcon icon={faPaperPlane} className='send_icon' />
           </button>
         </div>
       </div>
       <div className='home_container_9'>
-        <div className='news_container'>
-          <div className='news_title'>
+        <div className='home_news_container'>
+          <div className='home_news_title'>
             NEWS & MEDIA
           </div>
-          <div className='news_text'>
+          <div className='home_news_text'>
             Recent News Posts
           </div>
-          <div className='news_card_container'>
-            <div className='news_1'>
-              <Card className='news_card'>
+          <div className='home_news_card_container'>
+            <div className='home_news_1'>
+              <Card className='home_news_card'>
                 <CardContent>
                   <img
                     src={home_img}
                     alt='home_img'
-                    className='news_card_img'
+                    className='home_news_card_img'
                   />
                   <p className="news_card_date">
-                    <FontAwesomeIcon icon={faCalendarCheck} className='news_icon' />
+                    <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
                     October 10, 2020
                   </p>
-                  <p className='news_card_title'>
+                  <p className='home_news_card_title'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
-                  <p className='news_card_desc'>
+                  <p className='home_news_card_desc'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className='read_more'>
@@ -591,22 +589,22 @@ const Home = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className='news_2'>
-              <Card className='news_card'>
+            <div className='home_news_2'>
+              <Card className='home_news_card'>
                 <CardContent>
                   <img
                     src={home_img}
                     alt='home_img'
-                    className='news_card_img'
+                    className='home_news_card_img'
                   />
                   <p className="news_card_date">
-                    <FontAwesomeIcon icon={faCalendarCheck} className='news_icon' />
+                    <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
                     October 10, 2020
                   </p>
-                  <p className='news_card_title'>
+                  <p className='home_news_card_title'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
-                  <p className='news_card_desc'>
+                  <p className='home_news_card_desc'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className='read_more'>
@@ -617,22 +615,22 @@ const Home = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className='news_3'>
-              <Card className='news_card'>
+            <div className='home_news_3'>
+              <Card className='home_news_card'>
                 <CardContent>
                   <img
                     src={home_img}
                     alt='home_img'
-                    className='news_card_img'
+                    className='home_news_card_img'
                   />
                   <p className="news_card_date">
-                    <FontAwesomeIcon icon={faCalendarCheck} className='news_icon' />
+                    <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
                     October 10, 2020
                   </p>
-                  <p className='news_card_title'>
+                  <p className='home_news_card_title'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
-                  <p className='news_card_desc'>
+                  <p className='home_news_card_desc'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className='read_more'>
@@ -647,98 +645,98 @@ const Home = () => {
         </div>
       </div>
       <div className='footer'>
-        <div className='company_container'>
-          <div className='company_title'>
+        <div className='home_company_container'>
+          <div className='home_company_title'>
             IGC
           </div>
-          <div className='company_text'>
+          <div className='home_company_text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
-          <div className='company_social_container'>
-            <FontAwesomeIcon icon={faFacebookF} className='social_icon' />
-            <FontAwesomeIcon icon={faInstagram} className='social_icon' />
-            <FontAwesomeIcon icon={faWhatsapp} className='social_icon' />
-            <FontAwesomeIcon icon={faTwitter} className='social_icon' />
-            <FontAwesomeIcon icon={faLinkedin} className='social_icon' />
+          <div className='home_company_social_container'>
+            <FontAwesomeIcon icon={faFacebookF} className='home_social_icon' />
+            <FontAwesomeIcon icon={faInstagram} className='home_social_icon' />
+            <FontAwesomeIcon icon={faWhatsapp} className='home_social_icon' />
+            <FontAwesomeIcon icon={faTwitter} className='home_social_icon' />
+            <FontAwesomeIcon icon={faLinkedin} className='home_social_icon' />
           </div>
         </div>
-        <div className='contact_container_2'>
-          <div className='contact_title_2'>
+        <div className='home_contact_container_2'>
+          <div className='home_contact_title_2'>
             CONTACT US
             <hr className='hc10_line' />
           </div>
-          <div className='contact_text_2'>
+          <div className='home_contact_text_2'>
             <p>
-              <FontAwesomeIcon icon={faMap} className='contact_icon' />
+              <FontAwesomeIcon icon={faMap} className='home_contact_icon' />
               Address
             </p>
             <p>
-              <FontAwesomeIcon icon={faPhone} className='contact_icon' />
+              <FontAwesomeIcon icon={faPhone} className='home_contact_icon' />
               Phone Number
             </p>
             <p>
-              <FontAwesomeIcon icon={faEnvelope} className='contact_icon' />
+              <FontAwesomeIcon icon={faEnvelope} className='home_contact_icon' />
               Email
             </p>
             <p>
-              <FontAwesomeIcon icon={faWhatsapp} className='contact_icon' />
+              <FontAwesomeIcon icon={faWhatsapp} className='home_contact_icon' />
               Whatsapp Number
             </p>
             <p>
-              <FontAwesomeIcon icon={faClock} className='contact_icon' />
+              <FontAwesomeIcon icon={faClock} className='home_contact_icon' />
               Working Hours
             </p>
           </div>
         </div>
-        <div className='navigation_container'>
-          <div className='navigation_title'>
+        <div className='home_navigation_container'>
+          <div className='home_navigation_title'>
             NAVIGATION
             <hr className='hc10_line' />
           </div>
-          <div className='navigation_text'>
+          <div className='home_navigation_text'>
             <p>
-              <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
+              <FontAwesomeIcon icon={faCircleCheck} className='home_contact_icon' />
               Home
             </p>
             <p>
-              <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
+              <FontAwesomeIcon icon={faCircleCheck} className='home_contact_icon' />
               Industries & service
             </p>
             <p>
-              <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
+              <FontAwesomeIcon icon={faCircleCheck} className='home_contact_icon' />
               About Us
             </p>
             <p>
-              <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
+              <FontAwesomeIcon icon={faCircleCheck} className='home_contact_icon' />
               Contact Us
             </p>
             <p>
-              <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
+              <FontAwesomeIcon icon={faCircleCheck} className='home_contact_icon' />
               News & Media
             </p>
             <p>
-              <FontAwesomeIcon icon={faCircleCheck} className='contact_icon' />
+              <FontAwesomeIcon icon={faCircleCheck} className='home_contact_icon' />
               Careers
             </p>
           </div>
         </div>
-        <div className='news_container_2'>
-          <div className='news_title_2'>
+        <div className='home_news_container_2'>
+          <div className='home_news_title_2'>
             LATEST NEWS & POSTS
             <hr className='hc10_line' />
           </div>
-          <div className='news_card_container_2'>
-            <div className='news_1_2'>
-              <Card className='news_card_2' sx={{ backgroundColor: 'rgb(250, 250, 250)', border: 'none', boxShadow: 'none' }}>
+          <div className='home_news_card_container_2'>
+            <div className='home_news_1_2'>
+              <Card className='home_news_card_2' sx={{ backgroundColor: 'rgb(250, 250, 250)', border: 'none', boxShadow: 'none' }}>
                 <CardContent>
-                  <div className='news_card_2_img_container'>
+                  <div className='home_news_card_2_img_container'>
                     <img
                       src={home_img}
                       alt='home_img'
-                      className='news_card_img_2'
+                      className='home_news_card_img_2'
                     />
                   </div>
-                  <div className='news_card_2_text'>
+                  <div className='home_news_card_2_text'>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
@@ -746,17 +744,17 @@ const Home = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className='news_2_2'>
-              <Card className='news_card_2' sx={{ backgroundColor: 'rgb(250, 250, 250)', border: 'none', boxShadow: 'none' }}>
+            <div className='home_news_2_2'>
+              <Card className='home_news_card_2' sx={{ backgroundColor: 'rgb(250, 250, 250)', border: 'none', boxShadow: 'none' }}>
                 <CardContent>
-                  <div className='news_card_2_img_container'>
+                  <div className='home_news_card_2_img_container'>
                     <img
                       src={home_img}
                       alt='home_img'
-                      className='news_card_img_2'
+                      className='home_news_card_img_2'
                     />
                   </div>
-                  <div className='news_card_2_text'>
+                  <div className='home_news_card_2_text'>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
@@ -764,17 +762,17 @@ const Home = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className='news_3_2'>
-              <Card className='news_card_2' sx={{ backgroundColor: 'rgb(250, 250, 250)', border: 'none', boxShadow: 'none' }}>
+            <div className='home_news_3_2'>
+              <Card className='home_news_card_2' sx={{ backgroundColor: 'rgb(250, 250, 250)', border: 'none', boxShadow: 'none' }}>
                 <CardContent>
-                  <div className='news_card_2_img_container'>
+                  <div className='home_news_card_2_img_container'>
                     <img
                       src={home_img}
                       alt='home_img'
-                      className='news_card_img_2'
+                      className='home_news_card_img_2'
                     />
                   </div>
-                  <div className='news_card_2_text'>
+                  <div className='home_news_card_2_text'>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>

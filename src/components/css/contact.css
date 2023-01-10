@@ -1,0 +1,121 @@
+.contact_container_1 {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-image: linear-gradient(to bottom right, #0094f8, #00d581);
+    color: #fff;
+}
+
+.cc1_title {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cc1_text {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.contact_container_2 {
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.contact_card_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+    display: grid;
+    width: 50%;
+    margin: auto;
+}
+
+.contact_contact_card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.contact_card_2 .contact_contact_card {
+    padding: 2rem 1rem;
+}
+
+.contact_contact_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to bottom right, #0094f8, #00d581);
+    z-index: 1;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+}
+
+.contact_contact_card:hover {
+    color: #fff;
+    margin-top: -10px;
+    transition: all 0.3s ease-in;
+}
+
+.contact_contact_card:hover::before {
+    opacity: 1;
+    z-index: -1;
+}
+
+.contact_card_icon_container {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact_card_icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.contact_card_text_container {
+    width: 100%;
+    text-align: center;
+}
+
+.contact_card_text_1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.contact_card_text_2 {
+    font-size: 1rem;
+    color: rgb(132, 132, 132);
+    line-height: 1.5;    
+}
+
+.contact_card_text_3 {
+    font-size: 1rem;
+    color: rgb(132, 132, 132);
+    margin-top: 5px;
+}
+
+.contact_contact_card:hover .contact_card_text_2 {
+    color: #fff;
+}
+
+.contact_contact_card:hover .contact_card_text_3 {
+    color: #fff;
+}
+
+.contact_container_3 {
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
