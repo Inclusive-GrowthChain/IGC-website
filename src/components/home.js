@@ -302,7 +302,7 @@ const Home = () => {
             }
             {
               showServiceCard===4 && (
-                <p>Digital Transformation Title</p>
+                <p>Helping companies moving from Web 2.0 to Web 3.0 world</p>
               )
             }
           </div>
@@ -330,7 +330,7 @@ const Home = () => {
           {
             showServiceCard===4 && (
               <p className='service_desc'>
-                Digital Transformation Desc
+                Our expertise helps in hand holding companies to unleash the opportunities of web3.0 ecosystem through diligent audit and digital transformation engagement
               </p>
             )
           }
