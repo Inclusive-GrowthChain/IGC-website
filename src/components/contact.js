@@ -18,6 +18,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
+import { faShare } from '@fortawesome/free-solid-svg-icons';
 
 import './css/contact.css';
 
@@ -81,8 +82,78 @@ const Contact = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className='contact_card_3'>
-              
+          </div>
+        </div>
+        <div className='contact_container_3'>
+          <div className='cc3_title'>
+              Let's talk business
+            </div>
+          <div className='cc3_content_container'>
+            <div className='contact_form_container'>
+              <div className='contact_form_input_container'>
+                <input type='text' placeholder='Your Name' className='contact_form_input'/>
+              </div>
+              <div className='contact_form_input_container'>
+                <input type='text' placeholder='Your Email' className='contact_form_input'/>
+              </div>
+              <div className='contact_form_input_container'>
+                <input type='text' placeholder='Subject' className='contact_form_input'/>
+              </div>
+              <div className='contact_form_input_container'>
+                <textarea placeholder='Message' className='contact_form_message'></textarea>
+              </div>
+              <div className='contact_form_submit'>
+                Send Message
+              </div>
+            </div>
+            <div className='contact_details_container'>
+              <div className='contact_details_1_container'>
+                <div className='contact_details_icon_container'>
+                  <FontAwesomeIcon icon={faPhone} className='contact_details_icon'/>
+                </div>
+                <div className='contact_details_text_container'>
+                  <div className='contact_details_text_title'>
+                    Phone Support
+                  </div>
+                  <div className='contact_details_text'>
+                    +31-653987807
+                  </div>
+                  <div className='contact_details_text'>
+                    +91-9866896553
+                  </div>
+                </div>
+              </div>
+              <div className='contact_details_2_container'>
+                <div className='contact_details_icon_container'>
+                  <FontAwesomeIcon icon={faEnvelope} className='contact_details_icon'/>
+                </div>
+                <div className='contact_details_text_container'>
+                  <div className='contact_details_text_title'>
+                    Email Us
+                  </div>
+                  <div className='contact_details_text'>
+                    sampleemail1@gmail.com
+                  </div>
+                  <div className='contact_details_text'>
+                    sampleemail2@gmail.com
+                  </div>
+                </div>
+              </div>
+              <div className='contact_details_3_container'>
+                <div className='contact_details_icon_container'>
+                  <FontAwesomeIcon icon={faShare} className='contact_details_icon'/>
+                </div>
+                <div className='contact_details_text_container'>
+                  <div className='contact_details_text_title'>
+                    Social Media
+                  </div>
+                  <div className='contact_details_social_icon_container'>
+                    <FontAwesomeIcon icon={faFacebookF} className='contact_details_social_icon' />
+                    <FontAwesomeIcon icon={faInstagram} className='contact_details_social_icon' />
+                    <FontAwesomeIcon icon={faWhatsapp} className='contact_details_social_icon' />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
