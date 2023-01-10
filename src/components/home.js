@@ -27,6 +27,8 @@ import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faPeopleRoof } from '@fortawesome/free-solid-svg-icons';
 
+import { Icon } from '@iconify/react';
+
 import './css/home.css';
 
 import home_img from '../assets/home_img/20943774.jpg';
@@ -113,6 +115,7 @@ const Home = () => {
               <CardContent>
                 <div className='platform_card_icon_container'>
                   <FontAwesomeIcon icon={faSeedling} className='platform_icon' />
+                  {/* <Icon icon="charm:plant-pot" className='platform_icon'/> */}
                 </div>
                 <p className='platform_card_title'>
                   Agri-Tech
@@ -127,7 +130,8 @@ const Home = () => {
             <Card className={showPlatformCard===3 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(3)}>
               <CardContent>
                 <div className='platform_card_icon_container'>
-                  <FontAwesomeIcon icon={faHeartPulse} className='platform_icon' />
+                  {/* <FontAwesomeIcon icon={faHeartPulse} className='platform_icon' /> */}
+                  <Icon icon="healthicons:health-outline" className='platform_icon'/>
                 </div>
                 <p className='platform_card_title'>
                   Health Care
@@ -345,7 +349,7 @@ const Home = () => {
             <Card className={showServiceCard===1 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(1)}>
               <CardContent>
                 <div className='service_icon_container'>
-                  <FontAwesomeIcon icon={faHeartPulse} className='service_icon' />
+                  <Icon icon="eos-icons:ai" className='service_icon'/>
                 </div>
                 <p className='service_card_title'>
                   AI & ML
@@ -357,7 +361,7 @@ const Home = () => {
             <Card className={showServiceCard===2 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(2)}>
               <CardContent>
                 <div className='service_icon_container'>
-                  <FontAwesomeIcon icon={faCreditCard} className='service_icon' />
+                  <Icon icon="eos-icons:blockchain" className='service_icon'/>
                 </div>
                 <p className='service_card_title'>
                   Blockchain
@@ -369,7 +373,7 @@ const Home = () => {
             <Card className={showServiceCard===3 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(3)}>
               <CardContent>
                 <div className='service_icon_container'>
-                  <FontAwesomeIcon icon={faSeedling} className='service_icon' />
+                  <Icon icon="fluent:iot-20-regular" className='service_icon'/>
                 </div>
                 <p className='service_card_title'>
                   IOT

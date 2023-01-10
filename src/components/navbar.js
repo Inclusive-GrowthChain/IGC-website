@@ -8,7 +8,7 @@ import "./css/navbar.css";
 import ServiceDropdown from "./nav-service_dropdown";
 // import PlatformDropdown from "./nav-platform_dropdown";
 import { platform_list } from "./navitems";
-import logo from "../assets/logo/logo3.png"
+import logo from "../assets/logo/4.png"
 
 const Navbar = () => {
   const [showServiceDropdown, setShowServiceDropdown] = useState(false);
@@ -46,7 +46,14 @@ const Navbar = () => {
           alt="logo"
           className="navbar_logo_img"
         />
-        IGC
+        <div className="navbar_logo_text">
+          <div className="navbar_logo_text_1">
+            Inclusive Growth Chain
+          </div>
+          <div className="navbar_logo_text_2">
+            Impact that Empowers
+          </div>
+        </div>
       </Link>
       <ul className='nav_item'>
         {

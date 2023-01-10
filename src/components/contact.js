@@ -62,13 +62,13 @@ const Contact = () => {
                   </div>
                   <div className='contact_card_text_container'>
                     <div className='contact_card_text_1'>
-                      Netherlands Office
+                      India Office
                     </div>
                     <div className='contact_card_text_2'>
-                      62 Woltersweg, Hengelo, Netherlands, 7552DD
+                      Dlabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad - 500111, India
                     </div>
                     <div className='contact_card_text_3'>
-                      Phone: +31-653987807
+                      Phone: +91-9866896553
                     </div>
                   </div>
                 </div>
@@ -84,13 +84,13 @@ const Contact = () => {
                   </div>
                   <div className='contact_card_text_container'>
                     <div className='contact_card_text_1'>
-                      India Office
+                      Netherlands Office
                     </div>
                     <div className='contact_card_text_2'>
-                      Dlabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad - 500111, India
+                      62 Woltersweg, Hengelo, Netherlands, 7552DD
                     </div>
                     <div className='contact_card_text_3'>
-                      Phone: +91-9866896553
+                      Phone: +31-653987807
                     </div>
                   </div>
                 </div>
@@ -147,10 +147,7 @@ const Contact = () => {
                   Email Us
                 </div>
                 <div className='contact_details_text'>
-                  sampleemail1@gmail.com
-                </div>
-                <div className='contact_details_text'>
-                  sampleemail2@gmail.com
+                  admin@inclusivegrowthchain.com
                 </div>
               </div>
             </div>
@@ -173,7 +170,7 @@ const Contact = () => {
         </div>
       </div>
       <div className='contact_container_4'>
-        <MapContainer center={centerPosition} zoom={2} scrollWheelZoom={false} className='contact_map'>
+        <MapContainer center={centerPosition} zoom={4} scrollWheelZoom={false} className='contact_map'>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
