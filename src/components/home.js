@@ -42,7 +42,8 @@ import hc7_img_7 from '../assets/home_img/Partners/Hawking.png';
 import hc7_img_8 from '../assets/home_img/Partners/SecureKloud.png';
 import hc7_img_9 from '../assets/home_img/Partners/suvik.png';
 
-import SliderContent from './HomeSliderContent';
+import HomeSliderContent from './HomeSliderContent';
+import NewsSliderContent from './NewsSliderContent';
 
 const Home = () => {
   // const [showWelcomeTitle, setShowWelcomeTitle] = useState(false);
@@ -70,7 +71,7 @@ const Home = () => {
 
   return (
     <div className='home_main_container'>
-      <SliderContent />
+      <HomeSliderContent />
       {/* <div className='home_container_1'> */}
         {/* <div className='welcome_container'>
           <div className={showWelcomeTitle ? 'welcome_title' : 'welcome_title_loading'}>
@@ -566,86 +567,7 @@ const Home = () => {
           <div className='home_news_text'>
             Recent News Posts
           </div>
-          <div className='home_news_card_container'>
-            <div className='home_news_1'>
-              <Card className='home_news_card'>
-                <CardContent>
-                  <img
-                    src={home_img}
-                    alt='home_img'
-                    className='home_news_card_img'
-                  />
-                  <p className="home_news_card_date">
-                    <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
-                    October 10, 2020
-                  </p>
-                  <p className='home_news_card_title'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <p className='home_news_card_desc'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <div className='read_more'>
-                    <button className='learn_button'>
-                      Read More
-                    </button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className='home_news_2'>
-              <Card className='home_news_card'>
-                <CardContent>
-                  <img
-                    src={home_img}
-                    alt='home_img'
-                    className='home_news_card_img'
-                  />
-                  <p className="home_news_card_date">
-                    <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
-                    October 10, 2020
-                  </p>
-                  <p className='home_news_card_title'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <p className='home_news_card_desc'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <div className='read_more'>
-                    <button className='learn_button'>
-                      Read More
-                    </button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className='home_news_3'>
-              <Card className='home_news_card'>
-                <CardContent>
-                  <img
-                    src={home_img}
-                    alt='home_img'
-                    className='home_news_card_img'
-                  />
-                  <p className="home_news_card_date">
-                    <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
-                    October 10, 2020
-                  </p>
-                  <p className='home_news_card_title'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <p className='home_news_card_desc'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <div className='read_more'>
-                    <button className='learn_button'>
-                      Read More
-                    </button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+          <NewsSliderContent />
         </div>
       </div>
       <div className='footer'>

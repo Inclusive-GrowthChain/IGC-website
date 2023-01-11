@@ -75,7 +75,7 @@ const Careers = () => {
                   <b>Inclusive Growth Chain</b> (Twinsset Private Limited)
                 </div>
                 <div className='careers_card_title'>
-                  Android Developer
+                  Blockchain Developer
                 </div>
                 <div className='careers_card_content_container'>
                   <ul className='careers_card_info_list'>
@@ -100,7 +100,7 @@ const Careers = () => {
                   <b>Inclusive Growth Chain</b> (Twinsset Private Limited)
                 </div>
                 <div className='careers_card_title'>
-                  Android Developer
+                  Backend Developer
                 </div>
                 <div className='careers_card_content_container'>
                   <ul className='careers_card_info_list'>
@@ -125,7 +125,7 @@ const Careers = () => {
                   <b>Inclusive Growth Chain</b> (Twinsset Private Limited)
                 </div>
                 <div className='careers_card_title'>
-                  Android Developer
+                  User Interface Developer
                 </div>
                 <div className='careers_card_content_container'>
                   <ul className='careers_card_info_list'>

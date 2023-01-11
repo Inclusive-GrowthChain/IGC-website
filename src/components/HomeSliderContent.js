@@ -9,7 +9,7 @@ import partners_img from '../assets/home_img/Partners/partners.png';
 
 import './css/home.css';
 
-const SliderContent = () => {
+const HomeSliderContent = () => {
   var items = [
     {
       index: 1,
@@ -103,4 +103,4 @@ function Item(props) {
   )
 }
 
-export default SliderContent;
+export default HomeSliderContent;
