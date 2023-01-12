@@ -34,11 +34,11 @@ import './css/home.css';
 import home_img from '../assets/home_img/20943774.jpg';
 import hc7_img_1 from '../assets/home_img/Partners/dlabs.jpg';
 import hc7_img_2 from '../assets/home_img/Partners/IITD.jpg';
-import hc7_img_3 from '../assets/home_img/Partners/Samunnati.png';
+import hc7_img_3 from '../assets/home_img/Partners/Hawking.png';
 import hc7_img_4 from '../assets/home_img/Partners/WaterInsight.jpg';
 import hc7_img_5 from '../assets/home_img/Partners/DrReddys.png';
 import hc7_img_6 from '../assets/home_img/Partners/eFresh.png';
-import hc7_img_7 from '../assets/home_img/Partners/Hawking.png';
+import hc7_img_7 from '../assets/home_img/Partners/Samunnati.png';
 import hc7_img_8 from '../assets/home_img/Partners/SecureKloud.png';
 import hc7_img_9 from '../assets/home_img/Partners/suvik.png';
 
@@ -455,9 +455,10 @@ const Home = () => {
               alt='hc7_img_3'
               className='hc7_img_3'
               style={{
-                height: '100px',
-                width: '300px',
-                marginTop: '35px',
+                height: '175px',
+                width: '250px',
+                marginTop: '10px',
+                marginLeft: '-30px'
               }}
             />
           </div>
@@ -470,6 +471,7 @@ const Home = () => {
                 height: '150px',
                 width: '250px',
                 marginTop: '15px',
+                marginLeft: '-30px'
               }}
             />
           </div>
@@ -479,9 +481,9 @@ const Home = () => {
               alt='hc7_img_5'
               className='hc7_img_5'
               style={{
-                height: '200px',
-                width: '200px',
-                marginTop: '-15px'
+                height: '250px',
+                width: '250px',
+                marginTop: '-45px'
               }}
             />
           </div>
@@ -505,8 +507,8 @@ const Home = () => {
               className='hc7_img_7'
               style={{
                 height: '100px',
-                width: '150px',
-                marginLeft: '-70px',
+                width: '350px',
+                marginLeft: '0px',
                 marginTop: '70px'
               }}
             />
@@ -519,7 +521,7 @@ const Home = () => {
               style={{
                 height: '150px',
                 width: '300px',
-                marginLeft: '-100px',
+                marginLeft: '-10px',
                 marginTop: '50px'
               }}
             />

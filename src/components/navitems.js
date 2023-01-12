@@ -5,74 +5,35 @@ export const navItems = [
     path: "./",
     cName: "nav_item"
   },
-  // {
-  //   id: 2,
-  //   title: "SERVICES",
-  //   path: "./services",
-  //   cName: "nav_item"
-  // },
   {
-    id: 3,
+    id: 2,
     title: "IMPACT STORIES",
     path: "./impact-stories",
     cName: "nav_item"
   },
   {
-    id: 4,
+    id: 3,
     title: "ABOUT",
     path: "./about",
     cName: "nav_item"
   },
   {
-    id: 5,
+    id: 4,
     title: "CONTACT",
     path: "./contact",
     cName: "nav_item"
   },
   {
-    id: 6,
-    title: "NEWS",
+    id: 5,
+    title: "NEWS & MEDIA",
     path: "./news",
     cName: "nav_item"
   },
   {
-    id: 7,
+    id: 6,
     title: "CAREERS",
     path: "./careers",
     cName: "nav_item"
-  }
-];
-  
-export const service_list = [
-  {
-    id: 1,
-    title: "App Development",
-    path: "./app-development",
-    cName: "services_list_item"
-  },
-  {
-    id: 2,
-    title: "Web Development",
-    path: "./web-development",
-    cName: "services_list_item"
-  },
-  {
-    id: 3,
-    title: "AI & ML",
-    path: "./ai-ml",
-    cName: "services_list_item"
-  },
-  {
-    id: 4,
-    title: "Blockchain",
-    path: "./blockchain",
-    cName: "services_list_item"
-  },
-  {
-    id: 5,
-    title: "IOT",
-    path: "./iot",
-    cName: "services_list_item"
   }
 ];
 
@@ -94,5 +55,20 @@ export const platform_list = [
     title: "Agri Tech",
     path: "./agri-tech",
     cName: "platform_list_item"
+  }
+];
+
+export const news_list = [
+  {
+    id: 1,
+    title: "News",
+    path: "./news",
+    cName: "news_list_item"
+  },
+  {
+    id: 2,
+    title: "Blog",
+    path: "./blog",
+    cName: "news_list_item"
   }
 ];

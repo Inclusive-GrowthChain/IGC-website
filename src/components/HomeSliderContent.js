@@ -13,8 +13,8 @@ const HomeSliderContent = () => {
   var items = [
     {
       index: 1,
-      title: "WELCOME TO IGC",
-      description: "Inclusive Growth Chain - Impact that Empowers",
+      title: "",
+      description: "Welcome to Inclusive Growth Chain : Your Digital Transformation Partner",
       text: ""
     },
     {

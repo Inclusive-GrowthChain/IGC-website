@@ -1,38 +1,9 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-
-import { ReactComponent as Img_1 } from '../assets/home_img/1.svg';
-import { ReactComponent as Img_2 } from '../assets/home_img/6.svg';
-import hackathon_img from '../assets/home_img/hackathon.jpg';
-import hackathon2_img from '../assets/home_img/hackathon2.jpg';
-import partners_img from '../assets/home_img/Partners/partners.png';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMap } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
-import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faBrain } from '@fortawesome/free-solid-svg-icons';
-import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
-import { faCreditCard } from '@fortawesome/free-regular-svg-icons';
-import { faSeedling } from '@fortawesome/free-solid-svg-icons';
-import { faTachographDigital } from '@fortawesome/free-solid-svg-icons';
-import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { faPeopleRoof } from '@fortawesome/free-solid-svg-icons';
 import home_img from '../assets/home_img/20943774.jpg';
 
 import './css/home.css';

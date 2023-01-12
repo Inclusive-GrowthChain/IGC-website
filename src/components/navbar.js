@@ -5,16 +5,16 @@ import { navItems } from "./navitems";
 
 import "./css/navbar.css";
 
-import ServiceDropdown from "./nav-service_dropdown";
-// import PlatformDropdown from "./nav-platform_dropdown";
 import { platform_list } from "./navitems";
+import { news_list } from "./navitems";
 import logo from "../assets/logo/4.png"
 
 const Navbar = () => {
-  const [showServiceDropdown, setShowServiceDropdown] = useState(false);
+  const [showNewsDropdown, setShowNewsDropdown] = useState(false);
   const [showPlatformDropdown, setShowPlatformDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [platformDropdown, setPlatformDropdown] = useState(false);
+  const [newsDropdown, setNewsDropdown] = useState(false);
 
   const handleScroll=() => {
     const offset=window.scrollY;
@@ -58,19 +58,6 @@ const Navbar = () => {
       <ul className='nav_item'>
         {
           navItems.map((item, index) => {
-            if (item.title === "SERVICES") {
-              return (
-                <li 
-                  key={item.id} 
-                  className={item.cName} 
-                  onMouseEnter={() => setShowServiceDropdown(true)} 
-                  onMouseLeave={() => setShowServiceDropdown(false)}
-                >
-                  <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
-                  { showServiceDropdown && <ServiceDropdown /> }
-                </li>
-              )
-            }
             if (item.title === "IMPACT STORIES") {
               return (
                 <li 
@@ -88,6 +75,33 @@ const Navbar = () => {
                             return (
                               <li key={item.id}>
                                 <Link to={item.path} className={item.cName} onClick={() => setPlatformDropdown(false)}>{item.title}</Link>
+                              </li>
+                            )
+                          })
+                        }
+                      </ul>
+                    )
+                  }
+                </li>
+              )
+            }
+            if (item.title === "NEWS & MEDIA") {
+              return (
+                <li 
+                  key={item.id} 
+                  className={item.cName} 
+                  onMouseEnter={() => setShowNewsDropdown(true)} 
+                  onMouseLeave={() => setShowNewsDropdown(false)}
+                >
+                  <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
+                  {
+                    showNewsDropdown && (
+                      <ul className={newsDropdown ? "news_menu.clicked" : "news_menu"} onClick={() => setNewsDropdown(!newsDropdown)}>
+                        {
+                          news_list.map((item, index) => {
+                            return (
+                              <li key={item.id}>
+                                <Link to={item.path} className={item.cName} onClick={() => setNewsDropdown(false)}>{item.title}</Link>
                               </li>
                             )
                           })
