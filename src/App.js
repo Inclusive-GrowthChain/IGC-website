@@ -4,6 +4,7 @@ import About from "./components/about";
 import HealthCare from "./components/health_care";
 import Contact from "./components/contact";
 import Careers from "./components/careers";
+import News from "./components/news";
 import Blog from "./components/blog";
 import Navbar from "./components/navbar";
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/news" element={<News />} />
             <Route path="/blog" element={<Blog />} />
           </Route>
         </Routes>
