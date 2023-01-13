@@ -47,26 +47,6 @@ import NewsSliderContent from './NewsSliderContent';
 import Footer from './footer';
 
 const Home = () => {
-  // const [showWelcomeTitle, setShowWelcomeTitle] = useState(false);
-  // const [showWelcomeText, setShowWelcomeText] = useState(false);
-  // const [showLearnButton, setShowLearnButton] = useState(false);
-  // const [allLoaded, setAllLoaded] = useState(false);
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setShowWelcomeTitle(true);
-  //   }, 1000);
-  //   setInterval(() => {
-  //     setShowWelcomeText(true);
-  //   }, 2000);
-  //   setInterval(() => {
-  //     setShowLearnButton(true);
-  //   }, 3000);
-  //   setInterval(() => {
-  //     setAllLoaded(true);
-  //   }, 3500);
-  // }, []);
-
   const [showPlatformCard, setShowPlatformCard] = useState(1);
   const [showServiceCard, setShowServiceCard] = useState(1);
 
