@@ -121,7 +121,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='about_container_3'>
+        {/* <div className='about_container_3'>
           <div className='about_services_container'>
             <div className='about_services_title'>
               WHAT WE DO
@@ -362,7 +362,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className='about_container_4'>
           <div className='team_container'>
             <div className='team_title'>

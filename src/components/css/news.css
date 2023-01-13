@@ -43,7 +43,7 @@
 
 .news_card_img {
     width: 100%;
-    height: 100%;
+    height: 350px;
     margin: 0;
     padding: 0;
 }
@@ -60,6 +60,7 @@
     padding: 0;
     margin-top: 1rem;
     margin-left: 1rem;
+    padding-right: 1rem;
 }
 
 .news_card_desc {
@@ -70,6 +71,7 @@
     padding: 0;
     margin-top: 2rem;
     margin-left: 1rem;
+    padding-right: 1rem;
 }
 
 .news_card_date {

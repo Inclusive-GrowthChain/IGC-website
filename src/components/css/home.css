@@ -280,7 +280,7 @@
 .about_container_title {
     font-weight: 700;
     font-size: 1.2rem;
-    color: #0094f8;
+    color: #004c90;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -391,7 +391,8 @@
 
 .service_container {
     padding-left: 35vh;
-    width: 75%;
+    width: 85%;
+    margin-top: 5rem;
 }
 
 .about_container {
@@ -490,7 +491,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
-    margin-left: -25%;
 }
 
 .service_icon {
@@ -660,7 +660,7 @@
 .partners_title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #0094f8;
+    color: #004c90;
     text-align: center;
     margin: 0;
     padding: 0;

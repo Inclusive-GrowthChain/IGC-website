@@ -72,28 +72,6 @@ const Home = () => {
   return (
     <div className='home_main_container'>
       <HomeSliderContent />
-      {/* <div className='home_container_1'> */}
-        {/* <div className='welcome_container'>
-          <div className={showWelcomeTitle ? 'welcome_title' : 'welcome_title_loading'}>
-            WELCOME TO IGC
-          </div>
-          <div className={showWelcomeText ? 'welcome_text' : 'welcome_text_loading'}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-          <div className='learn_more'>
-            <button className={allLoaded ? 'learn_button' : showLearnButton ? 'learn_button_loaded' : 'learn_button_loading'}>
-              LEARN MORE
-            </button>
-          </div>
-        </div>
-        <div className='img_container'>
-          <img
-            src={home_img}
-            alt='home_img'
-            className='home_img'
-          />
-        </div> */}
-      {/* </div> */}
       <div className='home_container_2'>
         <div className='tab_container'>
           <div className='tab_1'>
@@ -339,11 +317,11 @@ const Home = () => {
               </p>
             )
           }
-          <div className='learn_more_3'>
+          {/* <div className='learn_more_3'>
             <button className='learn_button'>
               LEARN MORE
             </button>
-          </div>
+          </div> */}
         </div>
         <div className='service_card_container'>
           <div className='service_1'>
