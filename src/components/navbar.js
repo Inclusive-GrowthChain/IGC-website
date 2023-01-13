@@ -69,7 +69,10 @@ const Navbar = () => {
                   <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
                   {
                     showPlatformDropdown && (
-                      <ul className={platformDropdown ? "platform_menu.clicked" : "platform_menu"} onClick={() => setPlatformDropdown(!platformDropdown)}>
+                      <ul className={platformDropdown ? "platform_menu.clicked" : "platform_menu"} onClick={() => {
+                        setPlatformDropdown(false);
+                        setShowPlatformDropdown(false);
+                      }}>
                         {
                           platform_list.map((item, index) => {
                             return (
@@ -96,7 +99,10 @@ const Navbar = () => {
                   <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
                   {
                     showNewsDropdown && (
-                      <ul className={newsDropdown ? "news_menu.clicked" : "news_menu"} onClick={() => setNewsDropdown(!newsDropdown)}>
+                      <ul className={newsDropdown ? "news_menu.clicked" : "news_menu"} onClick={() => {
+                        setNewsDropdown(false);
+                        setShowNewsDropdown(false);
+                      }}>
                         {
                           news_list.map((item, index) => {
                             return (

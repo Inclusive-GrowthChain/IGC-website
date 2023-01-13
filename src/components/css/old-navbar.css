@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   background-color: #064420;
   color: #fff;
   box-shadow: 0 0 0 0;
@@ -60,7 +60,7 @@
 
 .options_scrolled {
   font-size: 16px;
-  margin-right: 3.12rem;                   /* maintain ratio if changing font-size */
+  margin-right: 3.12rem;                   
   transition: all 0.2s ease-in;
 }
 
@@ -138,4 +138,4 @@
   transition: all 1s ease-in;
   border-radius: 5px;
   border: 1px solid #064420;
-}
+} */
