@@ -125,7 +125,7 @@ var news_items = [
     item3: {
       date: 'January 06, 2022',
       title: 'UoH, Dr Reddy’s join hands to develop blockchain solutions for pharma industry',
-      desc: 'They are developing cold chain logistics solutions',
+      desc: 'The University of Hyderabad (UoH) and pharma major Dr Reddy’s Laboratories Ltd will be jointly developing cold chain logistics solutions for pharmaceutical firms based on blockchain.',
       link: 'https://www.thehindubusinessline.com/companies/uoh-dr-reddys-join-hands-to-develop-blockchain-solutions-for-pharma-industry/article38150295.ece',
       image: img_9,
     },

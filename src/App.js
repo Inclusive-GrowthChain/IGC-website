@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
-import HealthCare from "./components/health_care";
+import ImpactStories from "./components/impact-stories";
 import Contact from "./components/contact";
 import Careers from "./components/careers";
 import News from "./components/news";
@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/health-care" element={<HealthCare />} />
+            <Route path="/impact-stories" element={<ImpactStories />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/careers" element={<Careers />} />

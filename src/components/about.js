@@ -68,29 +68,28 @@ const About = () => {
               ABOUT US
             </div>
             <div className='about_text'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Inclusive Growth Chain
             </div>
+            {/* <div className='about_text_2'>
+              Impact that Empowers
+            </div> */}
             <p className='about_desc'>
-            We are a startup, founded by renowned professors/scientists, incubated initially at the University of Hyderabad and later the Indian School of Business, Hyderabad. We are founded in 2022 and in less than one year, we created impact by providing blockchain, AI&ML and IoT enable solutions for women empowerment, reliable transport of critical drugs, increasing financial access through co-lending arrangement between banks, farmer empowerment by creating farmer centric engagement services and citizen science initiatives for better environment. In the last one year, out team won two major blockchain hackathons conducted by Plugin, Dubai and National Payment Corporate of India.
+              Inclusive Growth Chain was founded by renowned professors/scientists in 2021. Within one year, we created impact by providing blockchain, AI&ML and IoT enabled solutions for women empowerment, reliable transport of critical drugs, increasing financial access through co-lending arrangement between banks, farmer empowerment by creating farmer centric engagement services and citizen science initiatives for better environment. In the last one year, our team won two major blockchain hackathons conducted by Plugin, Dubai and National Payment Corporation of India.
             </p>
             <div className='about_list'>
               <div className='about_list_1'>
                 <ul>
                   <li>
                     <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Machine Learning
+                    Blockchain
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Deep Learning
+                    IoT
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Artificial Intelligence
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Language Processing
+                    AI & ML
                   </li>
                 </ul>
               </div>
@@ -98,28 +97,24 @@ const About = () => {
                 <ul>
                   <li>
                     <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Machine Learning
+                    Citizen Science
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Deep Learning
+                    Natural Language Processing
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Artificial Intelligence
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Language Processing
+                    Metaverse
                   </li>
                 </ul>
               </div>
             </div>
-            <div className='about_learn_more'>
+            {/* <div className='about_learn_more'>
               <button className='learn_button'>
                 LEARN MORE
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <div className='about_container_3'>
@@ -367,11 +362,11 @@ const About = () => {
         <div className='about_container_4'>
           <div className='team_container'>
             <div className='team_title'>
-              OUR TEAM
+              MEET OUR FOUNDERS
             </div>
-            <div className='team_text'>
+            {/* <div className='team_text'>
               Meet with engineers
-            </div>
+            </div> */}
             <div className='team_card_container' onMouseOver={handleTeamHover} onMouseLeave={handleTeamHoverLeave}>
               <div className='team_back_arrow_container_1'>
                 {
@@ -480,7 +475,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='about_container_5'>
+        {/* <div className='about_container_5'>
           <div className='review_container'>
             <div className='review_title'>
               CLIENT REVIEWS
@@ -519,13 +514,13 @@ const About = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
-                      <div className='review_card_rating'>
+                      {/* <div className='review_card_rating'>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
-                      </div>
+                      </div> 
                     </CardContent>
                   </Card>
                 </div>
@@ -549,7 +544,7 @@ const About = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
-                      <div className='review_card_rating'>
+                      {/* <div className='review_card_rating'>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
@@ -579,13 +574,13 @@ const About = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
-                      <div className='review_card_rating'>
+                      {/* <div className='review_card_rating'>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
                         <FontAwesomeIcon icon={faStar} className='review_card_star'/>
-                      </div>
+                      </div> 
                     </CardContent>
                   </Card>
                 </div>
@@ -601,7 +596,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <Footer />
       </div>
   );

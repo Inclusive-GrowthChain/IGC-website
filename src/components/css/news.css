@@ -63,6 +63,11 @@
     padding-right: 1rem;
 }
 
+.news_card_title:hover {
+    color: #ff5325;
+    cursor: pointer;
+}
+
 .news_card_desc {
     font-size: 1rem;
     color: rgb(96, 96, 96);
