@@ -61,6 +61,7 @@
     margin-top: 1rem;
     margin-left: 1rem;
     padding-right: 1rem;
+    height: 75px;
 }
 
 .news_card_title:hover {
@@ -77,6 +78,7 @@
     margin-top: 2rem;
     margin-left: 1rem;
     padding-right: 1rem;
+    height: 75px;
 }
 
 .news_card_date {
@@ -87,4 +89,34 @@
     padding: 0;
     margin-top: 1rem;
     margin-left: 1rem;
+}
+
+.news_learn_button {
+    background-image: linear-gradient(to right, #0094f8, #00d581);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.938rem 30px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    position: relative;
+    z-index: 2;
+}
+
+.news_learn_button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left, #00d581, #00d581);
+    z-index: 1;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.news_learn_button:hover::before {
+    opacity: 1;
+    z-index: -1;
 }
