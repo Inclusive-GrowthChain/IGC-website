@@ -36,6 +36,12 @@ import img_7 from '../assets/impact_stories_imgs/7.png';
 import img_8 from '../assets/impact_stories_imgs/8.png';
 import img_9 from '../assets/impact_stories_imgs/9.png';
 import img_10 from '../assets/impact_stories_imgs/10.png';
+import img_11 from '../assets/impact_stories_imgs/11.jpg';
+import img_12 from '../assets/impact_stories_imgs/12.jpg';
+import img_13 from '../assets/impact_stories_imgs/13.jpg';
+import img_14 from '../assets/impact_stories_imgs/14.jpg';
+import img_15 from '../assets/impact_stories_imgs/15.jpg';
+import img_16 from '../assets/impact_stories_imgs/16.jpg';
 
 import Footer from './footer';
 
@@ -197,8 +203,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_11}
+                        alt='img_11'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -224,8 +230,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_12}
+                        alt='img_12'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -289,8 +295,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_13}
+                        alt='img_13'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -322,8 +328,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_14}
+                        alt='img_14'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -433,8 +439,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_15}
+                        alt='img_15'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -448,7 +454,64 @@ const ImpactStories = () => {
                       <p className='impact_stories_card_text_p'><b>Scientific Studies:</b> There are several scientific studies on the effects of Pollution; this is shown in the next slide.</p>
                       <p className='impact_stories_card_text_p'><b>Research based </b>Resolution: This problem can be solved by creating environmental health literacy through targeted communication.</p>
                       <p className='impact_stories_card_text_p'><b>The Gap:</b> They give Air quality Index (AQI) values, but do not specifically say what it means – people are expected  to comprehend it themselves and draw conclusions from it.</p>
-                      <p className='impact_stories_card_text_p'>We believethat several target groups have problem is accessing air quality of a give location. When they want to know the air quality of a given location, they relay on third party providers like google and others, that may not give data at a granular level and may not be detailed and precise.  On top of that you must subscribe to their service. </p>
+                      <p className='impact_stories_card_text_p'>We believe that several target groups have problem is accessing air quality of a give location. When they want to know the air quality of a given location, they relay on third party providers like google and others, that may not give data at a granular level and may not be detailed and precise.  On top of that you must subscribe to their service. </p>
+                      <table className='impact_stories_card_text_table'>
+                        <tr className='impact_stories_card_text_table_row'>
+                          <td className='impact_stories_card_text_table_2_col_1' style={{ textAlign: 'center' }}>
+                            <b>Current Solution</b>
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_2' style={{ textAlign: 'center' }}>
+                            <b>Pain Points</b>
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_3' style={{ textAlign: 'center' }}>
+                            <b>How our Blockchain model addresses?</b>
+                          </td>
+                        </tr>
+                        <tr className='impact_stories_card_text_table_row'>
+                          <td className='impact_stories_card_text_table_2_col_1'>
+                            Data on pollution is sold through digital platform by few established business applications or third party vendors
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_2'>
+                            Scalability
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_3'>
+                            Individual own and are empowered through data sharing service <br />
+                            Normal households supply real time data through sensors <br />
+                            Devices (wearable) are supplied to platform economy <br />
+                            partners who are on the road most of the time (UBER drivers) <br />
+                            More data points and granular data can be obtained <br />
+                          </td>
+                        </tr>
+                        <tr className='impact_stories_card_text_table_row'>
+                          <td className='impact_stories_card_text_table_2_col_1'>
+                            Data is costly  for consumption as few trusted vendors own the data
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_2'>
+                            Costs
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_3'>
+                            Individuals who own the data are compensated through
+                            crypto tokens as reward for providing the service. Much cheaper than third party vendors
+                          </td>
+                        </tr>
+                        <tr className='impact_stories_card_text_table_row'>
+                          <td className='impact_stories_card_text_table_2_col_1'>
+                            The data is prone to tampering and data users can manipulate for their private benefits (for example, polluting industry that subscribed to data can tamper for its benefits to have lower penalties)
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_2'>
+                            Manipulation and Lack of Trust
+                          </td>
+                          <td className='impact_stories_card_text_table_2_col_3'>
+                            Companies and business who buy the data on the platform
+                            cannot tamper it and hence they can report it to the regulators
+                            or public for creating trust. For instance, a polluting industry
+                            can report a third party supplied data that is tamper proof
+                            creates more trusts with regulators.
+                            The source of the data is always traceable and that creates
+                            trust to the consumer of the data.
+                          </td>
+                        </tr>
+                      </table>
                       <h2 className='impact_stories_card_text_heading' style={{ marginTop: '3rem' }}>Our Solution:</h2>
                       <p className='impact_stories_card_text_p'>We believe that blockchain enabled air quality platform, where members contribute (through installation of air quality sensors and get reward for supplying real-time data) to the “air data lake”  is more reliable, democratic and granular. </p>
                     </div>
@@ -494,8 +557,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_16}
+                        alt='img_16'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -584,13 +647,13 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_11}
+                        alt="img_11"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===0 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(0)}>
+                      <p className={currentStory === 0 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(0)}>
                         Building Farming Ecosystem with Blockchain for Empowering Farmers
                       </p>
                     </div>
@@ -598,13 +661,13 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_12}
+                        alt="img_12"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===1 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(1)}>
+                      <p className={currentStory === 1 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(1)}>
                         Protecting Medicine Logistics for Better Health Care Infrastructure
                       </p>
                     </div>
@@ -612,13 +675,13 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_13}
+                        alt="img_13"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===2 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(2)}>
+                      <p className={currentStory === 2 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(2)}>
                         Improving Funding Opportunities for the Bottom of the Pyramid of the Society
                       </p>
                     </div>
@@ -626,13 +689,13 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_14}
+                        alt="img_14"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===3 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(3)}>
+                      <p className={currentStory === 3 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(3)}>
                         Saving Industry Water Consumption
                       </p>
                     </div>
@@ -646,7 +709,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===4 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(4)}>
+                      <p className={currentStory === 4 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(4)}>
                         Making Corporate Debt Market for Ordinary Retail Investors
                       </p>
                     </div>
@@ -654,13 +717,13 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_15}
+                        alt="img_15"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===5 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(5)}>
+                      <p className={currentStory === 5 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(5)}>
                         Protecting the Environment through better Air Quality Monitoring Model
                       </p>
                     </div>
@@ -668,13 +731,13 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_16}
+                        alt="img_16"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className={currentStory===6 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(6)}>
+                      <p className={currentStory === 6 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(6)}>
                         Protecting the Environment through better Water Quality Monitoring Model
                       </p>
                     </div>
