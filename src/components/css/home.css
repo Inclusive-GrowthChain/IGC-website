@@ -21,15 +21,6 @@
     max-width: 80vh;
 }
 
-/* .welcome_title_loading {
-    font-size: 1.5rem;
-    color: #fff;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.625rem;
-} */
-
 .welcome_desc {
     font-size: 3.5rem;
     color: #004c90;
@@ -41,17 +32,6 @@
     width: 80vh;
     transition: all 1.5s ease-in;
 }
-
-/* .welcome_desc_loading {
-    font-size: 3.5em;
-    color: #fff;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    margin-top: 2rem;
-    width: 80vh;
-    margin-left: 25vh;
-} */
 
 .welcome_text {
     font-size: 1.2rem;
@@ -88,29 +68,6 @@
     z-index: 2;
 }
 
-/* .learn_button_loaded {
-    background-image: linear-gradient(to right, #0094f8, #00d581);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.938rem 30px;
-    font-size: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: all 0.5s ease-in;
-}
-
-.learn_button_loading {
-    background-color: #fff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.938rem 30px;
-    font-size: 1rem;
-    margin-top: -1rem;
-    cursor: pointer;
-} */
-
 .learn_button::before {
     content: "";
     position: absolute;
@@ -139,10 +96,19 @@
     left: 0;
     margin-left: -10rem;
     margin-top: -5rem;
-    animation: home_img_slide 6s ease-in-out infinite;
+    animation: about_img_slide 6s ease-in-out infinite;
 }
 
-@keyframes home_img_slide {
+.about_img {
+    width: 30%;
+    height: 30%;
+    top: 0;
+    left: 0;
+    margin-left: -10rem;
+    animation: about_img_slide 6s ease-in-out infinite;
+}
+
+@keyframes about_img_slide {
     0% {
         transform: translateY(0);
     }
@@ -157,8 +123,6 @@
 }
 
 .home_container_2 {
-    /* background-image: url(../../assets/home_bg/rm380-12.jpg);
-    background-size: cover; */
     background-color: rgb(250, 250, 250);
     padding-bottom: 20vh;
     display: grid;
@@ -387,6 +351,7 @@
     grid-gap: 2rem;
     width: 100%;
     padding-top: 20vh;
+    background-color: rgb(250, 250, 250);
 }
 
 .service_container {
@@ -520,7 +485,6 @@
     grid-gap: 2rem;
     width: 100%;
     padding-top: 20vh;
-    background-color: rgb(250, 250, 250);
 }
 
 .img_container_2 {

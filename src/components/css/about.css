@@ -386,28 +386,31 @@
 
 .team_card_container {
     width: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
-    grid-gap: 2rem;
+    grid-gap: 2rem; */
     margin-top: 1rem;
 }
 
 .team_inner_container {
-    width: 100%;
+    width: 60%;
     height: 100%;
+    margin: auto;
     border-radius: 10px;
     background-color: #fff;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
     grid-gap: 1rem;
     display: grid;
 }
 
 .team_member_card {
-    width: 19rem;
-    height: 22rem;
+    width: 22rem;
+    height: 27rem;
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     background-size: cover;
     background-position: center;
@@ -416,54 +419,45 @@
 }
 
 .team_member_1 > .team_member_card {
-    background-image: url(../../assets/about_profiles/1.png);
+    background-image: url(../../assets/about_profiles/5.jpg);
 }
 
 .team_member_2 > .team_member_card {
-    background-image: url(../../assets/about_profiles/2.png);
-}
-
-.team_member_3 > .team_member_card {
-    background-image: url(../../assets/about_profiles/3.png);
-}
-
-.team_member_4 > .team_member_card {
-    background-image: url(../../assets/about_profiles/4.png);
+    background-image: url(../../assets/about_profiles/6.jpg);
 }
 
 .team_member_card_title_container {
     width: 100%;
     height: 20%;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
-    grid-gap: 1rem;
-    margin-top: 2rem;
-    display: grid;
+    grid-gap: 1rem; */
+    margin-top: 1rem;
+    /* display: grid; */
+    margin: auto;
 }
 
 .team_member_card_user_container {
-    width: 160%;
+    width: 100%;
     height: 100%;
-    text-align: left;
-    margin-left: -20%;
-    grid-template-rows: 2;
+    text-align: center;
+    /* grid-template-rows: 2;
     grid-template-columns: 1;
     grid-gap: 1rem;
-    display: grid;
-    color: #fff;
+    display: grid; */
+    color: #000;
 }
 
 .team_member_card_name_container {
-    font-size: 1.2  rem;
-    display: none;
+    font-size: 1.2rem;
 }
 
 .team_member_card_designation_container {
     font-size: 1rem;
-    display: none;
+    margin-top: 10px;
 }
 
-.team_member_card_social {
+/* .team_member_card_social {
     font-size: 2rem;
     color: #fff;
     text-align: left;
@@ -473,9 +467,9 @@
     padding: 1.5rem;
     display: none;
     cursor: pointer;
-}
+} */
 
-.team_member_card:hover {
+/* .team_member_card:hover {
     background-image: linear-gradient(to bottom right, #0094f8, #00d581);
     transition: all 0.3s ease-in;
     cursor: pointer;
@@ -491,7 +485,7 @@
 
 .team_member_card:hover .team_member_card_social {
     display: block;
-}
+} */
 
 .team_member_card_social_icon {
     margin-right: 1rem;

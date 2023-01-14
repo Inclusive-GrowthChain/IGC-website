@@ -22,6 +22,7 @@ import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import './css/about.css';
 
 import home_img from '../assets/home_img/20943774.jpg';
+import about_img from '../assets/home_img/about.png';
 import Footer from './footer';
 
 const About = () => {
@@ -46,78 +47,78 @@ const About = () => {
   };
 
   return (
-      <div className='about_main_container'>
-        <div className='about_container_1'>
-          <div className='ac1_title'>
-            About
-          </div>
-          <div className='ac1_text'>
-            Home &nbsp; {'>'}{'>'} &nbsp; About
-          </div>
+    <div className='about_main_container'>
+      <div className='about_container_1'>
+        <div className='ac1_title'>
+          About
         </div>
-        <div className='about_container_2'>
-          <div className='about_img_container_2'>
-            <img
-              src={home_img}
-              alt='home_img'
-              className='home_img'
-            />
+        <div className='ac1_text'>
+          Home &nbsp; {'>'}{'>'} &nbsp; About
+        </div>
+      </div>
+      <div className='about_container_2'>
+        <div className='about_img_container_2'>
+          <img
+            src={about_img}
+            alt='about_img'
+            className='about_img'
+          />
+        </div>
+        <div className='about_inner_container'>
+          <div className='about_title'>
+            ABOUT US
           </div>
-          <div className='about_inner_container'>
-            <div className='about_title'>
-              ABOUT US
-            </div>
-            <div className='about_text'>
-              Inclusive Growth Chain
-            </div>
-            {/* <div className='about_text_2'>
+          <div className='about_text'>
+            Inclusive Growth Chain
+          </div>
+          {/* <div className='about_text_2'>
               Impact that Empowers
             </div> */}
-            <p className='about_desc'>
-              Inclusive Growth Chain was founded by renowned professors/scientists in 2021. Within one year, we created impact by providing blockchain, AI&ML and IoT enabled solutions for women empowerment, reliable transport of critical drugs, increasing financial access through co-lending arrangement between banks, farmer empowerment by creating farmer centric engagement services and citizen science initiatives for better environment. In the last one year, our team won two major blockchain hackathons conducted by Plugin, Dubai and National Payment Corporation of India.
-            </p>
-            <div className='about_list'>
-              <div className='about_list_1'>
-                <ul>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Blockchain
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    IoT
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    AI & ML
-                  </li>
-                </ul>
-              </div>
-              <div className='about_list_2'>
-                <ul>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Citizen Science
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Natural Language Processing
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon'/>
-                    Metaverse
-                  </li>
-                </ul>
-              </div>
+          <p className='about_desc'>
+            Inclusive Growth Chain was founded by renowned professors/scientists in 2021. Within one year, we created impact by providing blockchain, AI&ML and IoT enabled solutions for women empowerment, reliable transport of critical drugs, increasing financial access through co-lending arrangement between banks, farmer empowerment by creating farmer centric engagement services and citizen science initiatives for better environment. In the last one year, our team won two major blockchain hackathons conducted by Plugin, Dubai and National Payment Corporation of India.
+          </p>
+          <div className='about_list'>
+            <div className='about_list_1'>
+              <ul>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon' />
+                  Blockchain
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon' />
+                  IoT
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon' />
+                  AI & ML
+                </li>
+              </ul>
             </div>
-            {/* <div className='about_learn_more'>
+            <div className='about_list_2'>
+              <ul>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon' />
+                  Citizen Science
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon' />
+                  Natural Language Processing
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircleCheck} className='about_list_icon' />
+                  Metaverse
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* <div className='about_learn_more'>
               <button className='learn_button'>
                 LEARN MORE
               </button>
             </div> */}
-          </div>
         </div>
-        {/* <div className='about_container_3'>
+      </div>
+      {/* <div className='about_container_3'>
           <div className='about_services_container'>
             <div className='about_services_title'>
               WHAT WE DO
@@ -359,16 +360,16 @@ const About = () => {
             </div>
           </div>
         </div> */}
-        <div className='about_container_4'>
-          <div className='team_container'>
-            <div className='team_title'>
-              MEET OUR FOUNDERS
-            </div>
-            {/* <div className='team_text'>
+      <div className='about_container_4'>
+        <div className='team_container'>
+          <div className='team_title'>
+            MEET OUR FOUNDERS
+          </div>
+          {/* <div className='team_text'>
               Meet with engineers
             </div> */}
-            <div className='team_card_container' onMouseOver={handleTeamHover} onMouseLeave={handleTeamHoverLeave}>
-              <div className='team_back_arrow_container_1'>
+          <div className='team_card_container'>
+            {/* <div className='team_back_arrow_container_1'>
                 {
                   showTeamBackArrow && (
                     <div className='back_arrow'>
@@ -376,12 +377,33 @@ const About = () => {
                     </div>
                   )
                 }
+              </div> */}
+            <div className='team_inner_container'>
+              <div className='team_member_1'>
+                <Card className='team_member_card'>
+                  <CardContent>
+                    {/* <div className='team_member_card_title_container'>
+                        <div className='team_member_card_user_container'>
+                          <div className='team_member_card_name_container'>
+                            Name
+                          </div>
+                          <div className='team_member_card_designation_container'>
+                            Designation
+                          </div>
+                        </div>
+                      </div> */}
+                    {/* <div className='team_member_card_social'>
+                        <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
+                        <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
+                        <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
+                      </div> */}
+                  </CardContent>
+                </Card>
               </div>
-              <div className='team_inner_container'>
-                <div className='team_member_1'>
-                  <Card className='team_member_card'>
-                    <CardContent>
-                      <div className='team_member_card_title_container'>
+              <div className='team_member_2'>
+                <Card className='team_member_card'>
+                  <CardContent>
+                    {/* <div className='team_member_card_title_container'>
                         <div className='team_member_card_user_container'>
                           <div className='team_member_card_name_container'>
                             Name
@@ -390,80 +412,37 @@ const About = () => {
                             Designation
                           </div>
                         </div>
-                      </div>
-                      <div className='team_member_card_social'>
+                      </div> */}
+                    {/* <div className='team_member_card_social'>
                         <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
                         <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
                         <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className='team_member_2'>
-                  <Card className='team_member_card'>
-                    <CardContent>
-                      <div className='team_member_card_title_container'>
-                        <div className='team_member_card_user_container'>
-                          <div className='team_member_card_name_container'>
-                            Name
-                          </div>
-                          <div className='team_member_card_designation_container'>
-                            Designation
-                          </div>
-                        </div>
-                      </div>
-                      <div className='team_member_card_social'>
-                        <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className='team_member_3'>
-                  <Card className='team_member_card'>
-                    <CardContent>
-                      <div className='team_member_card_title_container'>
-                        <div className='team_member_card_user_container'>
-                          <div className='team_member_card_name_container'>
-                            Name
-                          </div>
-                          <div className='team_member_card_designation_container'>
-                            Designation
-                          </div>
-                        </div>
-                      </div>
-                      <div className='team_member_card_social'>
-                        <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className='team_member_4'>
-                  <Card className='team_member_card'>
-                    <CardContent>
-                      <div className='team_member_card_title_container'>
-                        <div className='team_member_card_user_container'>
-                          <div className='team_member_card_name_container'>
-                            Name
-                          </div>
-                          <div className='team_member_card_designation_container'>
-                            Designation
-                          </div>
-                        </div>
-                      </div>
-                      <div className='team_member_card_social'>
-                        <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </div> */}
+                  </CardContent>
+                </Card>
+              </div>
+              <div className='team_member_card_title_container'>
+                <div className='team_member_card_user_container'>
+                  <div className='team_member_card_name_container'>
+                    Prof. Vijaya B Marisetty
+                  </div>
+                  <div className='team_member_card_designation_container'>
+                    Co-Founder
+                  </div>
                 </div>
               </div>
-              <div className='team_back_arrow_container_2'>
+              <div className='team_member_card_title_container'>
+                <div className='team_member_card_user_container'>
+                  <div className='team_member_card_name_container'>
+                    Dr. Varsha Mamidi
+                  </div>
+                  <div className='team_member_card_designation_container'>
+                    Co-Founder
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div className='team_back_arrow_container_2'>
                 {
                   showTeamBackArrow && (
                     <div className='back_arrow'>
@@ -471,11 +450,11 @@ const About = () => {
                     </div>
                   )
                 }
-              </div>
-            </div>
+              </div> */}
           </div>
         </div>
-        {/* <div className='about_container_5'>
+      </div>
+      {/* <div className='about_container_5'>
           <div className='review_container'>
             <div className='review_title'>
               CLIENT REVIEWS
@@ -597,8 +576,8 @@ const About = () => {
             </div>
           </div>
         </div> */}
-        <Footer />
-      </div>
+      <Footer />
+    </div>
   );
 }
 

@@ -41,6 +41,7 @@ import hc7_img_6 from '../assets/home_img/Partners/eFresh.png';
 import hc7_img_7 from '../assets/home_img/Partners/Samunnati.png';
 import hc7_img_8 from '../assets/home_img/Partners/SecureKloud.png';
 import hc7_img_9 from '../assets/home_img/Partners/suvik.png';
+import about_img from '../assets/home_img/about.png';
 
 import HomeSliderContent from './HomeSliderContent';
 import NewsSliderContent from './NewsSliderContent';
@@ -374,9 +375,9 @@ const Home = () => {
         </div>
         <div className='img_container_2'>
           <img
-            src={home_img}
-            alt='home_img'
-            className='home_img'
+            src={about_img}
+            alt='about_img'
+            className='about_img'
           />
         </div>
       </div>

@@ -58,36 +58,36 @@ const Navbar = () => {
       <ul className='nav_item'>
         {
           navItems.map((item, index) => {
-            if (item.title === "IMPACT STORIES") {
-              return (
-                <li 
-                  key={item.id} 
-                  className={item.cName} 
-                  onMouseEnter={() => setShowPlatformDropdown(true)} 
-                  onMouseLeave={() => setShowPlatformDropdown(false)}
-                >
-                  <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
-                  {
-                    showPlatformDropdown && (
-                      <ul className={platformDropdown ? "platform_menu.clicked" : "platform_menu"} onClick={() => {
-                        setPlatformDropdown(false);
-                        setShowPlatformDropdown(false);
-                      }}>
-                        {
-                          platform_list.map((item, index) => {
-                            return (
-                              <li key={item.id}>
-                                <Link to={item.path} className={item.cName} onClick={() => setPlatformDropdown(false)}>{item.title}</Link>
-                              </li>
-                            )
-                          })
-                        }
-                      </ul>
-                    )
-                  }
-                </li>
-              )
-            }
+            // if (item.title === "IMPACT STORIES") {
+            //   return (
+            //     <li 
+            //       key={item.id} 
+            //       className={item.cName} 
+            //       onMouseEnter={() => setShowPlatformDropdown(true)} 
+            //       onMouseLeave={() => setShowPlatformDropdown(false)}
+            //     >
+            //       <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
+            //       {
+            //         showPlatformDropdown && (
+            //           <ul className={platformDropdown ? "platform_menu.clicked" : "platform_menu"} onClick={() => {
+            //             setPlatformDropdown(false);
+            //             setShowPlatformDropdown(false);
+            //           }}>
+            //             {
+            //               platform_list.map((item, index) => {
+            //                 return (
+            //                   <li key={item.id}>
+            //                     <Link to={item.path} className={item.cName} onClick={() => setPlatformDropdown(false)}>{item.title}</Link>
+            //                   </li>
+            //                 )
+            //               })
+            //             }
+            //           </ul>
+            //         )
+            //       }
+            //     </li>
+            //   )
+            // }
             if (item.title === "NEWS & MEDIA") {
               return (
                 <li 
