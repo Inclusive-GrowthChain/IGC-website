@@ -577,7 +577,7 @@ const ImpactStories = () => {
           <div className='isc2_side_container'>
             <div className='isc2_recent_posts_container'>
               <div className='isc2_recent_posts_title'>
-                Recent Posts
+                Impact Stories
               </div>
               <div className='isc2_recent_posts_list_container'>
                 <ul className='isc2_recent_posts_list'>
@@ -590,7 +590,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(0)}>
+                      <p className={currentStory===0 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(0)}>
                         Building Farming Ecosystem with Blockchain for Empowering Farmers
                       </p>
                     </div>
@@ -604,7 +604,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(1)}>
+                      <p className={currentStory===1 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(1)}>
                         Protecting Medicine Logistics for Better Health Care Infrastructure
                       </p>
                     </div>
@@ -618,7 +618,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(2)}>
+                      <p className={currentStory===2 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(2)}>
                         Improving Funding Opportunities for the Bottom of the Pyramid of the Society
                       </p>
                     </div>
@@ -632,7 +632,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(3)}>
+                      <p className={currentStory===3 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(3)}>
                         Saving Industry Water Consumption
                       </p>
                     </div>
@@ -646,7 +646,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(4)}>
+                      <p className={currentStory===4 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(4)}>
                         Making Corporate Debt Market for Ordinary Retail Investors
                       </p>
                     </div>
@@ -660,7 +660,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(5)}>
+                      <p className={currentStory===5 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(5)}>
                         Protecting the Environment through better Air Quality Monitoring Model
                       </p>
                     </div>
@@ -674,7 +674,7 @@ const ImpactStories = () => {
                       />
                     </div>
                     <div className='isc2_recent_posts_list_item_text_container'>
-                      <p className='isc2_recent_posts_list_item_text' onClick={() => setCurrentStory(6)}>
+                      <p className={currentStory===6 ? 'isc2_recent_posts_list_item_text_selected' : 'isc2_recent_posts_list_item_text'} onClick={() => setCurrentStory(6)}>
                         Protecting the Environment through better Water Quality Monitoring Model
                       </p>
                     </div>
