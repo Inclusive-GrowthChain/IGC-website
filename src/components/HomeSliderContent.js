@@ -36,12 +36,6 @@ const HomeSliderContent = () => {
       description: "Our Partners",
       text: "Our Partners and Collaborators Engage in Creating Impact through digital transformation"
     },
-    // {
-    //   index: 5,
-    //   title: "",
-    //   description: "Hello World!",
-    //   text: ""
-    // }
   ]
 
   return (
@@ -75,7 +69,7 @@ function Item(props) {
       <div className='img_container'>
         {
           props.item.index === 1 && (
-            <img src={about_img} style={{width: '40%', height: '40%', marginLeft: '-5%', marginTop: '-5%'}}/>
+            <img src={about_img} style={{width: '40%', height: '40%', marginLeft: '-5%', marginTop: '-5%'}} className={'home_img'}/>
           )
         }
         {
