@@ -71,7 +71,13 @@ const Blog = () => {
           Home &nbsp; {'>'}{'>'} &nbsp; Blog
         </div>
       </div>
-      <div className='blog_container_2'>
+      <div style={{marginTop: '5%', fontSize: '4rem'}}>
+        Stay tuned
+      </div>
+      <div style={{marginTop: '2%', marginBottom: '5%', fontSize: '2rem'}}>
+        We will release our blog here soon
+      </div>
+      {/* <div className='blog_container_2'>
         <div className='bc2_content_container'>
           <div className='blog_card_container'>
             {
@@ -102,11 +108,9 @@ const Blog = () => {
                       {item.description}
                     </div>
                     <div className='read_more'>
-                      {/* <a href={props.item.item1.link} target="_blank"> */}
                       <button className='learn_button' style={{ marginLeft: '-17px' }}>
                         Read More
                       </button>
-                      {/* </a> */}
                     </div>
                   </CardContent>
                 </Card>
@@ -215,7 +219,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

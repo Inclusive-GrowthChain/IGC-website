@@ -34,6 +34,7 @@ import img_31 from '../assets/news_imgs/31.jpg';
 import img_32 from '../assets/news_imgs/32.png';
 import img_33 from '../assets/news_imgs/33.jpeg';
 import img_34 from '../assets/news_imgs/34.jpg';
+import img_35 from '../assets/impact_stories_imgs/7.png';
 
 import './css/home.css';
 
@@ -218,14 +219,14 @@ const NewsSliderContent = () => {
         title: 'Plugin & Inclusive Growth Chain: Leveraging Smart Contracts to Check Air Pollution in Real-Time',
         desc: "Plugin and Inclusive Growth Chain have joined hands collectively to make technological implications, on a much-wished answer for today`s real-international problems.",
         link: 'https://www.nasdaq.com/press-release/plugin-inclusive-growth-chain:-leveraging-smart-contracts-to-check-air-pollution-in',
-        image: home_img,
+        image: img_35,
       },
       item2: {
         date: 'June 14, 2022',
         title: 'Plugin & Inclusive Growth Chain: Leveraging Smart Contracts to Check Air Pollution in Real-Time',
         desc: 'Through the Plugin---IGC partnership, the entities will work towards implementing the "Project Pollution Check".',
         link: 'https://finance.yahoo.com/news/plugin-inclusive-growth-chain-leveraging-033400833.html',
-        image: home_img,
+        image: img_35,
       },
       item3: {
         date: '',

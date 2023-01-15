@@ -22,7 +22,7 @@ import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import './css/about.css';
 
 import home_img from '../assets/home_img/20943774.jpg';
-import about_img from '../assets/home_img/about.png';
+import about_img from '../assets/home_img/about2.png';
 import Footer from './footer';
 
 const About = () => {

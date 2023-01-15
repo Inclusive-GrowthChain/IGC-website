@@ -1,8 +1,9 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 
-import {ReactComponent as Img_1} from '../assets/home_img/1.svg';
-import {ReactComponent as Img_2} from '../assets/home_img/6.svg';
+// import {ReactComponent as Img_1} from '../assets/home_img/1.svg';
+// import {ReactComponent as Img_2} from '../assets/home_img/6.svg';
+import about_img from '../assets/home_img/about2.png';
 import hackathon_img from '../assets/home_img/hackathon.jpg';
 import hackathon2_img from '../assets/home_img/hackathon2.jpg';
 import partners_img from '../assets/home_img/Partners/partners.png';
@@ -74,7 +75,7 @@ function Item(props) {
       <div className='img_container'>
         {
           props.item.index === 1 && (
-            <Img_1 className={'home_img'}/>
+            <img src={about_img} style={{width: '40%', height: '40%', marginLeft: '-5%', marginTop: '-5%'}}/>
           )
         }
         {
@@ -92,12 +93,6 @@ function Item(props) {
             <img src={partners_img} style={{boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)', width: '35%', height: '35%'}} className={'home_img'}/>
           )
         }
-        {
-          props.item.index === 5 && (
-            <Img_2 className={'home_img'}/>
-          )
-        }
-        
       </div>
     </div>
   )
