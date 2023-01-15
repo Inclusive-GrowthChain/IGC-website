@@ -14,7 +14,7 @@ const HomeSliderContent = () => {
     {
       index: 1,
       title: "",
-      description: "Welcome to Inclusive Growth Chain : Your Digital Transformation Partner",
+      description: "Welcome to Inclusive Growth Chain: Your Digital Transformation Partner",
       text: ""
     },
     {
@@ -35,12 +35,12 @@ const HomeSliderContent = () => {
       description: "Our Partners",
       text: "Our Partners and Collaborators Engage in Creating Impact through digital transformation"
     },
-    {
-      index: 5,
-      title: "",
-      description: "Hello World!",
-      text: ""
-    }
+    // {
+    //   index: 5,
+    //   title: "",
+    //   description: "Hello World!",
+    //   text: ""
+    // }
   ]
 
   return (

@@ -22,6 +22,9 @@ import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
 import { faFolder } from '@fortawesome/free-regular-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Modal } from '@mui/material';
 
 import './css/impact_stories.css';
 
@@ -45,8 +48,10 @@ import img_16 from '../assets/impact_stories_imgs/16.jpg';
 import img_17 from '../assets/impact_stories_imgs/17.png';
 import img_18 from '../assets/impact_stories_imgs/18.png';
 import img_19 from '../assets/impact_stories_imgs/19.jpg';
+import img_20 from '../assets/impact_stories_imgs/20.png';
 
 import Footer from './footer';
+import { Box } from '@mui/system';
 
 const impact_stories_items = [
   {
@@ -185,7 +190,20 @@ const impact_stories_items = [
 ];
 
 const ImpactStories = () => {
-  const [currentStory, setCurrentStory] = useState(1);
+  const [currentStory, setCurrentStory] = useState(0);
+  const [showZoomedImage, setShowZoomedImage] = useState(false);
+  const [showZoomedImage2, setShowZoomedImage2] = useState(false);
+  const [showZoomedImage3, setShowZoomedImage3] = useState(false);
+  const [showZoomedImage4, setShowZoomedImage4] = useState(false);
+
+  const handleShowZoomedImage = () => setShowZoomedImage(true);
+  const handleCloseZoomedImage = () => setShowZoomedImage(false);
+  const handleShowZoomedImage2 = () => setShowZoomedImage2(true);
+  const handleCloseZoomedImage2 = () => setShowZoomedImage2(false);
+  const handleShowZoomedImage3 = () => setShowZoomedImage3(true);
+  const handleCloseZoomedImage3 = () => setShowZoomedImage3(false);
+  const handleShowZoomedImage4 = () => setShowZoomedImage4(true);
+  const handleCloseZoomedImage4 = () => setShowZoomedImage4(false);
 
   return (
     <div className='impact_stories_main_container'>
@@ -222,6 +240,30 @@ const ImpactStories = () => {
                       <p className='impact_stories_card_text_p'>The main objective of FPO’s (Farmer Producer Organisations) is to organize farmers into a collective and improve their bargaining power in the market. In particular, reduction of cost of borrowing, providing market linkages and overall well-being of the farmers. However, mere aggregation will not yield desired results unless the demand side and supply side problems are addressed. On the demand side, farmers would like to have access to timely finance with lower rates of borrowing. On the supply side, lenders require more information to assess the default risk of the farmers and thereby reduce their information asymmetry problem.</p>
                       <h2 className='impact_stories_card_text_heading' style={{ marginTop: '3rem' }}>Our Solution:</h2>
                       <p className='impact_stories_card_text_p'>Our Project aims to reduce the frictions on both demand and supply side by introducing two specific technology based interventions, namely, robo-advising service (on the demand side) that aims to improve financial discipline of farmers and blockchain platform for lac farmers/cultivators transactions with FPO and lenders (on the supply side), that aims to reduce the information asymmetry and better monitoring of assets for the FPO and lenders. These two technological interventions may help reduce borrowing costs and improve famers’ economic wellbeing. Thus, more efficiency and improved margins through FPO aggregation would increase lac farmers’ contribution to Indian GDP. Research on technology interventions to reduce information asymmetry is limited for farmer empowerment.</p>
+                    </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage}
+                        onClose={handleCloseZoomedImage}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                          <img
+                            src={img_20}
+                            alt="img_20"
+                            className='impact_stories_card_zoomed_img'
+                          />
+                        </div>
+                      </Modal>
+                    </div>
+                    <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
+                      <img
+                        src={img_20}
+                        alt='img_20'
+                        className='impact_stories_card_img'
+                        style={{ height: 'auto', width: '100%' }}
+                      />
                     </div>
                   </CardContent>
                 </Card>
@@ -276,10 +318,26 @@ const ImpactStories = () => {
                           </li>
                         </ol>
                       </p>
+                      <div>
+                        <Modal
+                          open={showZoomedImage}
+                          onClose={handleCloseZoomedImage}
+                        >
+                          <div className='impact_stories_card_zoom_container'>
+                            <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                            <img
+                              src={img_10}
+                              alt="img_10"
+                              className='impact_stories_card_zoomed_img'
+                            />
+                          </div>
+                        </Modal>
+                      </div>
                       <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
                         <img
-                          src={img_1}
-                          alt='img_1'
+                          src={img_10}
+                          alt='img_10'
                           className='impact_stories_card_img'
                           style={{ height: 'auto', width: '100%' }}
                         />
@@ -313,7 +371,23 @@ const ImpactStories = () => {
                       <p className='impact_stories_card_text_p'>In light of this development, we envisaged a consortium marketplace, that facilitates future partnerships between commercial banks and NBFCs for co-lending and creation of several structured financial products aimed at addressing the challenges of priority sectors in India. Given that such a platform can face several potential challenges, in terms of risk mitigation, complexity in operations and corresponding costs. Inclusive Growth Chain ventured into developing a risk mitigation platform using blockchain technology. Essentially, such a platform will act as a middle layer between demand (borrowers) and supply (lenders). In summary, it will be a mediating layer to build trust between lenders and borrowers, without compromising security and privacy of each individual stakeholder operating on the platform.</p>
                       <p className='impact_stories_card_text_p'>There are five more layers under the application layer. Data ledger layer stores all the transactions and artefacts data in Hyper-ledger Fabric enabled blocks. We propose several consensus algorithms broadly coming under "proof of authority" as the consensus protocol. We propose permissioned consortium blockchain to ensure consensus is achieved through authorized nodes within the blockchain. These are followed by an information exchange layer between the co-lenders, network and hardware layers.</p>
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage}
+                        onClose={handleCloseZoomedImage}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                          <img
+                            src={img_1}
+                            alt="img_1"
+                            className='impact_stories_card_zoomed_img'
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
                       <img
                         src={img_1}
                         alt='img_1'
@@ -348,14 +422,47 @@ const ImpactStories = () => {
                       <p className='impact_stories_card_text_p'>The issues currently plaguing the plant are largely preventable. With the right technology and implementation, the identified reasons for plant inefficiencies can be tackled head on. </p>
                       <p className='impact_stories_card_text_p'>Given the root cause of the problems the plant is facing, a solution would require i) real time monitoring of data and ii) the ability to store this information in such a way that it is secure, immutable, and can be shared across stakeholders easily. There are two emerging technologies that are perfectly suited to enabling such a solution. These technologies are: a) Internet of Things (IoT) and, b) Blockchain technology respectively. IoT devices are electronic devices that have the ability to communicate over the internet, such as sensors that can continuously take readings and parallelly upload them to a local / cloud storage system. Blockchain technology is a cutting edge technology that enables the creation of databases that are secure and  immutable, such a database results in the obliteration of reconciliation issues and helps facilitate trust amongst stakeholders by acting as a single source of truth. In the following sections an introduction to these technologies is given so as to provide a context for our solution.</p>
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage}
+                        onClose={handleCloseZoomedImage}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                          <img
+                            src={img_5}
+                            alt="img_5"
+                            className='impact_stories_card_zoomed_img'
+                            style={{ width: '70%', marginLeft: '15%' }}
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
                       <img
                         src={img_5}
                         alt='card_img'
                         className='impact_stories_card_img'
                       />
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage2}
+                        onClose={handleCloseZoomedImage2}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage2} />
+                          <img
+                            src={img_18}
+                            alt="img_18"
+                            className='impact_stories_card_zoomed_img'
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage2} />
                       <img
                         src={img_18}
                         alt='img_18'
@@ -384,7 +491,24 @@ const ImpactStories = () => {
                     <div className='impact_stories_card_text'>
                       <h2 className='impact_stories_card_text_heading'>The Issue:</h2>
                       <p className='impact_stories_card_text_p'>The current system of Bond market in India is having too many layers of intermediation and too slow in settling a transaction due to several validations at every stage of the process, time consuming resolution of data inconsistencies and multiple versions of truth across the network of issuers. Various operational and counterparty risks are  associated with this system like settlement failures, disputes, allocation conflicts and reconciliation of errors etc. Corporate Bond market suffers from low liquidity due to entry barriers to retail or small investors, where the minimum lot size for trading is Rs.2 lakh. Too many layers of intermediation and too slow in settling a transaction due to several validations at every stage of the process.</p>
+                      <div>
+                        <Modal
+                          open={showZoomedImage}
+                          onClose={handleCloseZoomedImage}
+                        >
+                          <div className='impact_stories_card_zoom_container'>
+                            <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                            <img
+                              src={img_2}
+                              alt="img_2"
+                              className='impact_stories_card_zoomed_img'
+                              style={{ width: '70%', marginLeft: '15%' }}
+                            />
+                          </div>
+                        </Modal>
+                      </div>
                       <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
                         <img
                           src={img_2}
                           alt='img_2'
@@ -431,7 +555,24 @@ const ImpactStories = () => {
                       <p className='impact_stories_card_text_p'>Smart contracts are used for execution and validation of the transactions, smart contracts are   triggered by predefined parameters and complete transactions instantly. This can reduce counterparty risk during the transaction and reduces the possibility of trade breaks.</p>
                       <p className='impact_stories_card_text_p'>The system of single ledger system that has both bonds and cash on a single ledger in a prevalidated state, ensuring settlement guarantee, transfer of one asset occurs if and only if the transfer of the other asset also occurs, reducing counterparty settlement risks for investors.</p>
                       <p className='impact_stories_card_text_p'>Use of  distributed ledger technology (DLT), which is a decentralized database managed by multiple participants across multiple locations that enables participants to access, validate and update records simultaneously and securely.</p>
+                      <div>
+                        <Modal
+                          open={showZoomedImage2}
+                          onClose={handleCloseZoomedImage2}
+                        >
+                          <div className='impact_stories_card_zoom_container'>
+                            <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage2} />
+                            <img
+                              src={img_6}
+                              alt="img_6"
+                              className='impact_stories_card_zoomed_img'
+                              style={{ width: '70%', marginLeft: '15%' }}
+                            />
+                          </div>
+                        </Modal>
+                      </div>
                       <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage2} />
                         <img
                           src={img_6}
                           alt='img_6'
@@ -439,7 +580,24 @@ const ImpactStories = () => {
                           style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
+                      <div>
+                        <Modal
+                          open={showZoomedImage3}
+                          onClose={handleCloseZoomedImage3}
+                        >
+                          <div className='impact_stories_card_zoom_container'>
+                            <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage3} />
+                            <img
+                              src={img_17}
+                              alt="img_17"
+                              className='impact_stories_card_zoomed_img'
+                              style={{ width: '70%', marginLeft: '15%' }}
+                            />
+                          </div>
+                        </Modal>
+                      </div>
                       <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage3} />
                         <img
                           src={img_17}
                           alt='img_17'
@@ -534,7 +692,24 @@ const ImpactStories = () => {
                       <h2 className='impact_stories_card_text_heading' style={{ marginTop: '3rem' }}>Our Solution:</h2>
                       <p className='impact_stories_card_text_p'>We believe that blockchain enabled air quality platform, where members contribute (through installation of air quality sensors and get reward for supplying real-time data) to the “air data lake”  is more reliable, democratic and granular. </p>
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage}
+                        onClose={handleCloseZoomedImage}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                          <img
+                            src={img_3}
+                            alt="img_3"
+                            className='impact_stories_card_zoomed_img'
+                            style={{ width: '70%', marginLeft: '15%' }}
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
                       <img
                         src={img_3}
                         alt='img_3'
@@ -542,7 +717,24 @@ const ImpactStories = () => {
                         style={{ width: '100%', height: 'auto' }}
                       />
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage2}
+                        onClose={handleCloseZoomedImage2}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage2} />
+                          <img
+                            src={img_7}
+                            alt="img_7"
+                            className='impact_stories_card_zoomed_img'
+                            style={{ width: '70%', marginLeft: '15%' }}
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage2} />
                       <img
                         src={img_7}
                         alt='img_7'
@@ -550,7 +742,23 @@ const ImpactStories = () => {
                         style={{ width: '100%', height: 'auto' }}
                       />
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage3}
+                        onClose={handleCloseZoomedImage3}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage3} />
+                          <img
+                            src={img_8}
+                            alt="img_8"
+                            className='impact_stories_card_zoomed_img'
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage3} />
                       <img
                         src={img_8}
                         alt='img_8'
@@ -558,7 +766,23 @@ const ImpactStories = () => {
                         style={{ width: '100%', height: 'auto' }}
                       />
                     </div>
+                    <div>
+                      <Modal
+                        open={showZoomedImage4}
+                        onClose={handleCloseZoomedImage4}
+                      >
+                        <div className='impact_stories_card_zoom_container'>
+                          <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage4} />
+                          <img
+                            src={img_9}
+                            alt="img_9"
+                            className='impact_stories_card_zoomed_img'
+                          />
+                        </div>
+                      </Modal>
+                    </div>
                     <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage4} />
                       <img
                         src={img_9}
                         alt='img_9'
@@ -591,7 +815,24 @@ const ImpactStories = () => {
                       <h2 className='impact_stories_card_text_heading' style={{ marginTop: '3rem' }}>Our Solution:</h2>
                       <p className='impact_stories_card_text_p'>Inclusive Growth Chain (IGC) provide a crowd sourcing platform on a blockchain network for sourcing water quality at a daily frequency level by using their water sampling smart IoT devices  and validating it with satellite images based machine learning models. Using Citizen Science frame work, IGC will empower local citizen representatives to supply periodical water samples through smart devices given to them. They are directly incentivized for supplying the water images takes from water sampling smart IoT devices to the data lakes maintained by IGC for deriving water quality parameters through machine learning models.</p>
                       <p className='impact_stories_card_text_p' style={{ marginTop: '2rem' }}><b>DATA FLOW:</b></p>
+                      <div>
+                        <Modal
+                          open={showZoomedImage}
+                          onClose={handleCloseZoomedImage}
+                        >
+                          <div className='impact_stories_card_zoom_container'>
+                            <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage} />
+                            <img
+                              src={img_4}
+                              alt="img_4"
+                              className='impact_stories_card_zoomed_img'
+                              style={{width: '80%', marginLeft: '10%'}}
+                            />
+                          </div>
+                        </Modal>
+                      </div>
                       <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage} />
                         <img
                           src={img_4}
                           alt='img_4'
