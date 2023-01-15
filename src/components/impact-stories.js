@@ -49,6 +49,7 @@ import img_17 from '../assets/impact_stories_imgs/17.png';
 import img_18 from '../assets/impact_stories_imgs/18.png';
 import img_19 from '../assets/impact_stories_imgs/19.jpg';
 import img_20 from '../assets/impact_stories_imgs/20.png';
+import img_21 from '../assets/impact_stories_imgs/21.png';
 
 import Footer from './footer';
 import { Box } from '@mui/system';
@@ -338,6 +339,31 @@ const ImpactStories = () => {
                         <img
                           src={img_10}
                           alt='img_10'
+                          className='impact_stories_card_img'
+                          style={{ height: 'auto', width: '100%' }}
+                        />
+                      </div>
+                      <p className='impact_stories_card_text_p' style={{ marginTop: '4rem', marginLeft: '1rem' }}>Process flow of blockchain enabled IoT: </p>
+                      <div>
+                        <Modal
+                          open={showZoomedImage2}
+                          onClose={handleCloseZoomedImage2}
+                        >
+                          <div className='impact_stories_card_zoom_container'>
+                            <FontAwesomeIcon icon={faTimes} className='impact_stories_card_zoomed_close_icon' onClick={handleCloseZoomedImage2} />
+                            <img
+                              src={img_21}
+                              alt="img_21"
+                              className='impact_stories_card_zoomed_img'
+                            />
+                          </div>
+                        </Modal>
+                      </div>
+                      <div className='impact_stories_card_image_container'>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='impact_stories_card_zoom_icon' onClick={handleShowZoomedImage2} />
+                        <img
+                          src={img_21}
+                          alt='img_21'
                           className='impact_stories_card_img'
                           style={{ height: 'auto', width: '100%' }}
                         />
