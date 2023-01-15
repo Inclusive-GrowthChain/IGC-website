@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IGC-website/static/css/main.46e307c2.css",
-    "main.js": "/IGC-website/static/js/main.5703ec28.js",
+    "main.css": "/IGC-website/static/css/main.9519c96d.css",
+    "main.js": "/IGC-website/static/js/main.6118aca1.js",
     "static/js/787.71e672d5.chunk.js": "/IGC-website/static/js/787.71e672d5.chunk.js",
     "static/media/6.jpg": "/IGC-website/static/media/6.0fe3fddd8bbaf4a7eb8d.jpg",
     "static/media/11.jpg": "/IGC-website/static/media/11.7bff35896636d4e1f6e0.jpg",
@@ -13,14 +13,13 @@
     "static/media/12.jpg": "/IGC-website/static/media/12.47284076f41a674d848c.jpg",
     "static/media/4.jpg": "/IGC-website/static/media/4.b33d9d7c1a3dd8af9399.jpg",
     "static/media/25.jpg": "/IGC-website/static/media/25.5b3f875b3408cc24a782.jpg",
-    "static/media/about.png": "/IGC-website/static/media/about.5fc11637094662d39bc2.png",
     "static/media/9.png": "/IGC-website/static/media/9.07cba8779e2fbbf221d3.png",
     "static/media/8.png": "/IGC-website/static/media/8.0952b044d3d30fa001f4.png",
+    "static/media/about2.png": "/IGC-website/static/media/about2.88225e64e7f30952eaac.png",
     "static/media/33.jpeg": "/IGC-website/static/media/33.26a252d555f5a3629823.jpeg",
-    "static/media/6.svg": "/IGC-website/static/media/6.b9124c062e72838cfd34874362a50ac5.svg",
     "static/media/18.jpg": "/IGC-website/static/media/18.23d83a5283008bc2fb30.jpg",
-    "static/media/1.svg": "/IGC-website/static/media/1.1fe7ca57b6d8944096cbdc40a4d5a60d.svg",
     "static/media/26.jpg": "/IGC-website/static/media/26.1c88d353aa904a0dd620.jpg",
+    "static/media/21.png": "/IGC-website/static/media/21.49c74243af8b9a05a2da.png",
     "static/media/5.png": "/IGC-website/static/media/5.86d4f35afe97ad11bf6f.png",
     "static/media/21.jpg": "/IGC-website/static/media/21.4403b5db950c8abffaee.jpg",
     "static/media/27.jpg": "/IGC-website/static/media/27.4d05a9235f4e862cb1d9.jpg",
@@ -56,12 +55,12 @@
     "static/media/suvik.png": "/IGC-website/static/media/suvik.758c9a4969c4b371c753.png",
     "static/media/32.png": "/IGC-website/static/media/32.f2e8104b49ca2ba6106a.png",
     "index.html": "/IGC-website/index.html",
-    "main.46e307c2.css.map": "/IGC-website/static/css/main.46e307c2.css.map",
-    "main.5703ec28.js.map": "/IGC-website/static/js/main.5703ec28.js.map",
+    "main.9519c96d.css.map": "/IGC-website/static/css/main.9519c96d.css.map",
+    "main.6118aca1.js.map": "/IGC-website/static/js/main.6118aca1.js.map",
     "787.71e672d5.chunk.js.map": "/IGC-website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46e307c2.css",
-    "static/js/main.5703ec28.js"
+    "static/css/main.9519c96d.css",
+    "static/js/main.6118aca1.js"
   ]
 }
