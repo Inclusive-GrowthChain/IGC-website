@@ -42,6 +42,9 @@ import img_13 from '../assets/impact_stories_imgs/13.jpg';
 import img_14 from '../assets/impact_stories_imgs/14.jpg';
 import img_15 from '../assets/impact_stories_imgs/15.jpg';
 import img_16 from '../assets/impact_stories_imgs/16.jpg';
+import img_17 from '../assets/impact_stories_imgs/17.png';
+import img_18 from '../assets/impact_stories_imgs/18.png';
+import img_19 from '../assets/impact_stories_imgs/19.jpg';
 
 import Footer from './footer';
 
@@ -352,6 +355,14 @@ const ImpactStories = () => {
                         className='impact_stories_card_img'
                       />
                     </div>
+                    <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                      <img
+                        src={img_18}
+                        alt='img_18'
+                        className='impact_stories_card_img'
+                        style={{ height: 'auto', width: '100%' }}
+                      />
+                    </div>
                   </CardContent>
                 </Card>
               )
@@ -362,8 +373,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={home_img}
-                        alt='card_img'
+                        src={img_19}
+                        alt='img_19'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -426,6 +437,14 @@ const ImpactStories = () => {
                           alt='img_6'
                           className='impact_stories_card_img'
                           style={{ width: '100%', height: 'auto' }}
+                        />
+                      </div>
+                      <div className='impact_stories_card_image_container' style={{ marginTop: '4rem' }}>
+                        <img
+                          src={img_17}
+                          alt='img_17'
+                          className='impact_stories_card_img'
+                          style={{ height: 'auto', width: '100%' }}
                         />
                       </div>
                     </div>
@@ -703,8 +722,8 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={home_img}
-                        alt="home_img"
+                        src={img_19}
+                        alt="img_19"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
