@@ -13,17 +13,18 @@
 }
 
 .footer_company_container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 100%;
 }
 
 .footer_company_title {
-    font-size: 2.2em;
+    font-size: 1.5rem;
     color: #000;
     text-align: left;
     margin: 0;
     padding: 0;
+    margin-top: 2%;
 }
 
 .footer_company_text {
@@ -52,7 +53,7 @@
 }
 
 .footer_contact_container_2 {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 2%;
 }
@@ -85,10 +86,10 @@
 }
 
 .footer_navigation_container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 2%;
-    margin-left: -15%;
+    margin-left: 5%;
 }
 
 .footer_navigation_title {
@@ -131,7 +132,7 @@
 .footer_news_container_2 {
     width: 130%;
     margin: auto;
-    margin-left: -30%;
+    margin-left: -10%;
     margin-top: 2%;
 }
 
@@ -151,7 +152,6 @@
 .footer_news_card_2 {
     width: 100%;
     height: 100%;
-    margin-top: 0rem;
     padding-bottom: 2%;
 }
 
@@ -163,8 +163,8 @@
 }
 
 .footer_news_card_img_2 {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 60px;
     margin: 0;
     padding: 0;
     float: left;
@@ -178,7 +178,7 @@
     float: right;
     text-align: left;
     padding-left: 5%;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 .footer_news_card_2>p {

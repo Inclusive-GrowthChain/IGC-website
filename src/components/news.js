@@ -56,6 +56,7 @@ import img_32 from '../assets/news_imgs/32.png';
 import img_33 from '../assets/news_imgs/33.jpeg';
 import img_34 from '../assets/news_imgs/34.jpg';
 import img_35 from '../assets/impact_stories_imgs/7.png';
+import img_36 from '../assets/news_imgs/36.jpg';
 import Footer from './footer';
 
 // var news_items = [
@@ -388,7 +389,7 @@ var news_items = [
       title: 'लाह के किसानाें व उद्याेगों के लिए आईआईटी बनाएगा प्लेटफाॅर्म, आय बढ़ाने की हाेगी काेशिश',
       desc: 'देश में लाह (लाख) का सर्वाधिक उत्पादन झारखंड में हाेता है। भारत में करीब 16,352 टन लाह के उत्पादन में लगभग 8293 टन (54.6%) का याेगदान झारखंड का है। ',
       link: 'https://www.bhaskar.com/local/jharkhand/dhanbad/news/iit-will-make-platform-for-lac-farmers-and-industries-efforts-will-be-made-to-increase-income-129094120.html',
-      image: home_img,
+      image: img_36,
     },
     item3: {
       date: 'June 13, 2022',

@@ -264,6 +264,9 @@ const Careers = () => {
                           </ul>
                         </p>
                       </p>
+                      <p className='careers_modal_p'>
+                        <b>Send your CV to: </b>admin@inclusivegrowthchain.com
+                      </p>
                     </div>
                   </div>
                 </Modal>

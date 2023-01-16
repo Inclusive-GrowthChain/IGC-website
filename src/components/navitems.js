@@ -19,18 +19,12 @@ export const navItems = [
   },
   {
     id: 4,
-    title: "CONTACT",
-    path: "./contact",
-    cName: "nav_item"
-  },
-  {
-    id: 5,
     title: "NEWS & MEDIA",
     path: "./news",
     cName: "nav_item"
   },
   {
-    id: 6,
+    id: 5,
     title: "CAREERS",
     path: "./careers",
     cName: "nav_item"

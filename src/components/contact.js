@@ -163,7 +163,7 @@ const Contact = () => {
                 <div className='contact_details_social_icon_container'>
                   <FontAwesomeIcon icon={faFacebookF} className='contact_details_social_icon' />
                   <FontAwesomeIcon icon={faLinkedin} className='contact_details_social_icon' />
-                  <FontAwesomeIcon icon={faWhatsapp} className='contact_details_social_icon' />
+                  <FontAwesomeIcon icon={faTwitter} className='contact_details_social_icon' />
                 </div>
               </div>
             </div>

@@ -6,6 +6,9 @@ import { faMap, faPhone, faEnvelope, faClock, faCircleCheck } from '@fortawesome
 import { Link } from "react-router-dom";
 
 import home_img from '../assets/home_img/20943774.jpg';
+import img_6 from '../assets/news_imgs/6.jpg';
+import img_8 from '../assets/news_imgs/8.jpg';
+import img_35 from '../assets/impact_stories_imgs/7.png';
 import './css/footer.css';
 
 const Footer = () => {
@@ -13,17 +16,16 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer_company_container'>
         <div className='footer_company_title'>
-          IGC
+          INCLUSIVE GROWTH CHAIN
+          <hr className='footer_line' />
         </div>
-        <div className='footer_company_text'>
+        {/* <div className='footer_company_text'>
           Impact that Empowers
-        </div>
+        </div> */}
         <div className='footer_company_social_container'>
-          <FontAwesomeIcon icon={faFacebookF} className='footer_social_icon' />
-          <FontAwesomeIcon icon={faInstagram} className='footer_social_icon' />
-          <FontAwesomeIcon icon={faWhatsapp} className='footer_social_icon' />
-          <FontAwesomeIcon icon={faTwitter} className='footer_social_icon' />
           <FontAwesomeIcon icon={faLinkedin} className='footer_social_icon' />
+          <FontAwesomeIcon icon={faTwitter} className='footer_social_icon' />
+          <FontAwesomeIcon icon={faFacebookF} className='footer_social_icon' />
         </div>
       </div>
       <div className='footer_contact_container_2'>
@@ -42,16 +44,16 @@ const Footer = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className='footer_contact_icon' />
-            Email
+            admin@inclusivegrowthchain.com
           </p>
-          <p>
+          {/* <p>
             <FontAwesomeIcon icon={faWhatsapp} className='footer_contact_icon' />
             Whatsapp Number
           </p>
           <p>
             <FontAwesomeIcon icon={faClock} className='footer_contact_icon' />
             Working Hours
-          </p>
+          </p> */}
         </div>
       </div>
       <div className='footer_navigation_container'>
@@ -109,14 +111,16 @@ const Footer = () => {
               <CardContent>
                 <div className='footer_news_card_2_img_container'>
                   <img
-                    src={home_img}
-                    alt='home_img'
+                    src={img_35}
+                    alt='img_35'
                     className='footer_news_card_img_2'
                   />
                 </div>
                 <div className='footer_news_card_2_text'>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <Link to="../news" className='footer_navigation_link'>
+                      Plugin & Inclusive Growth Chain: Leveraging Smart Contracts to Check Air Pollution in Real-Time
+                    </Link>
                   </p>
                 </div>
               </CardContent>
@@ -127,14 +131,16 @@ const Footer = () => {
               <CardContent>
                 <div className='footer_news_card_2_img_container'>
                   <img
-                    src={home_img}
-                    alt='home_img'
+                    src={img_8}
+                    alt='img_8'
                     className='footer_news_card_img_2'
                   />
                 </div>
                 <div className='footer_news_card_2_text'>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <Link to="../news" className='footer_navigation_link'>
+                      University of Hyderabad, Dr Reddy's to build cold chain solutions for pharma industry
+                    </Link>
                   </p>
                 </div>
               </CardContent>
@@ -145,14 +151,16 @@ const Footer = () => {
               <CardContent>
                 <div className='footer_news_card_2_img_container'>
                   <img
-                    src={home_img}
-                    alt='home_img'
+                    src={img_6}
+                    alt='img_6'
                     className='footer_news_card_img_2'
                   />
                 </div>
                 <div className='footer_news_card_2_text'>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <Link to="../news" className='footer_navigation_link'>
+                      UoH and Dr Reddy's to develop blockchain solutions for pharma firms. Here's more about it
+                    </Link>
                   </p>
                 </div>
               </CardContent>

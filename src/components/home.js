@@ -185,27 +185,27 @@ const Home = () => {
           <div className='stat_1_container'>
             <div className='stat_1'>
               <div className='stat_firstLine'>
-                6000+
+                6+
               </div>
               <div className='stat_secondLine'>
-                Complete Projects
+                Ongoing Projects
               </div>
             </div>
           </div>
           <div className='stat_2_container'>
             <div className='stat_2'>
               <div className='stat_firstLine'>
-                4000+
+                5+
               </div>
               <div className='stat_secondLine'>
-                Satisfied Clients
+                Number of Clients
               </div>
             </div>
           </div>
           <div className='stat_3_container'>
             <div className='stat_3'>
               <div className='stat_firstLine'>
-                3500+
+                100+
               </div>
               <div className='stat_secondLine'>
                 Years of Combined Experience
@@ -225,17 +225,17 @@ const Home = () => {
           <div className='stat_5_container'>
             <div className='stat_5'>
               <div className='stat_firstLine'>
-                3500+
+                6+
               </div>
               <div className='stat_secondLine'>
-                Different platforms Provided
+                Different Platforms Provided
               </div>
             </div>
           </div>
           <div className='stat_6_container'>
             <div className='stat_6'>
               <div className='stat_firstLine'>
-                6000+
+                5+
               </div>
               <div className='stat_secondLine'>
                 Happy Customers

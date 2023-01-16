@@ -41,7 +41,7 @@ import img_9 from '../assets/impact_stories_imgs/9.png';
 import img_10 from '../assets/impact_stories_imgs/10.png';
 import img_11 from '../assets/impact_stories_imgs/11.jpg';
 import img_12 from '../assets/impact_stories_imgs/12.jpg';
-import img_13 from '../assets/impact_stories_imgs/13.jpg';
+import img_23 from '../assets/impact_stories_imgs/23.jpg';
 import img_14 from '../assets/impact_stories_imgs/14.jpg';
 import img_15 from '../assets/impact_stories_imgs/15.jpg';
 import img_16 from '../assets/impact_stories_imgs/16.jpg';
@@ -50,6 +50,7 @@ import img_18 from '../assets/impact_stories_imgs/18.png';
 import img_19 from '../assets/impact_stories_imgs/19.jpg';
 import img_20 from '../assets/impact_stories_imgs/20.png';
 import img_21 from '../assets/impact_stories_imgs/21.png';
+import img_22 from '../assets/impact_stories_imgs/22.png';
 
 import Footer from './footer';
 import { Box } from '@mui/system';
@@ -225,8 +226,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={img_11}
-                        alt='img_11'
+                        src={img_22}
+                        alt='img_22'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -382,8 +383,8 @@ const ImpactStories = () => {
                   <CardContent className='impact_stories_card_content'>
                     <div className='impact_stories_card_image_container'>
                       <img
-                        src={img_13}
-                        alt='img_13'
+                        src={img_23}
+                        alt='img_23'
                         className='impact_stories_card_img'
                       />
                     </div>
@@ -933,8 +934,8 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={img_11}
-                        alt="img_11"
+                        src={img_22}
+                        alt="img_22"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
@@ -961,8 +962,8 @@ const ImpactStories = () => {
                   <li className='isc2_recent_posts_list_item'>
                     <div className='isc2_recent_posts_list_item_img_container'>
                       <img
-                        src={img_13}
-                        alt="img_13"
+                        src={img_23}
+                        alt="img_23"
                         className='isc2_recent_posts_list_item_img'
                       />
                     </div>
