@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
+import AboutFounders from "./components/about-founders";
 import ImpactStories from "./components/impact-stories";
 import Contact from "./components/contact";
 import Careers from "./components/careers";
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/impact-stories" element={<ImpactStories />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about-founders" element={<AboutFounders />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/news" element={<News />} />

@@ -52,6 +52,21 @@ export const platform_list = [
   }
 ];
 
+export const about_list = [
+  {
+    id: 1,
+    title: "About IGC",
+    path: "./about",
+    cName: "about_list_item"
+  },
+  {
+    id: 2,
+    title: "Meet the Founders",
+    path: "./about-founders",
+    cName: "about_list_item"
+  }
+];
+
 export const news_list = [
   {
     id: 1,

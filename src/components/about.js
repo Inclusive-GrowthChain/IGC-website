@@ -26,25 +26,25 @@ import about_img from '../assets/home_img/about2.png';
 import Footer from './footer';
 
 const About = () => {
-  const [showReviewBackArrow, setShowReviewBackArrow] = useState(false);
-  const [showTeamBackArrow, setShowTeamBackArrow] = useState(false);
-  const [serviceIndex, setServiceIndex] = useState(0);
+  // const [showReviewBackArrow, setShowReviewBackArrow] = useState(false);
+  // const [showTeamBackArrow, setShowTeamBackArrow] = useState(false);
+  // const [serviceIndex, setServiceIndex] = useState(0);
 
-  const handleReviewHover = () => {
-    setShowReviewBackArrow(true);
-  };
+  // const handleReviewHover = () => {
+  //   setShowReviewBackArrow(true);
+  // };
 
-  const handleReviewHoverLeave = () => {
-    setShowReviewBackArrow(false);
-  };
+  // const handleReviewHoverLeave = () => {
+  //   setShowReviewBackArrow(false);
+  // };
 
-  const handleTeamHover = () => {
-    setShowTeamBackArrow(true);
-  };
+  // const handleTeamHover = () => {
+  //   setShowTeamBackArrow(true);
+  // };
 
-  const handleTeamHoverLeave = () => {
-    setShowTeamBackArrow(false);
-  };
+  // const handleTeamHoverLeave = () => {
+  //   setShowTeamBackArrow(false);
+  // };
 
   return (
     <div className='about_main_container'>
@@ -76,6 +76,9 @@ const About = () => {
             </div> */}
           <p className='about_desc'>
             Inclusive Growth Chain was founded by renowned professors/scientists in 2021. Within one year, we created impact by providing blockchain, AI&ML and IoT enabled solutions for women empowerment, reliable transport of critical drugs, increasing financial access through co-lending arrangement between banks, farmer empowerment by creating farmer centric engagement services and citizen science initiatives for better environment. In the last one year, our team won two major blockchain hackathons conducted by Plugin, Dubai and National Payment Corporation of India.
+          </p>
+          <p className='about_desc'>
+            We create ideas and implement them to make the world a better place to live. Our current focus is to use technology as an enabler for bringing this change. We focus on core issues that are of concern in the world, namely, health care; education; agriculture and environment. Our team develops new models by integrating several cutting edge technologies, namely, Blockchain; IoT; and AI & ML, to create an impact that empowers people for bringing the desired change in the society. We team up with Governments, Corporate, NGOs and ordinary citizens to make this possible.
           </p>
           <div className='about_list'>
             <div className='about_list_1'>
@@ -360,14 +363,14 @@ const About = () => {
             </div>
           </div>
         </div> */}
-      <div className='about_container_4'>
+      {/* <div className='about_container_4'>
         <div className='team_container'>
           <div className='team_title'>
             MEET OUR FOUNDERS
           </div>
           {/* <div className='team_text'>
               Meet with engineers
-            </div> */}
+            </div>
           <div className='team_card_container'>
             {/* <div className='team_back_arrow_container_1'>
                 {
@@ -377,7 +380,7 @@ const About = () => {
                     </div>
                   )
                 }
-              </div> */}
+              </div>
             <div className='team_inner_container'>
               <div className='team_member_1'>
                 <Card className='team_member_card'>
@@ -391,12 +394,12 @@ const About = () => {
                             Designation
                           </div>
                         </div>
-                      </div> */}
+                      </div>
                     {/* <div className='team_member_card_social'>
                         <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
                         <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
                         <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div> */}
+                      </div>
                   </CardContent>
                 </Card>
               </div>
@@ -412,12 +415,12 @@ const About = () => {
                             Designation
                           </div>
                         </div>
-                      </div> */}
+                      </div>
                     {/* <div className='team_member_card_social'>
                         <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
                         <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
                         <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div> */}
+                      </div>
                   </CardContent>
                 </Card>
               </div>
@@ -450,10 +453,10 @@ const About = () => {
                     </div>
                   )
                 }
-              </div> */}
+              </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className='about_container_5'>
           <div className='review_container'>
             <div className='review_title'>

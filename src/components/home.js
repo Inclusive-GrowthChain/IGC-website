@@ -215,7 +215,7 @@ const Home = () => {
           <div className='stat_4_container'>
             <div className='stat_4'>
               <div className='stat_firstLine'>
-                6000+
+                18
               </div>
               <div className='stat_secondLine'>
                 Team Members

@@ -7,6 +7,7 @@ import "./css/navbar.css";
 
 import { platform_list } from "./navitems";
 import { news_list } from "./navitems";
+import { about_list } from "./navitems";
 import logo from "../assets/logo/4.png"
 
 const Navbar = () => {
@@ -15,6 +16,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [platformDropdown, setPlatformDropdown] = useState(false);
   const [newsDropdown, setNewsDropdown] = useState(false);
+  const [aboutDropdown, setAboutDropdown] = useState(false);
+  const [showAboutDropdown, setShowAboutDropdown] = useState(false);
 
   const handleScroll=() => {
     const offset=window.scrollY;
@@ -88,6 +91,36 @@ const Navbar = () => {
             //     </li>
             //   )
             // }
+            if (item.title === "ABOUT") {
+              return (
+                <li 
+                  key={item.id} 
+                  className={item.cName} 
+                  onMouseEnter={() => setShowAboutDropdown(true)} 
+                  onMouseLeave={() => setShowAboutDropdown(false)}
+                >
+                  <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
+                  {
+                    showAboutDropdown && (
+                      <ul className={aboutDropdown ? "about_menu.clicked" : "about_menu"} onClick={() => {
+                        setAboutDropdown(false);
+                        setShowAboutDropdown(false);
+                      }}>
+                        {
+                          about_list.map((item, index) => {
+                            return (
+                              <li key={item.id}>
+                                <Link to={item.path} className={item.cName} onClick={() => setAboutDropdown(false)}>{item.title}</Link>
+                              </li>
+                            )
+                          })
+                        }
+                      </ul>
+                    )
+                  }
+                </li>
+              )
+            }
             if (item.title === "NEWS & MEDIA") {
               return (
                 <li 
