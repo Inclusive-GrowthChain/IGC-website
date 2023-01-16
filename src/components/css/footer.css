@@ -118,6 +118,16 @@
     cursor: pointer;
 }
 
+.footer_navigation_link {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+}
+
+.footer_navigation_link:hover {
+    color: #ff5325;
+    cursor: pointer;
+}
+
 .footer_news_container_2 {
     width: 130%;
     margin: auto;

@@ -3,6 +3,8 @@ import { Card, CardContent } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faWhatsapp, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faMap, faPhone, faEnvelope, faClock, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
+
 import home_img from '../assets/home_img/20943774.jpg';
 import './css/footer.css';
 
@@ -14,7 +16,7 @@ const Footer = () => {
           IGC
         </div>
         <div className='footer_company_text'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Impact that Empowers
         </div>
         <div className='footer_company_social_container'>
           <FontAwesomeIcon icon={faFacebookF} className='footer_social_icon' />
@@ -60,27 +62,39 @@ const Footer = () => {
         <div className='footer_navigation_text'>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            Home
+            <Link to="../" className='footer_navigation_link'>
+              Home
+            </Link>
           </p>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            Industries & service
+            <Link to="../impact-stories" className='footer_navigation_link'>
+              Impact Stories
+            </Link>
           </p>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            About Us
+            <Link to="../about" className='footer_navigation_link'>
+              About Us
+            </Link>
           </p>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            Contact Us
+            <Link to="../contact" className='footer_navigation_link'>
+              Contact Us
+            </Link>
           </p>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            News & Media
+            <Link to="../news" className='footer_navigation_link'>
+              News & Media
+            </Link>
           </p>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            Careers
+            <Link to="../careers" className='footer_navigation_link'>
+              Careers
+            </Link>
           </p>
         </div>
       </div>
