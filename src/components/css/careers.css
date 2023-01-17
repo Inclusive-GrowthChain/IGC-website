@@ -26,11 +26,7 @@
 }
 
 .careers_card_container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    display: grid;
-    grid-row: 2;
-    width: 65%;
+    width: 90%;
     margin: auto;
 }
 
@@ -43,10 +39,10 @@
 }
 
 .careers_card_logo {
-    width: 90px;
-    height: 90px;
-    margin-left: 230px;
+    width: 60px;
+    height: 60px;
     margin-top: -30px;
+    float: right;
 }
 
 .careers_card_company_container {

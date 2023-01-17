@@ -452,3 +452,40 @@
     margin-left: -1%;
   }
 }
+
+/* Careers */
+
+@media only screen and (min-width: 580px) {
+  .careers_card_container {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .careers_card_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    display: grid;
+    grid-row: 2;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .careers_card_container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    display: grid;
+    grid-row: 2;
+    width: 65%;
+    margin: auto;
+  }
+
+  .careers_card_logo {
+    width: 90px;
+    height: 90px;
+    margin-top: -30px;
+  }
+}
