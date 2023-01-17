@@ -1,7 +1,7 @@
 .home_container_1 {
-    padding-top: 25vh;
+    padding-top: 5vh;
     padding-bottom: 20vh;
-    height: 55vh;
+    height: auto;
 }
 
 .welcome_container {
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     margin-left: 12vw;
-    margin-top: -10vh;
+    /* margin-top: -10vh; */
     width: 80%;
     transition: all 1.5s ease-in;
 }
@@ -76,12 +76,11 @@
 }
 
 .home_img {
-    display: none;
-    width: 28vw;
-    height: 28vw;
-    margin-top: 6vh;
+    /* display: none; */
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 6vh;
     left: 0;
-    animation: about_img_slide 6s ease-in-out infinite;
     z-index: -1;
 }
 
@@ -97,6 +96,10 @@
     100% {
         transform: translateY(0);
     }
+}
+
+.home_carousel_1 {
+    display: none;
 }
 
 .home_container_2 {
@@ -471,7 +474,7 @@
 }
 
 .home_container_5 {
-    padding-bottom: 20vh;
+    /* padding-bottom: 20vh; */
     width: 100%;
     padding-top: 20vh;
 }
@@ -799,13 +802,13 @@
 }
 
 .home_subscribe_button {
-    width: 5vh;
-    height: 5vh;
+    width: 4vh;
+    height: 4vh;
     text-align: center;
     color: #000;
     box-sizing: border-box;
     padding-top: 7px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-left: -2.5rem;
     margin-right: auto;
     transition: all 0.2s ease-in;

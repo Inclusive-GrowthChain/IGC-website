@@ -53,6 +53,14 @@
     height: 85vh;
   }
 
+  .welcome_desc {
+    font-size: 3vw;
+  }
+
+  .welcome_text {
+    font-size: 2vw;
+  }
+
   .about_container_text {
     font-size: 3vw;
   }
@@ -99,6 +107,17 @@
     display: inline;
     margin-top: 2vw;
     margin-left: 12vw;
+    animation: about_img_slide 6s ease-in-out infinite;
+    width: 28vw;
+    height: 28vw;
+  }
+
+  .home_carousel_1 {
+    display: block;
+  }
+
+  .home_carousel_2 {
+    display: none;
   }
 
   .stats_container {
@@ -109,7 +128,7 @@
   }
 
   .home_container_5 {
-    padding-bottom: 20vh;
+    /* padding-bottom: 20vh; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
@@ -339,7 +358,7 @@
   }
 
   .carousel2 {
-    display: none;    
+    display: none;
   }
 
   .home_news_card_title {
@@ -376,5 +395,60 @@
 
   .home_news_card_desc {
     font-size: 0.8rem;
+  }
+}
+
+/* About */
+
+@media only screen and (min-width: 1200px) {
+  .about_container_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+  }
+
+  .about_about_img {
+    margin-left: -10rem;
+  }
+
+  .about_text {
+    width: 60%;
+  }
+
+  .about_desc {
+    width: 70%;
+  }
+
+  .about_list {
+    width: 60%;
+  }
+}
+
+/* About Founders */
+
+@media only screen and (min-width: 992px) {
+  .founder_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .about_founders_content_container_2 {
+    width: 60%;
+    margin: 0 auto;
+    grid-row: 2;
+    display: grid;
+  }
+
+  .founder_details {
+    width: 130%;
+    margin-left: -25%;
+    padding: 1rem;
+  }
+
+  .founder_img_container {
+    width: 70%;
+    margin-left: -1%;
   }
 }

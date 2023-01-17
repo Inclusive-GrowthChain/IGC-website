@@ -61,7 +61,7 @@ const About = () => {
           <img
             src={about_img}
             alt='about_img'
-            className='about_img'
+            className='about_about_img'
           />
         </div>
         <div className='about_inner_container'>
@@ -363,100 +363,6 @@ const About = () => {
             </div>
           </div>
         </div> */}
-      {/* <div className='about_container_4'>
-        <div className='team_container'>
-          <div className='team_title'>
-            MEET OUR FOUNDERS
-          </div>
-          {/* <div className='team_text'>
-              Meet with engineers
-            </div>
-          <div className='team_card_container'>
-            {/* <div className='team_back_arrow_container_1'>
-                {
-                  showTeamBackArrow && (
-                    <div className='back_arrow'>
-                      <FontAwesomeIcon icon={faChevronLeft} className='back_arrow_icon'/>
-                    </div>
-                  )
-                }
-              </div>
-            <div className='team_inner_container'>
-              <div className='team_member_1'>
-                <Card className='team_member_card'>
-                  <CardContent>
-                    {/* <div className='team_member_card_title_container'>
-                        <div className='team_member_card_user_container'>
-                          <div className='team_member_card_name_container'>
-                            Name
-                          </div>
-                          <div className='team_member_card_designation_container'>
-                            Designation
-                          </div>
-                        </div>
-                      </div>
-                    {/* <div className='team_member_card_social'>
-                        <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className='team_member_2'>
-                <Card className='team_member_card'>
-                  <CardContent>
-                    {/* <div className='team_member_card_title_container'>
-                        <div className='team_member_card_user_container'>
-                          <div className='team_member_card_name_container'>
-                            Name
-                          </div>
-                          <div className='team_member_card_designation_container'>
-                            Designation
-                          </div>
-                        </div>
-                      </div>
-                    {/* <div className='team_member_card_social'>
-                        <FontAwesomeIcon icon={faGooglePlus} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faTwitter} className='team_member_card_social_icon'/>
-                        <FontAwesomeIcon icon={faLinkedin} className='team_member_card_social_icon'/>
-                      </div>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className='team_member_card_title_container'>
-                <div className='team_member_card_user_container'>
-                  <div className='team_member_card_name_container'>
-                    Prof. Vijaya B Marisetty
-                  </div>
-                  <div className='team_member_card_designation_container'>
-                    Co-Founder
-                  </div>
-                </div>
-              </div>
-              <div className='team_member_card_title_container'>
-                <div className='team_member_card_user_container'>
-                  <div className='team_member_card_name_container'>
-                    Dr. Varsha Mamidi
-                  </div>
-                  <div className='team_member_card_designation_container'>
-                    Co-Founder
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className='team_back_arrow_container_2'>
-                {
-                  showTeamBackArrow && (
-                    <div className='back_arrow'>
-                      <FontAwesomeIcon icon={faChevronRight} className='back_arrow_icon'/>
-                    </div>
-                  )
-                }
-              </div>
-          </div>
-        </div>
-      </div> */}
       {/* <div className='about_container_5'>
           <div className='review_container'>
             <div className='review_title'>
