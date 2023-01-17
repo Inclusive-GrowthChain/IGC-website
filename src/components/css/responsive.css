@@ -489,3 +489,49 @@
     margin-top: -30px;
   }
 }
+
+/* Contact */
+
+@media only screen and (min-width: 1200px) {
+  .contact_card_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+    display: grid;
+    width: 50%;
+    margin: auto;
+  }
+
+  .cc3_content_container {
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    display: grid;
+    margin-top: 5rem;
+  }
+
+  .contact_details_container {
+    margin-top: 0rem;
+  }
+
+  .contact_details_icon_container {
+    width: 100%;
+  }
+
+  .contact_details_text_container {
+    width: 100%;
+    margin-left: -30%;
+  }
+
+  .contact_details_2_container .contact_details_text_container {
+    margin-left: -30%;
+  }
+
+  .contact_map_1 {
+    display: block;
+  }
+
+  .contact_map_2 {
+    display: none;
+  }
+}

@@ -171,7 +171,23 @@ const Contact = () => {
         </div>
       </div>
       <div className='contact_container_4'>
-        <MapContainer center={centerPosition} zoom={4} scrollWheelZoom={false} className='contact_map'>
+        <MapContainer center={centerPosition} zoom={4} scrollWheelZoom={false} className='contact_map_1'>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
+            <Popup>
+              62 Woltersweg, Hengelo, Netherlands, 7552DD
+            </Popup>
+          </Marker>
+          <Marker position={position2}>
+            <Popup>
+              Dlabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad
+            </Popup>
+          </Marker>
+        </MapContainer>
+        <MapContainer center={centerPosition} zoom={2} scrollWheelZoom={false} className='contact_map_2'>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
