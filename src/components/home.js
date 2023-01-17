@@ -391,11 +391,6 @@ const Home = () => {
               src={hc7_img_1}
               alt='hc7_img_1'
               className='hc7_img_1'
-              style={{
-                height: '100px',
-                width: '300px',
-                marginTop: '35px',
-              }}
             />
           </div>
           <div className='hc7_col_2'>
@@ -403,10 +398,6 @@ const Home = () => {
               src={hc7_img_2}
               alt='hc7_img_2'
               className='hc7_img_2'
-              style={{
-                height: '200px',
-                width: '300px',
-              }}
             />
           </div>
           <div className='hc7_col_3'>
@@ -414,12 +405,6 @@ const Home = () => {
               src={hc7_img_3}
               alt='hc7_img_3'
               className='hc7_img_3'
-              style={{
-                height: '175px',
-                width: '250px',
-                marginTop: '10px',
-                marginLeft: '-30px'
-              }}
             />
           </div>
           <div className='hc7_col_4'>
@@ -427,12 +412,6 @@ const Home = () => {
               src={hc7_img_4}
               alt='hc7_img_4'
               className='hc7_img_4'
-              style={{
-                height: '150px',
-                width: '250px',
-                marginTop: '15px',
-                marginLeft: '-30px'
-              }}
             />
           </div>
           <div className='hc7_col_5'>
@@ -440,11 +419,6 @@ const Home = () => {
               src={hc7_img_5}
               alt='hc7_img_5'
               className='hc7_img_5'
-              style={{
-                height: '250px',
-                width: '250px',
-                marginTop: '-45px'
-              }}
             />
           </div>
         </div>
@@ -454,10 +428,6 @@ const Home = () => {
               src={hc7_img_6}
               alt='hc7_img_6'
               className='hc7_img_6'
-              style={{
-                height: '200px',
-                width: '250px',
-              }}
             />
           </div>
           <div className='hc7_col_2'>
@@ -465,12 +435,6 @@ const Home = () => {
               src={hc7_img_7}
               alt='hc7_img_7'
               className='hc7_img_7'
-              style={{
-                height: '100px',
-                width: '350px',
-                marginLeft: '0px',
-                marginTop: '70px'
-              }}
             />
           </div>
           <div className='hc7_col_3'>
@@ -478,12 +442,6 @@ const Home = () => {
               src={hc7_img_8}
               alt='hc7_img_8'
               className='hc7_img_8'
-              style={{
-                height: '150px',
-                width: '300px',
-                marginLeft: '-10px',
-                marginTop: '50px'
-              }}
             />
           </div>
           <div className='hc7_col_4'>
@@ -491,11 +449,6 @@ const Home = () => {
               src={hc7_img_9}
               alt='hc7_img_9'
               className='hc7_img_9'
-              style={{
-                height: '100px',
-                width: '300px',
-                marginTop: '82px'
-              }}
             />
           </div>
         </div>

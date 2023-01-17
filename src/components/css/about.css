@@ -20,7 +20,7 @@
     margin-top: 1rem;
 }
 
-.learn_button {
+/* .learn_button {
     background-image: linear-gradient(to right, #0094f8, #00d581);
     color: #fff;
     border: none;
@@ -71,7 +71,7 @@
 .learn_button:hover::before {
     opacity: 1;
     z-index: -1;
-}
+} */
 
 .about_title {
     font-size: 1.2rem;

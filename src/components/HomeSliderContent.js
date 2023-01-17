@@ -51,9 +51,9 @@ function Item(props) {
   return (
     <div className='home_container_1'>
       <div className='welcome_container'>
-        <div className={'welcome_title'}>
+        {/* <div className={'welcome_title'}>
           {props.item.title}
-        </div>
+        </div> */}
         <div className={'welcome_desc'}>
           {props.item.description}
         </div>
@@ -61,7 +61,7 @@ function Item(props) {
           {props.item.text}
         </div>
         <div className='learn_more'>
-          <button className={'learn_button'}>
+          <button className='learn_button'>
             LEARN MORE
           </button>
         </div>
@@ -69,7 +69,7 @@ function Item(props) {
       <div className='img_container'>
         {
           props.item.index === 1 && (
-            <img src={about_img} style={{width: '40%', height: '40%', marginLeft: '-5%', marginTop: '-5%'}} className={'home_img'}/>
+            <img src={about_img} style={{height: '35vw', width: '40vw', marginLeft: '-5%', marginTop: '-15%'}} className={'home_img'}/>
           )
         }
         {
@@ -79,12 +79,12 @@ function Item(props) {
         }
         {
           props.item.index === 3 && (
-            <img src={hackathon2_img} style={{boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)', height: '550px'}} className={'home_img'}/>
+            <img src={hackathon2_img} style={{boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)'}} className={'home_img'}/>
           )
         }
         {
           props.item.index === 4 && (
-            <img src={partners_img} style={{boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)', width: '35%', height: '35%'}} className={'home_img'}/>
+            <img src={partners_img} style={{boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)'}} className={'home_img'}/>
           )
         }
       </div>
