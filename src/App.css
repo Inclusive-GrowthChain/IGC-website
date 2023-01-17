@@ -1,5 +1,15 @@
 * {
   font-family: 'Titillium Web', sans-serif;
+  /* font-family: 'Catamaran', sans-serif; */
+  /* font-family: 'Explora', cursive; */
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  /* font-family: 'Karla', sans-serif; */
+  /* font-family: 'Lora', serif; */
+  /* font-family: 'Mulish', sans-serif; */
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Source Serif Pro', serif; */
 }
 
 .App {
@@ -36,6 +46,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -10,6 +10,7 @@ import Blog from "./components/blog";
 import Navbar from "./components/navbar";
 
 import './App.css';
+import './components/css/responsive.css';
 
 const Layout = () => {
   return (
