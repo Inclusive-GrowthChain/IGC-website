@@ -14,6 +14,36 @@
   .hamburger_menu {
     display: none;
   }
+
+  .nav_item_a {
+    padding: 30px 10px 30px 20px;
+    font-size: 1.3vw;
+  }
+
+  .nav_item_a_scrolled {
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav_item_a {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .nav_item_a_scrolled {
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav_item_a {
+    padding: 30px 20px 30px 20px;
+    font-size: 0.85vw;
+  }
+
+  .nav_item_a_scrolled {
+    font-size: 0.65vw;
+  }
 }
 
 /* Home */
