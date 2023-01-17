@@ -188,7 +188,7 @@ const NewsSliderContent = () => {
   //   },
   // ];
 
-  var news_items = [
+  const news_items = [
     {
       index: 1,
       item1: {
@@ -239,12 +239,62 @@ const NewsSliderContent = () => {
     },
   ];
 
+  const responsive_news_items = [
+    {
+      index: 1,
+      date: 'January 07, 2022',
+      title: "UoH and Dr Reddy's to develop blockchain solutions for pharma firms. Here's more about it",
+      desc: 'This project is supported by the Institution of Eminence (IoE) entrepreneurial research grant of the University of Hyderabad ',
+      link: 'https://www.edexlive.com/news/2022/jan/07/uoh-and-dr-reddys-to-develop-blockchain-solutions-for-pharma-firms-26732.html',
+      image: img_6,
+    },
+    {
+      index: 2,
+      date: 'January 06, 2022',
+      title: 'UoH, Dr Reddy’s join hands to develop blockchain solutions for pharma industry',
+      desc: 'They are developing cold chain logistics solutions',
+      link: 'https://www.thehindubusinessline.com/companies/uoh-dr-reddys-join-hands-to-develop-blockchain-solutions-for-pharma-industry/article38150295.ece',
+      image: img_9,
+    },
+    {
+      index: 3,
+      date: '2021',
+      title: 'लाह के किसानाें व उद्याेगों के लिए आईआईटी बनाएगा प्लेटफाॅर्म, आय बढ़ाने की हाेगी काेशिश',
+      desc: 'देश में लाह (लाख) का सर्वाधिक उत्पादन झारखंड में हाेता है। भारत में करीब 16,352 टन लाह के उत्पादन में लगभग 8293 टन (54.6%) का याेगदान झारखंड का है। ',
+      link: 'https://www.bhaskar.com/local/jharkhand/dhanbad/news/iit-will-make-platform-for-lac-farmers-and-industries-efforts-will-be-made-to-increase-income-129094120.html',
+      image: img_36,
+    },
+    {
+      index: 4,
+      date: 'June 13, 2022',
+      title: 'Plugin & Inclusive Growth Chain: Leveraging Smart Contracts to Check Air Pollution in Real-Time',
+      desc: "Plugin and Inclusive Growth Chain have joined hands collectively to make technological implications, on a much-wished answer for today`s real-international problems.",
+      link: 'https://www.nasdaq.com/press-release/plugin-inclusive-growth-chain:-leveraging-smart-contracts-to-check-air-pollution-in',
+      image: img_35,
+    },
+    {
+      index: 5,
+      date: 'June 14, 2022',
+      title: 'Plugin & Inclusive Growth Chain: Leveraging Smart Contracts to Check Air Pollution in Real-Time',
+      desc: 'Through the Plugin---IGC partnership, the entities will work towards implementing the "Project Pollution Check".',
+      link: 'https://finance.yahoo.com/news/plugin-inclusive-growth-chain-leveraging-033400833.html',
+      image: img_35,
+    },
+  ];
+
   return (
-    <Carousel height={'50rem'}>
-      {
-        news_items.map((item, i) => <Item key={i} item={item} />)
-      }
-    </Carousel>
+    <div>
+      <Carousel className='carousel1'>
+        {
+          news_items.map((item, i) => <Item key={i} item={item} />)
+        }
+      </Carousel>
+      <Carousel className='carousel2'>
+        {
+          responsive_news_items.map((item, i) => <Item2 key={i} item={item} />)
+        }
+      </Carousel>
+    </div>
   )
 }
 
@@ -343,6 +393,41 @@ function Item(props) {
           </div>
         )
       }
+    </div>
+  )
+}
+
+function Item2(props) {
+  return (
+    <div className='home_news_card_container'>
+      <div className='home_news_1'>
+        <Card className='home_news_card'>
+          <CardContent>
+            <img
+              src={props.item.image}
+              alt='home_img'
+              className='home_news_card_img'
+            />
+            <p className="home_news_card_date">
+              <FontAwesomeIcon icon={faCalendarCheck} className='home_news_icon' />
+              {props.item.date}
+            </p>
+            <p className='home_news_card_title'>
+              {props.item.title}
+            </p>
+            <p className='home_news_card_desc'>
+              {props.item.desc}
+            </p>
+            <div className='read_more'>
+              <a href={props.item.link} target="_blank">
+                <button className='learn_button'>
+                  Read More
+                </button>
+              </a>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   )
 }

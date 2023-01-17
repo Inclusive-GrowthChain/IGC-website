@@ -57,7 +57,7 @@ const Home = () => {
       <div className='home_container_2'>
         <div className='tab_container'>
           <div className='tab_1'>
-            <Card className={showPlatformCard===1 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(1)}>
+            <Card className={showPlatformCard === 1 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(1)}>
               <CardContent>
                 <div className='platform_card_icon_container'>
                   <FontAwesomeIcon icon={faCreditCard} className='platform_icon' />
@@ -72,7 +72,7 @@ const Home = () => {
             </Card>
           </div>
           <div className='tab_2'>
-            <Card className={showPlatformCard===2 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(2)}>
+            <Card className={showPlatformCard === 2 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(2)}>
               <CardContent>
                 <div className='platform_card_icon_container'>
                   <FontAwesomeIcon icon={faSeedling} className='platform_icon' />
@@ -82,29 +82,29 @@ const Home = () => {
                   Agri-Tech
                 </p>
                 <p className='platform_card_desc'>
-                  Making markets work for small holder farmers 
+                  Making markets work for small holder farmers
                 </p>
               </CardContent>
             </Card>
           </div>
           <div className='tab_3'>
-            <Card className={showPlatformCard===3 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(3)}>
+            <Card className={showPlatformCard === 3 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(3)}>
               <CardContent>
                 <div className='platform_card_icon_container'>
                   {/* <FontAwesomeIcon icon={faHeartPulse} className='platform_icon' /> */}
-                  <Icon icon="healthicons:health-outline" className='platform_icon'/>
+                  <Icon icon="healthicons:health-outline" className='platform_icon' />
                 </div>
                 <p className='platform_card_title'>
                   Health Care
                 </p>
                 <p className='platform_card_desc'>
-                  Protecting lives with timely data and information 
+                  Protecting lives with timely data and information
                 </p>
               </CardContent>
             </Card>
           </div>
           <div className='tab_4'>
-            <Card className={showPlatformCard===4 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(4)}>
+            <Card className={showPlatformCard === 4 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(4)}>
               <CardContent>
                 <div className='platform_card_icon_container'>
                   <FontAwesomeIcon icon={faPeopleRoof} className='platform_icon' />
@@ -113,7 +113,7 @@ const Home = () => {
                   Citizen Science
                 </p>
                 <p className='platform_card_desc'>
-                  Disruptive data aggregation models to empower ordinary citizens to make a better world 
+                  Disruptive data aggregation models to empower ordinary citizens to make a better world
                 </p>
               </CardContent>
             </Card>
@@ -125,51 +125,51 @@ const Home = () => {
           </div>
           <div className='desc_text'>
             {
-              showPlatformCard===1 && (
+              showPlatformCard === 1 && (
                 <p>Fin-Tech for Inclusive Growth</p>
               )
             }
             {
-              showPlatformCard===2 && (
+              showPlatformCard === 2 && (
                 <p>Farmer centric Agri-Tech for democratic distribution of wealth in agri-ecosystem</p>
               )
             }
             {
-              showPlatformCard===3 && (
+              showPlatformCard === 3 && (
                 <p>Data that guide better health outcomes</p>
               )
             }
             {
-              showPlatformCard===4 && (
+              showPlatformCard === 4 && (
                 <p>Disrupting data aggregation model for creating a better world</p>
               )
             }
           </div>
           {
-            showPlatformCard===1 && (
+            showPlatformCard === 1 && (
               <p className='desc_desc'>
-                Inclusive Growth Chain did the first pilot in India, by using Blockchain technology, for onboarding poor farmers for financial inclusion and developing credit history for better access to finance. 
+                Inclusive Growth Chain did the first pilot in India, by using Blockchain technology, for onboarding poor farmers for financial inclusion and developing credit history for better access to finance.
               </p>
             )
           }
           {
-            showPlatformCard===2 && (
+            showPlatformCard === 2 && (
               <p className='desc_desc'>
-                Inclusive Growth Chain partnered with IIT Dhanbad for creating India’s first blockchain, AI&ML platform for empowering tribal farmers in Jharkhand state by developing an integrated platform that onboards input suppliers, financial institutions, output customers for unleashing the value chain benefits and distributing higher dividends to famers, who are the central and most significant players of the whole ecosystem. 
+                Inclusive Growth Chain partnered with IIT Dhanbad for creating India’s first blockchain, AI&ML platform for empowering tribal farmers in Jharkhand state by developing an integrated platform that onboards input suppliers, financial institutions, output customers for unleashing the value chain benefits and distributing higher dividends to famers, who are the central and most significant players of the whole ecosystem.
               </p>
             )
           }
           {
-            showPlatformCard===3 && (
+            showPlatformCard === 3 && (
               <p className='desc_desc'>
-                Inclusive Growth Chain provides secured services to store health data on blockchain and provides real-time access through cutting edge IoT devices. 
+                Inclusive Growth Chain provides secured services to store health data on blockchain and provides real-time access through cutting edge IoT devices.
               </p>
             )
           }
           {
-            showPlatformCard===4 && (
+            showPlatformCard === 4 && (
               <p className='desc_desc'>
-                Inclusive Growth Chain believes in the power of data and its aggregation. We strive to build models that ensure data ownership and its monetization lies with the data generators. Further, we believe ordinary citizens can play an important role in transforming societies by sourcing and supplying data on a secured blockchain platform. 
+                Inclusive Growth Chain believes in the power of data and its aggregation. We strive to build models that ensure data ownership and its monetization lies with the data generators. Further, we believe ordinary citizens can play an important role in transforming societies by sourcing and supplying data on a secured blockchain platform.
               </p>
             )
           }
@@ -251,49 +251,49 @@ const Home = () => {
           </div>
           <div className='service_text'>
             {
-              showServiceCard===1 && (
+              showServiceCard === 1 && (
                 <p>Smart Assistance for Empowerment Solutions</p>
               )
             }
             {
-              showServiceCard===2 && (
+              showServiceCard === 2 && (
                 <p>Governance, Transparency and Trust Solutions</p>
               )
             }
             {
-              showServiceCard===3 && (
+              showServiceCard === 3 && (
                 <p>Unleashing the Power of Data</p>
               )
             }
             {
-              showServiceCard===4 && (
+              showServiceCard === 4 && (
                 <p>Helping companies moving from Web 2.0 to Web 3.0 world</p>
               )
             }
           </div>
           {
-            showServiceCard===1 && (
+            showServiceCard === 1 && (
               <p className='service_desc'>
-                We use AI and ML for providing smart assistance to people the bottom end of the pyramid. They can create their own digital identity securely and engage with world for accessing resources. 
+                We use AI and ML for providing smart assistance to people the bottom end of the pyramid. They can create their own digital identity securely and engage with world for accessing resources.
               </p>
             )
           }
           {
-            showServiceCard===2 && (
+            showServiceCard === 2 && (
               <p className='service_desc'>
-                We provide, both permissioned and permissionless, blockchain enabled services for building trust and transparency between stakeholders in several business environments. 
+                We provide, both permissioned and permissionless, blockchain enabled services for building trust and transparency between stakeholders in several business environments.
               </p>
             )
           }
           {
-            showServiceCard===3 && (
+            showServiceCard === 3 && (
               <p className='service_desc'>
-                We innovate by developing custom made IoT devices where reliable and real time data is critical for decision making. We integrate IoT devices seamlessly on blockchain platform. 
+                We innovate by developing custom made IoT devices where reliable and real time data is critical for decision making. We integrate IoT devices seamlessly on blockchain platform.
               </p>
             )
           }
           {
-            showServiceCard===4 && (
+            showServiceCard === 4 && (
               <p className='service_desc'>
                 Our expertise helps in hand holding companies to unleash the opportunities of web3.0 ecosystem through diligent audit and digital transformation engagement
               </p>
@@ -307,10 +307,10 @@ const Home = () => {
         </div>
         <div className='service_card_container'>
           <div className='service_1'>
-            <Card className={showServiceCard===1 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(1)}>
+            <Card className={showServiceCard === 1 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(1)}>
               <CardContent>
                 <div className='service_icon_container'>
-                  <Icon icon="eos-icons:ai" className='service_icon'/>
+                  <Icon icon="eos-icons:ai" className='service_icon' />
                 </div>
                 <p className='service_card_title'>
                   AI & ML
@@ -319,10 +319,10 @@ const Home = () => {
             </Card>
           </div>
           <div className='service_2'>
-            <Card className={showServiceCard===2 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(2)}>
+            <Card className={showServiceCard === 2 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(2)}>
               <CardContent>
                 <div className='service_icon_container'>
-                  <Icon icon="eos-icons:blockchain" className='service_icon'/>
+                  <Icon icon="eos-icons:blockchain" className='service_icon' />
                 </div>
                 <p className='service_card_title'>
                   Blockchain
@@ -331,10 +331,10 @@ const Home = () => {
             </Card>
           </div>
           <div className='service_3'>
-            <Card className={showServiceCard===3 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(3)}>
+            <Card className={showServiceCard === 3 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(3)}>
               <CardContent>
                 <div className='service_icon_container'>
-                  <Icon icon="fluent:iot-20-regular" className='service_icon'/>
+                  <Icon icon="fluent:iot-20-regular" className='service_icon' />
                 </div>
                 <p className='service_card_title'>
                   IOT
@@ -343,7 +343,7 @@ const Home = () => {
             </Card>
           </div>
           <div className='service_4'>
-            <Card className={showServiceCard===4 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(4)}>
+            <Card className={showServiceCard === 4 ? 'service_card_selected' : 'service_card'} onClick={() => setShowServiceCard(4)}>
               <CardContent>
                 <div className='service_icon_container'>
                   <FontAwesomeIcon icon={faTachographDigital} className='service_icon' />
@@ -362,7 +362,7 @@ const Home = () => {
             ABOUT US
           </div>
           <div className='about_container_text'>
-            Inclusive Growth Chain is a technology platform provider for creating impact that leads to empowerment. 
+            Inclusive Growth Chain is a technology platform provider for creating impact that leads to empowerment.
           </div>
           <p className='about_container_desc'>
             We are a startup, founded by renowned professors/scientists, incubated initially at the University of Hyderabad and later the Indian School of Business, Hyderabad.
