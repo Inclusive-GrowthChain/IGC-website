@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IGC-website/static/css/main.0d07215a.css",
-    "main.js": "/IGC-website/static/js/main.00892c33.js",
+    "main.css": "/IGC-website/static/css/main.ff4c4f1e.css",
+    "main.js": "/IGC-website/static/js/main.5eaa2eaa.js",
     "static/js/787.71e672d5.chunk.js": "/IGC-website/static/js/787.71e672d5.chunk.js",
     "static/media/6.jpg": "/IGC-website/static/media/6.0fe3fddd8bbaf4a7eb8d.jpg",
     "static/media/11.jpg": "/IGC-website/static/media/11.7bff35896636d4e1f6e0.jpg",
@@ -58,12 +58,12 @@
     "static/media/suvik.png": "/IGC-website/static/media/suvik.758c9a4969c4b371c753.png",
     "static/media/32.png": "/IGC-website/static/media/32.f2e8104b49ca2ba6106a.png",
     "index.html": "/IGC-website/index.html",
-    "main.0d07215a.css.map": "/IGC-website/static/css/main.0d07215a.css.map",
-    "main.00892c33.js.map": "/IGC-website/static/js/main.00892c33.js.map",
+    "main.ff4c4f1e.css.map": "/IGC-website/static/css/main.ff4c4f1e.css.map",
+    "main.5eaa2eaa.js.map": "/IGC-website/static/js/main.5eaa2eaa.js.map",
     "787.71e672d5.chunk.js.map": "/IGC-website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d07215a.css",
-    "static/js/main.00892c33.js"
+    "static/css/main.ff4c4f1e.css",
+    "static/js/main.5eaa2eaa.js"
   ]
 }
