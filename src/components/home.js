@@ -79,7 +79,6 @@ const Home = () => {
               <CardContent>
                 <div className='platform_card_icon_container'>
                   <FontAwesomeIcon icon={faSeedling} className='platform_icon' />
-                  {/* <Icon icon="charm:plant-pot" className='platform_icon'/> */}
                 </div>
                 <p className='platform_card_title'>
                   Agri-Tech
@@ -94,7 +93,6 @@ const Home = () => {
             <Card className={showPlatformCard === 3 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(3)}>
               <CardContent>
                 <div className='platform_card_icon_container'>
-                  {/* <FontAwesomeIcon icon={faHeartPulse} className='platform_icon' /> */}
                   <Icon icon="healthicons:health-outline" className='platform_icon' />
                 </div>
                 <p className='platform_card_title'>
@@ -178,7 +176,9 @@ const Home = () => {
           }
           <div className='learn_more_2'>
             <button className='learn_button'>
-              LEARN MORE
+              <Link to='/impact-stories' className='learn_button_link'>
+                LEARN MORE
+              </Link>
             </button>
           </div>
         </div>

@@ -64,11 +64,11 @@ function Item(props) {
         <div className={'welcome_text'}>
           {props.item.text}
         </div>
-        <div className='learn_more'>
+        {/* <div className='learn_more'>
           <button className='learn_button'>
             LEARN MORE
           </button>
-        </div>
+        </div> */}
       </div>
       <div className='img_container'>
         {
@@ -128,11 +128,11 @@ function Item2(props) {
         <div className={'welcome_text'}>
           {props.item.text}
         </div>
-        <div className='learn_more'>
+        {/* <div className='learn_more'>
           <button className='learn_button'>
             LEARN MORE
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   )

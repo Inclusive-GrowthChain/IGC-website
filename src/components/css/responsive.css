@@ -265,6 +265,7 @@
 
   .about_container_desc {
     width: 90%;
+    font-size: 1.1vw;
   }
 
   .about_img {
@@ -526,15 +527,18 @@
   }
 
   .home_news_card_title {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .home_news_card_desc {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (min-width: 1400px) {
+  .about_container_desc {
+    font-size: 0.8vw;
+  }
 
   .platform_card,
   .platform_card_selected {
@@ -699,12 +703,20 @@
   }
 
   .cc3_content_container {
-    width: 70%;
+    width: 80%;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     display: grid;
     margin-top: 5rem;
+  }
+
+  .contact_details_2_container .contact_details_text_container {
+    margin-left: -2.5%;
+  }
+
+  .contact_form_container {
+    margin-left: 10%;
   }
 
   .contact_details_container {
@@ -797,10 +809,77 @@
     padding-top: 10vh;
     background-color: rgb(250, 250, 250);
     color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+    display: grid;
+    padding-left: 10%;
+    padding-right: 0%;
+  }
+
+  .footer_contact_container_2 {
+    display: block;
+  }
+
+  .footer_navigation_container {
+    display: block;
+  }
+
+  .footer_company_title {
+    text-align: left;
+  }
+
+  .footer_company_social_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: left;
+  }
+
+  .footer_contact_container_2 {
+    margin-left: 5%;
+  }
+
+  .footer_line {
+    margin-left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .footer {
+    padding-bottom: 10vh;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: rgb(250, 250, 250);
+    color: #fff;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1;
     grid-gap: 2rem;
     display: grid;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer_contact_container_2 {
+    margin-left: 0%;
+  }
+
+  .footer_news_container_2 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .footer {
     padding-left: 15%;
     padding-right: 15%;
   }
