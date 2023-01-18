@@ -471,6 +471,13 @@
     width: 90%;
     margin: auto;
   }
+
+  .careers_modal_container {
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 40%;
+    height: 80%;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
