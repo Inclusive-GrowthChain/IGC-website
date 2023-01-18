@@ -55,6 +55,9 @@ const Home = () => {
     <div className='home_main_container'>
       <HomeSliderContent />
       <div className='home_container_2'>
+        <div className='hc2_responsive_title'>
+          INDUSTRIES
+        </div>
         <div className='tab_container'>
           <div className='tab_1'>
             <Card className={showPlatformCard === 1 ? 'platform_card_selected' : 'platform_card'} onClick={() => setShowPlatformCard(1)}>
@@ -245,6 +248,9 @@ const Home = () => {
         </div>
       </div>
       <div className='home_container_4'>
+        <div className='hc4_responsive_title'>
+          SERVICES
+        </div>
         <div className='service_container'>
           <div className='service_title'>
             SERVICES

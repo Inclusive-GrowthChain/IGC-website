@@ -1,10 +1,28 @@
 /* Navbar */
 
+@media only screen and (min-width: 568px) {
+  .navbar_logo_text_1 {
+    font-size: 3.5vw;
+  }
+
+  .navbar_logo_text_2 {
+    font-size: 2.5vw;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 
   .navbar_logo_text,
   .demo_button_container {
     display: block;
+  }
+
+  .navbar_logo_text_1 {
+    font-size: 1.6vw;
+  }
+
+  .navbar_logo_text_2 {
+    font-size: 0.88vw;
   }
 
   .nav_item {
@@ -16,8 +34,8 @@
   }
 
   .nav_item_a {
-    padding: 30px 10px 30px 20px;
-    font-size: 1.3vw;
+    padding: 30px 2px 30px 2px;
+    font-size: 1vw;
   }
 
   .nav_item_a_scrolled {
@@ -27,11 +45,12 @@
 
 @media only screen and (min-width: 992px) {
   .nav_item_a {
-    padding: 30px 20px 30px 20px;
+    padding: 30px 10px 30px 10px;
+    font-size: 1vw;
   }
 
   .nav_item_a_scrolled {
-    font-size: 1vw;
+    font-size: 0.65vw;
   }
 }
 
@@ -371,6 +390,123 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .home_container_2 {
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+    width: 100%;
+  }
+
+  .hc2_responsive_title {
+    display: none;
+  }
+
+  .tab_container {
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 7%;
+    margin-left: 35vh;
+  }
+
+  .tab_1,
+  .tab_3 {
+    margin-top: 0vh;
+  }
+
+  .tab_2,
+  .tab_4 {
+    margin-top: 5vh;
+  }
+
+  .platform_card,
+  .platform_card_selected {
+    width: 250px;
+    height: 240px;
+  }
+
+  .platform_card_title {
+    margin-top: 0rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .platform_card_desc {
+    margin-top: 0.938rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+  }
+
+  .platform_icon {
+    height: 3rem;
+    width: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  .desc_container {
+    display: block;
+    padding-top: 20vh;
+    max-width: 100%;
+    margin: 0;
+    margin-left: 5rem;
+    margin-top: -1rem;
+  }
+
+  .home_container_4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+  }
+
+  .hc4_responsive_title {
+    display: none;
+  }
+
+  .service_container {
+    display: block;
+  }
+
+  .service_text {
+    font-size: 2.5vw;
+  }
+
+  .service_desc {
+    font-size: 1.2vw;
+  }
+
+  .service_card_container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .service_card,
+  .service_card_selected {
+    width: 260px;
+    height: 230px;
+  }
+
+  .service_icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .service_card_selected .service_icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
   .home_subscribe_title {
     font-size: 1.667vw;
   }
@@ -395,6 +531,60 @@
 
   .home_news_card_desc {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .platform_card,
+  .platform_card_selected {
+    width: 300px;
+    height: 290px;
+  }
+
+  .platform_card_title {
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .platform_card_desc {
+    margin-top: 0.938rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+  }
+
+  .platform_icon {
+    height: 5rem;
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  .service_card,
+  .service_card_selected {
+    width: 312px;
+    height: 290px;
+  }
+
+  .service_icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .service_card_selected .service_icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .service_text {
+    font-size: 1.76vw;
+  }
+
+  .service_desc {
+    font-size: 0.8vw;
   }
 }
 
@@ -580,5 +770,38 @@
 
   .news_card_desc {
     font-size: 1rem;
+  }
+}
+
+/* Impact Stories */
+
+@media only screen and (min-width: 1200px) {
+  .isc2_content_container {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 2rem;
+  }
+
+  .impact_stories_card_container {
+    width: 122.5%;
+    padding-left: 35%;
+  }
+}
+
+/* Footer */
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 10vh;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: rgb(250, 250, 250);
+    color: #fff;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+    display: grid;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }

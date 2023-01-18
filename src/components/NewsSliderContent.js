@@ -284,12 +284,12 @@ const NewsSliderContent = () => {
 
   return (
     <div>
-      <Carousel className='carousel1'>
+      <Carousel className='carousel1' navButtonsAlwaysVisible={true}>
         {
           news_items.map((item, i) => <Item key={i} item={item} />)
         }
       </Carousel>
-      <Carousel className='carousel2'>
+      <Carousel className='carousel2' navButtonsAlwaysVisible={true}>
         {
           responsive_news_items.map((item, i) => <Item2 key={i} item={item} />)
         }

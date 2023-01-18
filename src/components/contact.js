@@ -66,7 +66,10 @@ const Contact = () => {
                       India Office
                     </div>
                     <div className='contact_card_text_2'>
-                      Dlabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad - 500111, India
+                      Twinsset Pvt. Ltd.
+                    </div>
+                    <div className='contact_card_text_2'>
+                      DLabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad - 500111, India
                     </div>
                     <div className='contact_card_text_3'>
                       Phone: +91-9866896553
@@ -183,7 +186,7 @@ const Contact = () => {
           </Marker>
           <Marker position={position2}>
             <Popup>
-              Dlabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad
+              DLabs, Indian School of Business, ISB Road,  Gachibowli, Hyderabad
             </Popup>
           </Marker>
         </MapContainer>

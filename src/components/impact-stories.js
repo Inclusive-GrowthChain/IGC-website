@@ -1035,7 +1035,7 @@ const ImpactStories = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

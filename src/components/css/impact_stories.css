@@ -27,14 +27,11 @@
 }
 
 .isc2_content_container {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    grid-gap: 2rem;
+    width: 100%;
 }
 
 .impact_stories_card_container {
-    width: 122.5%;
-    padding-left: 35%;
+    width: 100%;
 }
 
 .impact_stories_card {

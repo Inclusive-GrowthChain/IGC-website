@@ -15,7 +15,7 @@ const HomeSliderContent = () => {
     {
       index: 1,
       title: "",
-      description: "Welcome to Inclusive Growth Chain: Your Digital Transformation Partner",
+      description: "Welcome to Inclusive Growth Chain: Your Digital Transformation Partner for Creating a Better World",
       text: ""
     },
     {
@@ -40,12 +40,12 @@ const HomeSliderContent = () => {
 
   return (
     <div>
-      <Carousel className='home_carousel_1'>
+      <Carousel className='home_carousel_1' navButtonsAlwaysVisible={true}>
         {
           items.map((item, i) => <Item key={i} item={item} />)
         }
       </Carousel>
-      <Carousel className='home_carousel_2'>
+      <Carousel className='home_carousel_2' navButtonsAlwaysVisible={true}>
         {
           items.map((item, i) => <Item2 key={i} item={item} />)
         }
