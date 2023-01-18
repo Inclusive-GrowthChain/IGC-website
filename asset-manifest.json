@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IGC-website/static/css/main.eb76e492.css",
+    "main.css": "/IGC-website/static/css/main.43487f79.css",
     "main.js": "/IGC-website/static/js/main.fff6b44d.js",
     "static/js/787.71e672d5.chunk.js": "/IGC-website/static/js/787.71e672d5.chunk.js",
     "static/media/6.jpg": "/IGC-website/static/media/6.0fe3fddd8bbaf4a7eb8d.jpg",
@@ -58,12 +58,12 @@
     "static/media/suvik.png": "/IGC-website/static/media/suvik.758c9a4969c4b371c753.png",
     "static/media/32.png": "/IGC-website/static/media/32.f2e8104b49ca2ba6106a.png",
     "index.html": "/IGC-website/index.html",
-    "main.eb76e492.css.map": "/IGC-website/static/css/main.eb76e492.css.map",
+    "main.43487f79.css.map": "/IGC-website/static/css/main.43487f79.css.map",
     "main.fff6b44d.js.map": "/IGC-website/static/js/main.fff6b44d.js.map",
     "787.71e672d5.chunk.js.map": "/IGC-website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb76e492.css",
+    "static/css/main.43487f79.css",
     "static/js/main.fff6b44d.js"
   ]
 }
