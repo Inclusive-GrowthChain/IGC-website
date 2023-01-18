@@ -542,3 +542,43 @@
     display: none;
   }
 }
+
+/* News */
+
+@media only screen and (min-width: 1200px) {
+  .news_card_container {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  .news_card_container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  .news_card_img {
+    height: 350px;
+  }
+
+  .news_card_title {
+    font-size: 1rem;
+  }
+
+  .news_card_desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .news_card_title {
+    font-size: 1.3rem;
+  }
+
+  .news_card_desc {
+    font-size: 1rem;
+  }
+}
