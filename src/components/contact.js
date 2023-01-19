@@ -41,6 +41,26 @@ const Contact = () => {
   const position = [52.26055967532952, 6.808795326260226];
   const position2 = [17.438290505669446, 78.33938473680966];
   const centerPosition = [34.8494, 42.5741];
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const onChangeName = (e) => {
+    setName(e.target.value);
+  };
+  
+  const onChangeEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const onChangeSubject = (e) => {
+    setSubject(e.target.value);
+  };
+
+  const onChangeMessage = (e) => {
+    setMessage(e.target.value);
+  };
 
   return (
     <div className='contact_main_container'>
@@ -110,19 +130,19 @@ const Contact = () => {
         <div className='cc3_content_container'>
           <div className='contact_form_container'>
             <div className='contact_form_input_container'>
-              <input type='text' placeholder='Your Name' className='contact_form_input' />
+              <input type='text' placeholder='Your Name' className='contact_form_input' onChange={(e) => onChangeName(e)}/>
             </div>
             <div className='contact_form_input_container'>
-              <input type='text' placeholder='Your Email' className='contact_form_input' />
+              <input type='text' placeholder='Your Email' className='contact_form_input' onChange={(e) => onChangeEmail(e)}/>
             </div>
             <div className='contact_form_input_container'>
-              <input type='text' placeholder='Subject' className='contact_form_input' />
+              <input type='text' placeholder='Subject' className='contact_form_input' onChange={(e) => onChangeSubject(e)}/>
             </div>
             <div className='contact_form_input_container'>
-              <textarea placeholder='Message' className='contact_form_message'></textarea>
+              <textarea placeholder='Message' className='contact_form_message' onChange={(e) => onChangeMessage(e)}></textarea>
             </div>
             <div className='contact_form_submit'>
-              Send Message
+              <a href={"mailto:admin@inclusivegrowthchain.com?subject=" + subject + "&body=" + message}>Send Message</a>
             </div>
           </div>
           <div className='contact_details_container'>

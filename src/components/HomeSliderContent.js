@@ -40,7 +40,7 @@ const HomeSliderContent = () => {
 
   return (
     <div>
-      <Carousel className='home_carousel_1' navButtonsAlwaysVisible={true}>
+      <Carousel className='home_carousel_1' navButtonsAlwaysVisible={true} interval={2000}>
         {
           items.map((item, i) => <Item key={i} item={item} />)
         }
