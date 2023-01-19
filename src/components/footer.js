@@ -24,6 +24,7 @@ const Footer = () => {
         </div> */}
         <div className='footer_company_responsive_text'>
           <p>DLabs, Indian School of Business</p>
+          <p>Hyderabad, India</p>
           <p>+91-9866896553</p>
           <p>admin@inclusivegrowthchain.com</p>
         </div>

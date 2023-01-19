@@ -156,6 +156,10 @@
     padding-top: 20vh;
   }
 
+  .img_container_2 {
+    display: block;
+  }
+
   .about_container_text {
     font-size: 1.76vw;
     width: 70%;

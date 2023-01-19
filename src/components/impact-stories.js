@@ -272,7 +272,7 @@ const ImpactStories = () => {
   
     return (
       <div>
-        <Carousel className='is_carousel'>
+        <Carousel className='is_carousel' navButtonsAlwaysVisible={true}>
           {
             items.map((item, i) => <Item key={i} item={item} />)
           }
@@ -284,7 +284,7 @@ const ImpactStories = () => {
   function Item(props) {
     return (
       <div className='is_responsive_posts_outer_container'>
-        <p className='is_responsive_posts_title'>Read More</p>
+        <p className='is_responsive_posts_title'>Read Next</p>
         <div className='is_responsive_posts_container'>
           <ul className='is_responsive_posts_list'>
             <li className='is_responsive_posts_list_item'>
