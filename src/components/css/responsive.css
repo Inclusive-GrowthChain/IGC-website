@@ -787,6 +787,32 @@
 
 /* Impact Stories */
 
+@media only screen and (min-width: 658px) {
+  .is_responsive_posts_list_item_img {
+    width: 30vw;
+    height: 150px;
+  }
+
+  .is_responsive_posts_list_item_text_container {
+    width: 100%;
+    margin-left: -10vw;
+  }
+
+  .is_responsive_posts_list_item_text,
+  .is_responsive_posts_list_item_text_selected {
+    font-size: 3vw;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 922px) {
+
+  .is_responsive_posts_list_item_text,
+  .is_responsive_posts_list_item_text_selected {
+    font-size: 2vw;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .isc2_content_container {
     grid-template-columns: repeat(2, 1fr);
@@ -797,6 +823,32 @@
   .impact_stories_card_container {
     width: 122.5%;
     padding-left: 35%;
+  }
+
+  .impact_stories_card_zoom_icon {
+    display: block;
+  }
+
+  .isc2_recent_posts_container {
+    display: block;
+  }
+
+  .is_carousel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .isc2_side_container {
+    width: 45%;
+    margin-left: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .isc2_side_container {
+    width: 37%;
+    margin-left: 15rem;
   }
 }
 

@@ -70,7 +70,7 @@ const Footer = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faCircleCheck} className='footer_contact_icon' />
-            <Link to="../impact-stories" className='footer_navigation_link'>
+            <Link to="../impact-stories" className='footer_navigation_link' onClick={() => localStorage.removeItem('platform')}>
               Impact Stories
             </Link>
           </p>

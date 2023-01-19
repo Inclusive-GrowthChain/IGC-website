@@ -27,6 +27,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from '@mui/material';
 
 import './css/impact_stories.css';
+import ImpactStoriesSliderContent from './ImpactStoriesSliderContent';
 
 import home_img from '../assets/home_img/20943774.jpg';
 import img_1 from '../assets/impact_stories_imgs/1.png';
@@ -206,6 +207,11 @@ const ImpactStories = () => {
   const handleCloseZoomedImage3 = () => setShowZoomedImage3(false);
   const handleShowZoomedImage4 = () => setShowZoomedImage4(true);
   const handleCloseZoomedImage4 = () => setShowZoomedImage4(false);
+
+  // useEffect(() => {
+  //   setCurrentStory(localStorage.getItem('impact-story') || 0);
+  //   console.log('currentStory', currentStory);
+  // }, []);
 
   return (
     <div className='impact_stories_main_container'>
@@ -1033,9 +1039,10 @@ const ImpactStories = () => {
               </div>
             </div>
           </div>
+          <ImpactStoriesSliderContent />
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

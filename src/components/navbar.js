@@ -133,7 +133,7 @@ const Navbar = () => {
             }
             return (
               <li key={item.id} className={item.cName}>
-                <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
+                <Link to={item.path} className={nav_item_a_classes.join(" ")} onClick={() => localStorage.removeItem('platform')}>{item.title}</Link>
               </li>
             )
           })
@@ -152,7 +152,7 @@ const Navbar = () => {
       {
         hamburgerOpen && (
           <div className="hamburger_container">
-            <ul className="hamburger_menu_list">
+            <ul className={scrolled ? "hamburger_menu_list_scrolled" : "hamburger_menu_list"}>
               {
                 navItems.map((item) => {
                   if (item.title === "ABOUT") {

@@ -175,7 +175,7 @@ const Home = () => {
             )
           }
           <div className='learn_more_2'>
-            <button className='learn_button'>
+            <button className='learn_button' onClick={() => localStorage.setItem('platform', showPlatformCard)}>
               <Link to='/impact-stories' className='learn_button_link'>
                 LEARN MORE
               </Link>

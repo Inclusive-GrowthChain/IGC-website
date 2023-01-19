@@ -6,13 +6,15 @@
     align-items: center;
     width: 100%;
     transition: all .7s ease-in;
-    z-index: 3;
+    z-index: 99;
 }
 
 .navbar_scrolled {
     position: fixed;
     transition: all .7s ease-in;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 99;
 }
 
 .navbar_logo {
@@ -197,7 +199,21 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
-    transition: all 0.3s ease-in;
+    /* transition: all 0.3s ease-in; */
+}
+
+.hamburger_menu_list_scrolled {
+    position: absolute;
+    top: 34vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    /* transition: all 0.3s ease-in; */
 }
 
 .hamburger_menu_list_item {
