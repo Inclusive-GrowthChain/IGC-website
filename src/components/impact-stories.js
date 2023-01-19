@@ -211,17 +211,17 @@ const ImpactStories = () => {
 
   const checkPlatform = () => {
     var platform = localStorage.getItem('platform');
-    if(platform!=null) {
-      if(platform === '1') {
+    if (platform != null) {
+      if (platform === '1') {
         setCurrentStory(2);
       }
-      else if(platform === '2') {
+      else if (platform === '2') {
         setCurrentStory(0);
       }
-      else if(platform === '3') {
+      else if (platform === '3') {
         setCurrentStory(1);
       }
-      else if(platform === '4') {
+      else if (platform === '4') {
         setCurrentStory(6);
       }
     }
@@ -269,10 +269,23 @@ const ImpactStories = () => {
         image: img_16,
       },
     ]
-  
+
     return (
       <div>
-        <Carousel className='is_carousel' navButtonsAlwaysVisible={true}>
+        <Carousel
+          className='is_carousel'
+          navButtonsAlwaysVisible={true}
+          navButtonsProps={{
+            style: {
+              opacity: 0.3,
+            }
+          }}
+          navButtonsWrapperProps={{
+            style: {
+              top: 25
+            }
+          }}
+        >
           {
             items.map((item, i) => <Item key={i} item={item} />)
           }
@@ -280,7 +293,7 @@ const ImpactStories = () => {
       </div>
     )
   }
-  
+
   function Item(props) {
     return (
       <div className='is_responsive_posts_outer_container'>
@@ -963,7 +976,7 @@ const ImpactStories = () => {
                               src={img_4}
                               alt="img_4"
                               className='impact_stories_card_zoomed_img'
-                              style={{width: '80%', marginLeft: '10%'}}
+                              style={{ width: '80%', marginLeft: '10%' }}
                             />
                           </div>
                         </Modal>
