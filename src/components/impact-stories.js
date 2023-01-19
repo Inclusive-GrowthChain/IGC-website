@@ -333,6 +333,7 @@ const ImpactStories = () => {
                         alt='img_22'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/automated-smart-garden-illustration_16219788.htm#query=farm%20technology%20illustration&position=20&from_view=search&track=ais">Image by macrovector</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Building Farming Ecosystem with Blockchain for Empowering Farmers
@@ -384,6 +385,7 @@ const ImpactStories = () => {
                         alt='img_12'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'>Image by <a href="https://www.freepik.com/free-vector/humanitarian-help-concept_7607398.htm#query=medicine%20logistics%20illustration&position=2&from_view=search&track=ais">Freepik</a></p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Protecting Medicine Logistics for Better Health Care Infrastructure
@@ -490,6 +492,7 @@ const ImpactStories = () => {
                         alt='img_23'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/flat-people-holding-euro-dollar-coins-currency-exchange_16846119.htm#query=money%20exchange%20illustration&position=0&from_view=search&track=ais">Image by redgreystock</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Improving Funding Opportunities for the Bottom of the Pyramid of the Society
@@ -539,6 +542,7 @@ const ImpactStories = () => {
                         alt='img_14'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/lack-fresh-water-abstract-concept_12085827.htm#query=water%20saving%20tap%20illustration&position=32&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Saving Industry Water Consumption
@@ -614,6 +618,7 @@ const ImpactStories = () => {
                         alt='img_19'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/promissory-note-abstract-concept-illustration_20769749.htm#query=corporate%20debt%20illustration&position=14&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Making Corporate Debt Market for Ordinary Retail Investors
@@ -750,6 +755,7 @@ const ImpactStories = () => {
                         alt='img_15'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/air-quality-monitor-abstract-concept-illustration_11667706.htm#query=air%20quality%20technology%20illustration&position=8&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Protecting the Environment through better Air Quality Monitoring Model
@@ -934,6 +940,7 @@ const ImpactStories = () => {
                         alt='img_16'
                         className='impact_stories_card_img'
                       />
+                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/chemicals-water-illustration-tiny-scientist-female-character-white-lab-coat-hold-beaker-research-water-laboratory_15128752.htm#query=water%20quality%20technology%20illustration&position=10&from_view=search&track=ais">Image by goonerua</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Protecting the Environment through better Water Quality Monitoring Model
