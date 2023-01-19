@@ -25,9 +25,10 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from '@mui/material';
+import Carousel from 'react-material-ui-carousel';
 
 import './css/impact_stories.css';
-import ImpactStoriesSliderContent from './ImpactStoriesSliderContent';
+// import ImpactStoriesSliderContent from './ImpactStoriesSliderContent';
 
 import home_img from '../assets/home_img/20943774.jpg';
 import img_1 from '../assets/impact_stories_imgs/1.png';
@@ -208,10 +209,106 @@ const ImpactStories = () => {
   const handleShowZoomedImage4 = () => setShowZoomedImage4(true);
   const handleCloseZoomedImage4 = () => setShowZoomedImage4(false);
 
-  // useEffect(() => {
-  //   setCurrentStory(localStorage.getItem('impact-story') || 0);
-  //   console.log('currentStory', currentStory);
-  // }, []);
+  const checkPlatform = () => {
+    var platform = localStorage.getItem('platform');
+    if(platform!=null) {
+      if(platform === '1') {
+        setCurrentStory(2);
+      }
+      else if(platform === '2') {
+        setCurrentStory(0);
+      }
+      else if(platform === '3') {
+        setCurrentStory(1);
+      }
+      else if(platform === '4') {
+        setCurrentStory(6);
+      }
+    }
+  };
+
+  useEffect(() => {
+    checkPlatform();
+  }, []);
+
+  const ImpactStoriesSliderContent = () => {
+    var items = [
+      {
+        index: 1,
+        title: "Building Farming Ecosystem with Blockchain for Empowering Farmers",
+        image: img_22,
+      },
+      {
+        index: 2,
+        title: "Protecting Medicine Logistics for Better Health Care Infrastructure",
+        image: img_12,
+      },
+      {
+        index: 3,
+        title: "Improving Funding Opportunities for the Bottom of the Pyramid of the Society",
+        image: img_23,
+      },
+      {
+        index: 4,
+        title: "Saving Industry Water Consumption",
+        image: img_14,
+      },
+      {
+        index: 5,
+        title: "Making Corporate Debt Market for Ordinary Retail Investors",
+        image: img_19,
+      },
+      {
+        index: 6,
+        title: "Protecting the Environment through better Air Quality Monitoring Model",
+        image: img_15,
+      },
+      {
+        index: 7,
+        title: "Protecting the Environment through better Water Quality Monitoring Model",
+        image: img_16,
+      },
+    ]
+  
+    return (
+      <div>
+        <Carousel className='is_carousel'>
+          {
+            items.map((item, i) => <Item key={i} item={item} />)
+          }
+        </Carousel>
+      </div>
+    )
+  }
+  
+  function Item(props) {
+    return (
+      <div className='is_responsive_posts_outer_container'>
+        <p className='is_responsive_posts_title'>Read More</p>
+        <div className='is_responsive_posts_container'>
+          <ul className='is_responsive_posts_list'>
+            <li className='is_responsive_posts_list_item'>
+              <div className='is_responsive_posts_list_item_img_container'>
+                <img
+                  src={props.item.image}
+                  alt={props.item.title}
+                  className='is_responsive_posts_list_item_img'
+                />
+              </div>
+              <div className='is_responsive_posts_list_item_text_container'>
+                <p className={currentStory === props.item.index - 1 ? 'is_responsive_posts_list_item_text_selected' : 'is_responsive_posts_list_item_text'} onClick={() => {
+                  setCurrentStory(props.item.index - 1);
+                  window.scrollTo(0, 0);
+                }}>
+                  {props.item.title}
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className='impact_stories_main_container'>
