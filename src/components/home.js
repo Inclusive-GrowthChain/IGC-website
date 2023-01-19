@@ -491,7 +491,6 @@ const Home = () => {
           <NewsSliderContent />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

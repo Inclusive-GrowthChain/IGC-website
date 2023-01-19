@@ -92,7 +92,6 @@ const AboutFounders = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

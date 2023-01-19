@@ -1042,7 +1042,6 @@ const ImpactStories = () => {
           <ImpactStoriesSliderContent />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

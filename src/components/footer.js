@@ -22,6 +22,11 @@ const Footer = () => {
         {/* <div className='footer_company_text'>
           Impact that Empowers
         </div> */}
+        <div className='footer_company_responsive_text'>
+          <p>DLabs, Indian School of Business</p>
+          <p>+91-9866896553</p>
+          <p>admin@inclusivegrowthchain.com</p>
+        </div>
         <div className='footer_company_social_container'>
           <FontAwesomeIcon icon={faLinkedin} className='footer_social_icon' />
           <FontAwesomeIcon icon={faTwitter} className='footer_social_icon' />
@@ -36,11 +41,11 @@ const Footer = () => {
         <div className='footer_contact_text_2'>
           <p>
             <FontAwesomeIcon icon={faMap} className='footer_contact_icon' />
-            Address
+            DLabs, Indian School of Business
           </p>
           <p>
             <FontAwesomeIcon icon={faPhone} className='footer_contact_icon' />
-            Phone Number
+            +91-9866896553
           </p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className='footer_contact_icon' />

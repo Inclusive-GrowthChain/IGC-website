@@ -8,6 +8,8 @@ import Careers from "./components/careers";
 import News from "./components/news";
 import Blog from "./components/blog";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import ScrollToTop from "./components/scrollToTop";
 
 import './App.css';
 import './components/css/responsive.css';
@@ -19,6 +21,7 @@ const Layout = () => {
       <div className="container">
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 };
@@ -27,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />

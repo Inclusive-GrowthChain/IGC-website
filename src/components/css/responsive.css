@@ -877,6 +877,10 @@
     padding-right: 0%;
   }
 
+  .footer_company_responsive_text {
+    display: none;
+  }
+
   .footer_contact_container_2 {
     display: block;
   }

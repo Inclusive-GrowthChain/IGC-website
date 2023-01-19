@@ -275,7 +275,6 @@ const Careers = () => {
           }
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

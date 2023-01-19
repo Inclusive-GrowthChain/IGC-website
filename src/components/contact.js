@@ -207,7 +207,6 @@ const Contact = () => {
           </Marker>
         </MapContainer>
       </div>
-      <Footer />
     </div>
   );
 }

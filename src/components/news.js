@@ -539,7 +539,6 @@ const News = () => {
           })
         }
       </div>
-      <Footer />
     </div>
   );
 }
