@@ -431,6 +431,10 @@
     height: 240px;
   }
 
+  .platform_card_selected {
+    margin-top: -0.625rem;
+  }
+
   .platform_card_title {
     margin-top: 0rem;
     font-size: 1rem;
@@ -496,6 +500,10 @@
   .service_card_selected {
     width: 260px;
     height: 230px;
+  }
+
+  .service_card_selected {
+    margin-top: -0.625rem;
   }
 
   .service_icon {
