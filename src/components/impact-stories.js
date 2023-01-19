@@ -2,6 +2,26 @@ import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMap } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
+import { faShare } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
+import { faFolder } from '@fortawesome/free-regular-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from '@mui/material';
@@ -10,6 +30,7 @@ import Carousel from 'react-material-ui-carousel';
 import './css/impact_stories.css';
 // import ImpactStoriesSliderContent from './ImpactStoriesSliderContent';
 
+import home_img from '../assets/home_img/20943774.jpg';
 import img_1 from '../assets/impact_stories_imgs/1.png';
 import img_2 from '../assets/impact_stories_imgs/2.png';
 import img_3 from '../assets/impact_stories_imgs/3.png';
@@ -20,6 +41,7 @@ import img_7 from '../assets/impact_stories_imgs/7.png';
 import img_8 from '../assets/impact_stories_imgs/8.png';
 import img_9 from '../assets/impact_stories_imgs/9.png';
 import img_10 from '../assets/impact_stories_imgs/10.png';
+import img_11 from '../assets/impact_stories_imgs/11.jpg';
 import img_12 from '../assets/impact_stories_imgs/12.jpg';
 import img_23 from '../assets/impact_stories_imgs/23.jpg';
 import img_14 from '../assets/impact_stories_imgs/14.jpg';
@@ -31,6 +53,9 @@ import img_19 from '../assets/impact_stories_imgs/19.jpg';
 import img_20 from '../assets/impact_stories_imgs/20.png';
 import img_21 from '../assets/impact_stories_imgs/21.png';
 import img_22 from '../assets/impact_stories_imgs/22.png';
+
+import Footer from './footer';
+import { Box } from '@mui/system';
 
 const impact_stories_items = [
   {
@@ -186,17 +211,17 @@ const ImpactStories = () => {
 
   const checkPlatform = () => {
     var platform = localStorage.getItem('platform');
-    if (platform != null) {
-      if (platform === '1') {
+    if(platform!=null) {
+      if(platform === '1') {
         setCurrentStory(2);
       }
-      else if (platform === '2') {
+      else if(platform === '2') {
         setCurrentStory(0);
       }
-      else if (platform === '3') {
+      else if(platform === '3') {
         setCurrentStory(1);
       }
-      else if (platform === '4') {
+      else if(platform === '4') {
         setCurrentStory(6);
       }
     }
@@ -244,23 +269,10 @@ const ImpactStories = () => {
         image: img_16,
       },
     ]
-
+  
     return (
       <div>
-        <Carousel
-          className='is_carousel'
-          navButtonsAlwaysVisible={true}
-          navButtonsProps={{
-            style: {
-              opacity: 0.3,
-            }
-          }}
-          navButtonsWrapperProps={{
-            style: {
-              top: 25
-            }
-          }}
-        >
+        <Carousel className='is_carousel'>
           {
             items.map((item, i) => <Item key={i} item={item} />)
           }
@@ -268,11 +280,11 @@ const ImpactStories = () => {
       </div>
     )
   }
-
+  
   function Item(props) {
     return (
       <div className='is_responsive_posts_outer_container'>
-        <p className='is_responsive_posts_title'>Read Next</p>
+        <p className='is_responsive_posts_title'>Read More</p>
         <div className='is_responsive_posts_container'>
           <ul className='is_responsive_posts_list'>
             <li className='is_responsive_posts_list_item'>
@@ -321,7 +333,6 @@ const ImpactStories = () => {
                         alt='img_22'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/automated-smart-garden-illustration_16219788.htm#query=farm%20technology%20illustration&position=20&from_view=search&track=ais">Image by macrovector</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Building Farming Ecosystem with Blockchain for Empowering Farmers
@@ -373,7 +384,6 @@ const ImpactStories = () => {
                         alt='img_12'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'>Image by <a href="https://www.freepik.com/free-vector/humanitarian-help-concept_7607398.htm#query=medicine%20logistics%20illustration&position=2&from_view=search&track=ais">Freepik</a></p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Protecting Medicine Logistics for Better Health Care Infrastructure
@@ -480,7 +490,6 @@ const ImpactStories = () => {
                         alt='img_23'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/flat-people-holding-euro-dollar-coins-currency-exchange_16846119.htm#query=money%20exchange%20illustration&position=0&from_view=search&track=ais">Image by redgreystock</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Improving Funding Opportunities for the Bottom of the Pyramid of the Society
@@ -530,7 +539,6 @@ const ImpactStories = () => {
                         alt='img_14'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/lack-fresh-water-abstract-concept_12085827.htm#query=water%20saving%20tap%20illustration&position=32&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Saving Industry Water Consumption
@@ -606,7 +614,6 @@ const ImpactStories = () => {
                         alt='img_19'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/promissory-note-abstract-concept-illustration_20769749.htm#query=corporate%20debt%20illustration&position=14&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Making Corporate Debt Market for Ordinary Retail Investors
@@ -743,7 +750,6 @@ const ImpactStories = () => {
                         alt='img_15'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/air-quality-monitor-abstract-concept-illustration_11667706.htm#query=air%20quality%20technology%20illustration&position=8&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Protecting the Environment through better Air Quality Monitoring Model
@@ -928,7 +934,6 @@ const ImpactStories = () => {
                         alt='img_16'
                         className='impact_stories_card_img'
                       />
-                      <p className='image_credits'><a href="https://www.freepik.com/free-vector/chemicals-water-illustration-tiny-scientist-female-character-white-lab-coat-hold-beaker-research-water-laboratory_15128752.htm#query=water%20quality%20technology%20illustration&position=10&from_view=search&track=ais">Image by goonerua</a> on Freepik</p>
                     </div>
                     <div className='impact_stories_card_title'>
                       Protecting the Environment through better Water Quality Monitoring Model
@@ -951,7 +956,7 @@ const ImpactStories = () => {
                               src={img_4}
                               alt="img_4"
                               className='impact_stories_card_zoomed_img'
-                              style={{ width: '80%', marginLeft: '10%' }}
+                              style={{width: '80%', marginLeft: '10%'}}
                             />
                           </div>
                         </Modal>

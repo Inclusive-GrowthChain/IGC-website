@@ -156,10 +156,6 @@
     padding-top: 20vh;
   }
 
-  .img_container_2 {
-    display: block;
-  }
-
   .about_container_text {
     font-size: 1.76vw;
     width: 70%;
@@ -616,7 +612,6 @@
 
   .about_about_img {
     margin-left: -10rem;
-    height: 50%;
   }
 
   .about_text {
@@ -630,13 +625,6 @@
   .about_list {
     width: 60%;
   }
-}
-
-@media only screen and (min-width: 1400px) {
-  .about_about_img {
-    width: 100%;
-    height: 100%;
-}
 }
 
 /* About Founders */

@@ -402,7 +402,7 @@
     margin: 0;
     padding: 0;
     margin-top: 2rem;
-    /* width: 80vh; */
+    width: 80vh;
 }
 
 .service_card {
@@ -500,7 +500,6 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: none;
 }
 
 .about_img {

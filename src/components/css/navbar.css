@@ -203,7 +203,7 @@
 }
 
 .hamburger_menu_list_scrolled {
-    position: fixed;
+    position: absolute;
     top: 12vh;
     left: 50%;
     transform: translate(-50%);
