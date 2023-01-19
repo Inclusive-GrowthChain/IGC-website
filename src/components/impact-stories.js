@@ -2,26 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMap } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBrain } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
-import { faShare } from '@fortawesome/free-solid-svg-icons';
-import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
-import { faFolder } from '@fortawesome/free-regular-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from '@mui/material';
@@ -30,7 +10,6 @@ import Carousel from 'react-material-ui-carousel';
 import './css/impact_stories.css';
 // import ImpactStoriesSliderContent from './ImpactStoriesSliderContent';
 
-import home_img from '../assets/home_img/20943774.jpg';
 import img_1 from '../assets/impact_stories_imgs/1.png';
 import img_2 from '../assets/impact_stories_imgs/2.png';
 import img_3 from '../assets/impact_stories_imgs/3.png';
@@ -41,7 +20,6 @@ import img_7 from '../assets/impact_stories_imgs/7.png';
 import img_8 from '../assets/impact_stories_imgs/8.png';
 import img_9 from '../assets/impact_stories_imgs/9.png';
 import img_10 from '../assets/impact_stories_imgs/10.png';
-import img_11 from '../assets/impact_stories_imgs/11.jpg';
 import img_12 from '../assets/impact_stories_imgs/12.jpg';
 import img_23 from '../assets/impact_stories_imgs/23.jpg';
 import img_14 from '../assets/impact_stories_imgs/14.jpg';
@@ -53,9 +31,6 @@ import img_19 from '../assets/impact_stories_imgs/19.jpg';
 import img_20 from '../assets/impact_stories_imgs/20.png';
 import img_21 from '../assets/impact_stories_imgs/21.png';
 import img_22 from '../assets/impact_stories_imgs/22.png';
-
-import Footer from './footer';
-import { Box } from '@mui/system';
 
 const impact_stories_items = [
   {

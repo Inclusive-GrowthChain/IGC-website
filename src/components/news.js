@@ -2,62 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMap } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBrain } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
-import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
-import { faFolder } from '@fortawesome/free-regular-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import './css/news.css';
 
-import home_img from '../assets/home_img/20943774.jpg';
-
-import img_1 from '../assets/news_imgs/1.jpeg';
-import img_2 from '../assets/news_imgs/2.jpg';
-// import img_3 from '../assets/news_imgs/3.jpg';
-import img_4 from '../assets/news_imgs/4.jpg';
-import img_5 from '../assets/news_imgs/5.jpg';
 import img_6 from '../assets/news_imgs/6.jpg';
 import img_7 from '../assets/news_imgs/7.jpeg';
 import img_8 from '../assets/news_imgs/8.jpg';
 import img_9 from '../assets/news_imgs/9.jpeg';
-// import img_10 from '../assets/news_imgs/10.jpg';
-import img_11 from '../assets/news_imgs/11.jpg';
-import img_12 from '../assets/news_imgs/12.jpeg';
-import img_13 from '../assets/news_imgs/13.jpg';
-import img_14 from '../assets/news_imgs/14.jpg';
-// import img_15 from '../assets/news_imgs/15.jpg';
-import img_16 from '../assets/news_imgs/16.jpg';
-import img_17 from '../assets/news_imgs/17.jpg';
-import img_18 from '../assets/news_imgs/18.jpg';
-// import img_19 from '../assets/news_imgs/19.jpg';
-import img_20 from '../assets/news_imgs/20.jpg';
-import img_21 from '../assets/news_imgs/21.jpg';
-import img_25 from '../assets/news_imgs/25.jpg';
-import img_26 from '../assets/news_imgs/26.jpg';
-import img_27 from '../assets/news_imgs/27.jpg';
-import img_31 from '../assets/news_imgs/31.jpg';
-import img_32 from '../assets/news_imgs/32.png';
-import img_33 from '../assets/news_imgs/33.jpeg';
-import img_34 from '../assets/news_imgs/34.jpg';
 import img_35 from '../assets/impact_stories_imgs/7.png';
 import img_36 from '../assets/news_imgs/36.jpg';
-import Footer from './footer';
 
 // var news_items = [
 //   {
