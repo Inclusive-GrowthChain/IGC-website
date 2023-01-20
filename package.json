@@ -4,6 +4,7 @@
   "homepage": "https://inclusive-growthchain.github.io/IGC-website/",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
