@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://inclusive-growthchain.github.io/IGC-website/",
+  "homepage": "https://63cab21040bf1c52b4a92cfc--teal-clafoutis-49a642.netlify.app/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
