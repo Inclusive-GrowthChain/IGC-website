@@ -29,7 +29,9 @@ const Footer = () => {
           <p>admin@inclusivegrowthchain.com</p>
         </div>
         <div className='footer_company_social_container'>
-          <FontAwesomeIcon icon={faLinkedin} className='footer_social_icon' />
+          <a href='https://www.linkedin.com/company/twinsset/' target='_blank' className='contact_details_social_link'>
+            <FontAwesomeIcon icon={faLinkedin} className='footer_social_icon' />
+          </a>
           <FontAwesomeIcon icon={faTwitter} className='footer_social_icon' />
           <FontAwesomeIcon icon={faFacebookF} className='footer_social_icon' />
         </div>

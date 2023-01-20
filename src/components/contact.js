@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,6 +24,8 @@ import 'leaflet/dist/leaflet.css';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import L from 'leaflet';
+import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 import './css/contact.css';
 
@@ -49,7 +51,7 @@ const Contact = () => {
   const onChangeName = (e) => {
     setName(e.target.value);
   };
-  
+
   const onChangeEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -60,6 +62,32 @@ const Contact = () => {
 
   const onChangeMessage = (e) => {
     setMessage(e.target.value);
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if(name === '' || email === '' || subject === '' || message === '') {
+      console.log(name);
+      console.log(email);
+      console.log(subject);
+      console.log(message);
+      alert('Please fill all the fields');
+      return;
+    }
+
+    emailjs.sendForm('service_hfliw7t', 'template_7jsaez6', form.current, 'xd5CsNE-A5KPC31kJ')
+      .then((result) => {
+          console.log(result.text);
+          alert('Email sent successfully');
+      }, (error) => {
+          console.log(error.text);
+          alert('Something went wrong. Please try again later.');
+      });
+
+    e.target.reset();
   };
 
   return (
@@ -128,23 +156,40 @@ const Contact = () => {
           Let's talk business
         </div>
         <div className='cc3_content_container'>
-          <div className='contact_form_container'>
-            <div className='contact_form_input_container'>
-              <input type='text' placeholder='Your Name' className='contact_form_input' onChange={(e) => onChangeName(e)}/>
+          {/* <div className='contact_form_container'> */}
+            {/* <div className='contact_form_input_container'>
+              <input type='text' placeholder='Your Name' className='contact_form_input' onChange={(e) => onChangeName(e)} />
             </div>
             <div className='contact_form_input_container'>
-              <input type='text' placeholder='Your Email' className='contact_form_input' onChange={(e) => onChangeEmail(e)}/>
+              <input type='text' placeholder='Your Email' className='contact_form_input' onChange={(e) => onChangeEmail(e)} />
             </div>
             <div className='contact_form_input_container'>
-              <input type='text' placeholder='Subject' className='contact_form_input' onChange={(e) => onChangeSubject(e)}/>
+              <input type='text' placeholder='Subject' className='contact_form_input' onChange={(e) => onChangeSubject(e)} />
             </div>
             <div className='contact_form_input_container'>
               <textarea placeholder='Message' className='contact_form_message' onChange={(e) => onChangeMessage(e)}></textarea>
             </div>
-            <div className='contact_form_submit'>
-              <a href={"mailto:admin@inclusivegrowthchain.com?subject=" + subject + "&body=" + message}>Send Message</a>
-            </div>
-          </div>
+            <div className='contact_form_submit' onClick={(e) => sendEmail(e)}>
+              Send Message
+            </div> */}
+            <form ref={form} onSubmit={sendEmail} className='contact_form'>
+              <div className='contact_form_input_container'>
+                <input type='text' placeholder='Your Name' className='contact_form_input' name='user_name' onChange={(e) => onChangeName(e)}/>
+              </div>
+              <div className='contact_form_input_container'>
+                <input type='text' placeholder='Your Email' className='contact_form_input' name='user_email' onChange={(e) => onChangeEmail(e)}/>
+              </div>
+              <div className='contact_form_input_container'>
+                <input type='text' placeholder='Subject' className='contact_form_input' name='subject' onChange={(e) => onChangeSubject(e)}/>
+              </div>
+              <div className='contact_form_input_container'>
+                <textarea placeholder='Message' className='contact_form_message' name='message' onChange={(e) => onChangeMessage(e)} />
+              </div>
+              <div className='contact_form_submit_container'>
+                <input type='submit' value='Send Message' className='contact_form_submit'/>
+              </div>
+            </form>
+          {/* </div> */}
           <div className='contact_details_container'>
             <div className='contact_details_1_container'>
               <div className='contact_details_icon_container'>
@@ -185,7 +230,9 @@ const Contact = () => {
                 </div>
                 <div className='contact_details_social_icon_container'>
                   <FontAwesomeIcon icon={faFacebookF} className='contact_details_social_icon' />
-                  <FontAwesomeIcon icon={faLinkedin} className='contact_details_social_icon' />
+                  <a href='https://www.linkedin.com/company/twinsset/' target='_blank' className='contact_details_social_link'>
+                    <FontAwesomeIcon icon={faLinkedin} className='contact_details_social_icon' />
+                  </a>
                   <FontAwesomeIcon icon={faTwitter} className='contact_details_social_icon' />
                 </div>
               </div>
