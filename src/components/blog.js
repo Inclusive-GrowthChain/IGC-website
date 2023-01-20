@@ -2,36 +2,36 @@ import React from 'react';
 
 import './css/blog.css';
 
-const blog_items = [
-  {
-    index: 1,
-    title: "Every time you attribute horse gets its holidays unicorn",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
-    date: "12 December, 2021",
-    topic: "AI & ML",
-  },
-  {
-    index: 2,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
-    date: "12 December, 2021",
-    topic: "Blockchain",
-  },
-  {
-    index: 3,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
-    date: "12 December, 2021",
-    topic: "NLP",
-  },
-  {
-    index: 4,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
-    date: "12 December, 2021",
-    topic: "Metaverse",
-  },
-]
+// const blog_items = [
+//   {
+//     index: 1,
+//     title: "Every time you attribute horse gets its holidays unicorn",
+//     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
+//     date: "12 December, 2021",
+//     topic: "AI & ML",
+//   },
+//   {
+//     index: 2,
+//     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+//     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
+//     date: "12 December, 2021",
+//     topic: "Blockchain",
+//   },
+//   {
+//     index: 3,
+//     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+//     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
+//     date: "12 December, 2021",
+//     topic: "NLP",
+//   },
+//   {
+//     index: 4,
+//     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+//     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam lorem, eget aliquam nisl nunc eu nunc.",
+//     date: "12 December, 2021",
+//     topic: "Metaverse",
+//   },
+// ]
 
 const Blog = () => {
 

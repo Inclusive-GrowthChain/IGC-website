@@ -160,7 +160,7 @@ const Careers = () => {
                 <Card className='careers_card'>
                   <CardContent>
                     <div className='careers_card_logo_container'>
-                      <img src={logo} className='careers_card_logo' />
+                      <img src={logo} className='careers_card_logo' alt='careers_card_logo'/>
                     </div>
                     <div className='careers_card_company_container'>
                       <b>Inclusive Growth Chain</b> (Twinsset Private Limited)
@@ -208,7 +208,7 @@ const Careers = () => {
                         <b>About the Startup:</b> Inclusive Growth Chain is an innovative technology company that aims to create an impact through Blockchain, Artificial Intelligence, Machine Learning, and IoT technologies. It has a solid track record of implementing blockchain-enabled services in the areas of financial inclusion, healthcare, women empowerment, education, and environmental sciences. The company was incubated initially at the University of Hyderabad and later at the Indian School of Business, Hyderabad. Inclusive Growth Chain has a record of winning the International Blockchain Hackathon in Dubai and the NPCI Blockchain Hackathon in India.
                       </p>
                       <p className='careers_modal_p'>
-                        <b>Website:</b> <a href='https://www.inclusivegrowthchain.com/' target='_blank'>https://www.inclusivegrowthchain.com/</a>
+                        <b>Website:</b> <a href='https://www.inclusivegrowthchain.com/' target='_blank' rel="noreferrer">https://www.inclusivegrowthchain.com/</a>
                       </p>
                       <p className='careers_modal_p'>
                         <b>Responsibilities and Duties:</b>

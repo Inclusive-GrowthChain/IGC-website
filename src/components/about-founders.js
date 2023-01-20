@@ -32,7 +32,7 @@ const AboutFounders = () => {
               </div>
               <hr className='founder_line' />
               <div className='founder_social'>
-                <a href='https://www.linkedin.com/in/vijaya-marisetty-689988179/' target='_blank'>Vijaya Marisetty | LinkedIn</a>
+                <a href='https://www.linkedin.com/in/vijaya-marisetty-689988179/' target='_blank' rel="noreferrer">Vijaya Marisetty | LinkedIn</a>
               </div>
               <div className='founder_text'>
                 Professor. Marisetty has 25 years of work experience as a faculty member at Monash University, Australia, Indian Institute of Management, Bangalore, India, RMIT University, Australia, Indian School of Business, Hyderabad, India, University of Hyderabad, India and University of Twente, Netherlands. He has received several best paper awards in international conferences and journals. He is the recipient of <b>Peter Brownell Manuscript Award</b> from the Accounting and Finance Association of Australia and New Zealand <b>(AFAANZ); Chartered Financial Analysts Institute (CFA, USA) Best Paper Award; Citation of Excellence Award</b> from Emerald Publishers Group.
@@ -58,7 +58,7 @@ const AboutFounders = () => {
               </div>
               <hr className='founder_line' />
               <div className='founder_social'>
-                <a href='https://www.linkedin.com/in/varsha-mamidi-13865328/' target='_blank'>Varsha Mamidi | LinkedIn</a>
+                <a href='https://www.linkedin.com/in/varsha-mamidi-13865328/' target='_blank' rel="noreferrer">Varsha Mamidi | LinkedIn</a>
               </div>
               <div className='founder_text'>
                 Professor. Varsha Mamidi has spent around 18 years in the IT industry before joining as a machine learning and analytics professor at the University of Hyderabad. She worked in Hewlitt-Packard, Telstra, Coles-Myer, Tanla Solutions and Causeway UK in various capacities, ranging from software developer to country delivery head. She is a certified Project Management Professional from PMP, USA. She is the recipient of an award from Telstra for creating algorithms for fraud detection in mobile retail networks in Australia.

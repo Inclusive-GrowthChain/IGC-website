@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -219,7 +216,7 @@ const Contact = () => {
                 </div>
                 <div className='contact_details_social_icon_container'>
                   <FontAwesomeIcon icon={faFacebookF} className='contact_details_social_icon' />
-                  <a href='https://www.linkedin.com/company/twinsset/' target='_blank' className='contact_details_social_link'>
+                  <a href='https://www.linkedin.com/company/twinsset/' target='_blank' rel="noreferrer" className='contact_details_social_link'>
                     <FontAwesomeIcon icon={faLinkedin} className='contact_details_social_icon' />
                   </a>
                   <FontAwesomeIcon icon={faTwitter} className='contact_details_social_icon' />

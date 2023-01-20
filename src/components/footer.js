@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, CardContent } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faWhatsapp, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faMap, faPhone, faEnvelope, faClock, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faMap, faPhone, faEnvelope, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 import img_6 from '../assets/news_imgs/6.jpg';
@@ -28,7 +28,7 @@ const Footer = () => {
           <p>admin@inclusivegrowthchain.com</p>
         </div>
         <div className='footer_company_social_container'>
-          <a href='https://www.linkedin.com/company/twinsset/' target='_blank' className='contact_details_social_link'>
+          <a href='https://www.linkedin.com/company/twinsset/' target='_blank' rel="noreferrer" className='contact_details_social_link'>
             <FontAwesomeIcon icon={faLinkedin} className='footer_social_icon' />
           </a>
           <FontAwesomeIcon icon={faTwitter} className='footer_social_icon' />

@@ -73,22 +73,22 @@ function Item(props) {
       <div className='img_container'>
         {
           props.item.index === 1 && (
-            <img src={about_img} style={{ height: '35vw', width: '40vw', marginLeft: '-5%', marginTop: '-15%' }} className={'home_img'} />
+            <img src={about_img} style={{ height: '35vw', width: '40vw', marginLeft: '-5%', marginTop: '-15%' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
         {
           props.item.index === 2 && (
-            <img src={hackathon_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} />
+            <img src={hackathon_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
         {
           props.item.index === 3 && (
-            <img src={hackathon2_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} />
+            <img src={hackathon2_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
         {
           props.item.index === 4 && (
-            <img src={partners_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} />
+            <img src={partners_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
       </div>
@@ -102,22 +102,22 @@ function Item2(props) {
       <div className='img_container'>
         {
           props.item.index === 1 && (
-            <img src={about_img} style={{ height: '20rem', width: '20rem', marginLeft: '-5%'}} className={'home_img'} />
+            <img src={about_img} style={{ height: '20rem', width: '20rem', marginLeft: '-5%'}} className={'home_img'} alt='home_slider_img'/>
           )
         }
         {
           props.item.index === 2 && (
-            <img src={hackathon_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} />
+            <img src={hackathon_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
         {
           props.item.index === 3 && (
-            <img src={hackathon2_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} />
+            <img src={hackathon2_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
         {
           props.item.index === 4 && (
-            <img src={partners_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} />
+            <img src={partners_img} style={{ boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)' }} className={'home_img'} alt='home_slider_img'/>
           )
         }
       </div>
