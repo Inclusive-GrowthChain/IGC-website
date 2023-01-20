@@ -161,18 +161,18 @@
   }
 
   .about_container_text {
-    font-size: 1.76vw;
-    width: 70%;
+    font-size: 3vw;
+    width: 150%;
   }
 
   .about_container_desc {
-    font-size: 0.8vw;
-    width: 70%;
+    font-size: 2vw;
+    width: 150%;
   }
 
   .about_img {
     display: block;
-    margin-left: -13rem;
+    margin-left: 2rem;
   }
 
   .home_container_8 {
@@ -264,16 +264,16 @@
   }
 
   .about_container_text {
-    width: 100%;
+    width: 130%;
   }
 
   .about_container_desc {
     width: 90%;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
   }
 
   .about_img {
-    margin-left: -7.5rem;
+    margin-left: 0rem;
   }
 
   .hc7_row_1 {
@@ -518,6 +518,20 @@
   .service_card_selected .service_icon {
     height: 3rem;
     width: 3rem;
+  }
+
+  .about_container_text {
+    width: 100%;
+    font-size: 1.76vw;
+  }
+
+  .about_container_desc {
+    width: 90%;
+    font-size: 1.1vw;
+  }
+
+  .about_img {
+    margin-left: -2rem;
   }
 
   .home_subscribe_title {

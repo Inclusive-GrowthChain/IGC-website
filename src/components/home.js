@@ -385,6 +385,7 @@ const Home = () => {
             alt='about_img'
             className='about_img'
           />
+          <p className='image_credits'><a href="https://www.freepik.com/free-vector/colored-donation-volunteer-work-flat-composition-volunteers-clean-up-street-plant-new-trees-park-vector-illustration_31977255.htm#query=rural%20people%20joining%20illustrator&position=16&from_view=search&track=ais">Image by macrovector</a> on Freepik</p>
         </div>
       </div>
       <div className='home_container_7'>
