@@ -10,27 +10,16 @@ import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBrain } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import L from 'leaflet';
-import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
 import './css/contact.css';
-
-import home_img from '../assets/home_img/20943774.jpg';
-import Footer from './footer';
 
 let DefaultIcon = L.icon({
   iconUrl: icon,

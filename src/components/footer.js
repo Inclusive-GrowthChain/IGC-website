@@ -5,7 +5,6 @@ import { faFacebookF, faInstagram, faWhatsapp, faTwitter, faLinkedin } from '@fo
 import { faMap, faPhone, faEnvelope, faClock, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
-import home_img from '../assets/home_img/20943774.jpg';
 import img_6 from '../assets/news_imgs/6.jpg';
 import img_8 from '../assets/news_imgs/8.jpg';
 import img_35 from '../assets/impact_stories_imgs/7.png';
