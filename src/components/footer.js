@@ -22,6 +22,7 @@ const Footer = () => {
           Impact that Empowers
         </div> */}
         <div className='footer_company_responsive_text'>
+          <p>Twinsset Pvt. Ltd.</p>
           <p>DLabs, Indian School of Business</p>
           <p>Hyderabad, India</p>
           <p>+91-9866896553</p>
@@ -41,6 +42,9 @@ const Footer = () => {
           <hr className='footer_line' />
         </div>
         <div className='footer_contact_text_2'>
+          <p>
+            Twinsset Pvt. Ltd.
+          </p>
           <p>
             <FontAwesomeIcon icon={faMap} className='footer_contact_icon' />
             DLabs, Indian School of Business

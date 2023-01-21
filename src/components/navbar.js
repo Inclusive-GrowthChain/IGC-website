@@ -79,7 +79,8 @@ const Navbar = () => {
                   onMouseEnter={() => setShowAboutDropdown(true)}
                   onMouseLeave={() => setShowAboutDropdown(false)}
                 >
-                  <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
+                  {/* <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link> */}
+                  <p className={nav_item_a_classes.join(" ")}>{item.title}</p>
                   {
                     showAboutDropdown && (
                       <ul className={aboutDropdown ? "about_menu.clicked" : "about_menu"} onClick={() => {
@@ -109,7 +110,8 @@ const Navbar = () => {
                   onMouseEnter={() => setShowNewsDropdown(true)}
                   onMouseLeave={() => setShowNewsDropdown(false)}
                 >
-                  <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link>
+                  {/* <Link to={item.path} className={nav_item_a_classes.join(" ")}>{item.title}</Link> */}
+                  <p className={nav_item_a_classes.join(" ")}>{item.title}</p>
                   {
                     showNewsDropdown && (
                       <ul className={newsDropdown ? "news_menu.clicked" : "news_menu"} onClick={() => {
@@ -163,7 +165,7 @@ const Navbar = () => {
                         onMouseEnter={() => setShowAboutDropdown(true)}
                         onMouseLeave={() => setShowAboutDropdown(false)}
                       >
-                        <Link to={item.path} className='hamburger_nav_item_a' onClick={() => setHamburgerOpen(false)}>{item.title}</Link>
+                        <Link className='hamburger_nav_item_a' onClick={() => setShowHamburgerAboutDropdown(!showHamburgerAboutDropdown)}>{item.title}</Link>
                         <FontAwesomeIcon icon={showHamburgerAboutDropdown ? faCaretDown : faCaretRight} className="hamburger_menu_list_item_icon" onClick={() => setShowHamburgerAboutDropdown(!showHamburgerAboutDropdown)} />
                         <hr className="hamburger_menu_list_line" />
                         {
@@ -204,7 +206,7 @@ const Navbar = () => {
                         onMouseEnter={() => setShowNewsDropdown(true)}
                         onMouseLeave={() => setShowNewsDropdown(false)}
                       >
-                        <Link to={item.path} className='hamburger_nav_item_a' onClick={() => setHamburgerOpen(false)}>{item.title}</Link>
+                        <Link className='hamburger_nav_item_a' onClick={() => setShowHamburgerNewsDropdown(!showHamburgerNewsDropdown)}>{item.title}</Link>
                         <FontAwesomeIcon icon={showHamburgerNewsDropdown ? faCaretDown : faCaretRight} className="hamburger_menu_list_item_icon" onClick={() => setShowHamburgerNewsDropdown(!showHamburgerNewsDropdown)} />
                         <hr className="hamburger_menu_list_line" />
                         {
