@@ -167,7 +167,7 @@ const Navbar = () => {
                       >
                         <Link className='hamburger_nav_item_a' onClick={() => setShowHamburgerAboutDropdown(!showHamburgerAboutDropdown)}>{item.title}</Link>
                         <FontAwesomeIcon icon={showHamburgerAboutDropdown ? faCaretDown : faCaretRight} className="hamburger_menu_list_item_icon" onClick={() => setShowHamburgerAboutDropdown(!showHamburgerAboutDropdown)} />
-                        <hr className="hamburger_menu_list_line" />
+                        {/* <hr className="hamburger_menu_list_line" /> */}
                         {
                           showHamburgerAboutDropdown && (
                             <ul className={hamburgerAboutDropdown ? "hamburger_about_menu.clicked" : "hamburger_about_menu"} onClick={() => {
@@ -177,7 +177,7 @@ const Navbar = () => {
                               {
                                 about_list.map((item) => {
                                   return (
-                                    <li key={item.id}>
+                                    <li key={item.id} className='hamburger_menu_list_item_drop'>
                                       <Link 
                                         to={item.path} 
                                         className='hamburger_nav_item_a' 
@@ -187,7 +187,7 @@ const Navbar = () => {
                                         }}>
                                           {item.title}
                                         </Link>
-                                      <hr className="hamburger_menu_list_line" />
+                                      {/* <hr className="hamburger_menu_list_line" /> */}
                                     </li>
                                   )
                                 })
@@ -208,7 +208,7 @@ const Navbar = () => {
                       >
                         <Link className='hamburger_nav_item_a' onClick={() => setShowHamburgerNewsDropdown(!showHamburgerNewsDropdown)}>{item.title}</Link>
                         <FontAwesomeIcon icon={showHamburgerNewsDropdown ? faCaretDown : faCaretRight} className="hamburger_menu_list_item_icon" onClick={() => setShowHamburgerNewsDropdown(!showHamburgerNewsDropdown)} />
-                        <hr className="hamburger_menu_list_line" />
+                        {/* <hr className="hamburger_menu_list_line" /> */}
                         {
                           showHamburgerNewsDropdown && (
                             <ul className={hamburgerNewsDropdown ? "hamburger_news_menu.clicked" : "hamburger_news_menu"} onClick={() => {
@@ -218,7 +218,7 @@ const Navbar = () => {
                               {
                                 news_list.map((item, index) => {
                                   return (
-                                    <li key={item.id}>
+                                    <li key={item.id} className='hamburger_menu_list_item_drop'>
                                       <Link
                                         to={item.path} 
                                         className='hamburger_nav_item_a' 
@@ -228,7 +228,7 @@ const Navbar = () => {
                                         }}>
                                           {item.title}
                                         </Link>
-                                      <hr className="hamburger_menu_list_line" />
+                                      {/* <hr className="hamburger_menu_list_line" /> */}
                                     </li>
                                   )
                                 })
@@ -242,14 +242,14 @@ const Navbar = () => {
                   return (
                     <li key={item.id} className='hamburger_menu_list_item'>
                       <Link to={item.path} className='hamburger_nav_item_a' onClick={() => setHamburgerOpen(false)}>{item.title}</Link>
-                      <hr className="hamburger_menu_list_line" />
+                      {/* <hr className="hamburger_menu_list_line" /> */}
                     </li>
                   )
                 })
               }
               <li className='hamburger_menu_list_item'>
                 <Link to="./contact" className='hamburger_nav_item_a' onClick={() => setHamburgerOpen(false)}>CONTACT US</Link>
-                <hr className="hamburger_menu_list_line" />
+                {/* <hr className="hamburger_menu_list_line" /> */}
               </li>
             </ul>
           </div>

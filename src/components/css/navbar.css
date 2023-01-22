@@ -220,6 +220,13 @@
 .hamburger_menu_list_item {
     cursor: pointer;
     margin-top: 2rem;
+    margin-bottom: 60px;
+}
+
+.hamburger_menu_list_item_drop {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 30px;
 }
 
 .hamburger_nav_item_a {
@@ -233,12 +240,13 @@
 }
 
 .hamburger_menu_list_line {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    margin: 5px;
+    width: 0%;
+    height: 0px;
+    background-color: rgb(226, 226, 226, 0);
+    /* margin: 5px; */
     margin-top: 20px;
     transition: all 0.3s ease-in;
+    display: hidden;
 }
 
 .hamburger_menu_list_item_icon {

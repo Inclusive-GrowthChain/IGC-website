@@ -92,6 +92,10 @@
     margin-bottom: 0.8rem;
 }
 
+.about_list_2 ul li {
+    text-indent: -1.4em;
+}
+
 .about_container_2 {
     padding-bottom: 20vh;
     width: 100%;
