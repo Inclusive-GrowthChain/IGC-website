@@ -42,13 +42,18 @@ const Footer = () => {
           <hr className='footer_line' />
         </div>
         <div className='footer_contact_text_2'>
-          <p>
-            Twinsset Pvt. Ltd.
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faMap} className='footer_contact_icon' />
-            DLabs, Indian School of Business
-          </p>
+          <div className='footer_contact_text_2_inner'>
+            <p>
+              <FontAwesomeIcon icon={faMap} className='footer_contact_icon' />
+              Twinsset Pvt. Ltd.
+            </p>
+            <p style={{marginLeft: '2.6rem'}}>
+              DLabs, Indian School of Business
+            </p>
+            <p style={{marginLeft: '2.6rem'}}>
+              Hyderabad, India
+            </p>
+          </div>
           <p>
             <FontAwesomeIcon icon={faPhone} className='footer_contact_icon' />
             +91-9866896553
